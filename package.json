@@ -1,0 +1,21 @@
+{
+  "name": "@ccayl/aviary-tokens",
+  "version": "0.0.1",
+  "description": "Testing 123",
+  "main": "index.js",
+  "files": ["index.js"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fullscript/aviary-tokens.git"
+  },
+  "author": "Fullscript",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fullscript/aviary-tokens/issues"
+  },
+  "homepage": "https://github.com/Fullscript/aviary-tokens#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {}
+}
