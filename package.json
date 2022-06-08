@@ -15,7 +15,9 @@
   },
   "homepage": "https://github.com/Fullscript/aviary-tokens#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "style-dictionary build"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "style-dictionary": "^3.7.0"
+  }
 }
