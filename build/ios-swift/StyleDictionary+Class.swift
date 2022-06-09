@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Thu, 09 Jun 2022 17:20:20 GMT
+// Generated on Thu, 09 Jun 2022 17:22:59 GMT
 
 
 import UIKit
@@ -25,7 +25,7 @@ public class StyleDictionaryClass {
     public static let globalColorsGreen500 = #86B09B
     public static let globalColorsGreen600 = #307553
     public static let globalColorsGreen700 = #275E43
-    public static let globalColorsGreen800 = #FFF
+    public static let globalColorsGreen800 = #244C38
     public static let globalColorsGrey100 = #FCFEFF
     public static let globalColorsGrey200 = #F5F7FA
     public static let globalColorsGrey300 = #E6EDF5
