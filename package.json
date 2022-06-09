@@ -4,16 +4,6 @@
   "description": "Testing 123",
   "main": "index.js",
   "files": ["index.js"],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Fullscript/aviary-tokens.git"
-  },
-  "author": "Fullscript",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Fullscript/aviary-tokens/issues"
-  },
-  "homepage": "https://github.com/Fullscript/aviary-tokens#readme",
   "scripts": {
     "build": "style-dictionary build"
   },
