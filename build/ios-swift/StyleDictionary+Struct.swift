@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Thu, 09 Jun 2022 17:22:59 GMT
+// Generated on Thu, 09 Jun 2022 17:38:11 GMT
 
 
 import UIKit
@@ -26,6 +26,7 @@ internal struct StyleDictionaryStruct {
     internal static let globalColorsGreen600 = #307553
     internal static let globalColorsGreen700 = #275E43
     internal static let globalColorsGreen800 = #244C38
+    internal static let globalColorsGreen900 = #FFF
     internal static let globalColorsGrey100 = #FCFEFF
     internal static let globalColorsGrey200 = #F5F7FA
     internal static let globalColorsGrey300 = #E6EDF5
