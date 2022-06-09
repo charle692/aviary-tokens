@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'data/tokens.json'
+    branches-ignore:
+      - 'main'
 
 jobs:
   generate_tokens:
