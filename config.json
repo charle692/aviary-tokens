@@ -2,7 +2,7 @@
   "source": ["data/tokens.json"],
 
   "platforms": {
-    "scss": {
+    "Owerly": {
       "transformGroup": "scss",
       "buildPath": "build/scss/",
       "files": [
@@ -23,7 +23,7 @@
       ]
     },
 
-    "ts": {
+    "Aviary": {
       "transformGroup": "js",
       "buildPath": "build/ts/",
       "files": [
