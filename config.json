@@ -4,7 +4,7 @@
   "platforms": {
     "Owlery": {
       "transformGroup": "scss",
-      "buildPath": "build/scss/",
+      "buildPath": "tokens/owlery/",
       "files": [
         {
           "destination": "colors.scss",
@@ -26,7 +26,7 @@
 
     "Aviary": {
       "transformGroup": "js",
-      "buildPath": "build/ts/",
+      "buildPath": "tokens/aviary/",
       "files": [
         {
           "format": "javascript/es6",
