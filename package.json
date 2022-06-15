@@ -1,4 +1,9 @@
 {
+  "name": "@ccayl/aviary-tokens",
+  "version": "0.0.1",
+  "description": "Testing 123",
+  "main": "index.js",
+  "files": ["index.js"],
   "scripts": {
     "build": "style-dictionary build"
   },
