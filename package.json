@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Testing 123",
   "main": "index.js",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "build": "node build.js"
   },
