@@ -8,7 +8,6 @@ StyleDictionary.registerFilter({
 });
 
 StyleDictionary.extend({
-  source: ["tokens/**/*.json"],
   platforms: {
     Owlery: {
       transformGroup: "scss",
