@@ -2,8 +2,8 @@ const StyleDictionary = require("style-dictionary").extend("config.json");
 
 StyleDictionary.registerFilter({
   name: "filter-typography",
-  matcher: function (prop) {
-    return prop.attributes.type === "typography";
+  matcher: ({ attributes }) => {
+    return attributes.type === "typography";
   },
 });
 
