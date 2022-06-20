@@ -63,6 +63,18 @@ TODO: Verify this part lol
 
 3.  Use the tokens!
 
+TODO: Fill our/fix up once we're using
+
+### React:
+
+```js
+import { typography } from "aviary-tokens/ts";
+
+export const myStyles = css`
+  font-size: ${typography.h1.fontSize};
+`;
+```
+
 ### Resources
 
 Our Design tokens in Figma: [Foundations](https://www.figma.com/file/ed7GjnB5rfEQ1CdTTh9jFP/Foundations?node-id=399%3A398)
