@@ -79,7 +79,7 @@ export const myStyles = css`
 
 Our Design tokens in Figma: [Foundations](https://www.figma.com/file/ed7GjnB5rfEQ1CdTTh9jFP/Foundations?node-id=399%3A398)
 
-## Contributing
+### Contributing
 
 TODO: Fix this up and add CONTRIBUTING.md
 
