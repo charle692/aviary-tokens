@@ -4,7 +4,7 @@ If you are wanting to contribute to this repository, ensure to follow the guidel
 
 ## Restricted development
 
-All work done in this repository is intended to only be members of the Phoenix team, as this is a critical part of our design system infrastructure. If you require [changes/feature requests](https://github.com/Fullscript/aviary-tokens/blob/.github/CONTRIBUTING.md#requesting-updates) or are reporting [bugs](https://github.com/Fullscript/aviary-tokens/blob/.github/CONTRIBUTING.md#bugs)
+All work done in this repository is intended to only be members of the Phoenix team, as this is a critical part of our design system infrastructure. We welcome any [requests for changes or features](https://github.com/Fullscript/aviary-tokens/blob/.github/CONTRIBUTING.md#requesting-updates) or [bug reports](https://github.com/Fullscript/aviary-tokens/blob/.github/CONTRIBUTING.md#bugs).
 
 ## Bugs
 
