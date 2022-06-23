@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 15 Jun 2022 15:44:11 GMT
+ * Generated on Thu, 23 Jun 2022 15:23:07 GMT
  */
 
 export const GlobalTypographyH1 = {"fontFamily":"Mulish","fontWeight":"700","lineHeight":"40","fontSize":"40","letterSpacing":"0%","paragraphSpacing":"0","textDecoration":"none","textCase":"none"};
