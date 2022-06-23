@@ -26,10 +26,17 @@ jobs:
           node-version: "14"
       - name: Install Node Dependencies
         run: npm install
+      - name: Run token-transformer
+        run: npm run transform
+      - name: Commit transformed tokens
+        id: auto-commit-action
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Transformed design tokens
       - name: Run style dictionary build
         run: npm run build
       - name: Commit built tokens
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Updated design tokens
+          commit_message: Built and updated design tokens
