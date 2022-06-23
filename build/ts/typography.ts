@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 16 Jun 2022 19:25:52 GMT
+ * Generated on Thu, 23 Jun 2022 16:13:10 GMT
  */
 
 export const GlobalTypographyH1FontFamily = "Mulish";
