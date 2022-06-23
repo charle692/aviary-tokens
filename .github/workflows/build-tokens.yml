@@ -3,14 +3,21 @@ name: Style dictionary build
 on:
   push:
     paths:
-      - 'data/transformed-tokens.json'
       - 'config.json'
     branches-ignore:
       - 'main'
+  workflow_run:
+    workflows:
+      - "Transform tokens using token-transformer"
+    types:
+      - "completed"
+    branches-ignore:
+    - 'main'
 
 jobs:
   generate_tokens:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - uses: actions/checkout@v3
