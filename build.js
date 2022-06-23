@@ -3,7 +3,7 @@ const StyleDictionary = require("style-dictionary").extend("config.json");
 StyleDictionary.registerFilter({
   name: "filter-typography",
   matcher: ({ attributes }) => {
-    return attributes.type === "typography";
+    return attributes.category === "typography";
   },
 });
 
