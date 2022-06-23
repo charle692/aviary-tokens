@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 23 Jun 2022 16:24:09 GMT
+ * Generated on Thu, 23 Jun 2022 16:13:10 GMT
  */
 
 export const GlobalColorsGreen100 = "#FAFFFC";
