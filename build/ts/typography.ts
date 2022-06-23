@@ -1,16 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Thu, 16 Jun 2022 19:25:52 GMT
+ * Generated on Thu, 23 Jun 2022 16:24:09 GMT
  */
 
-export const GlobalTypographyH1FontFamily = "Mulish";
-export const GlobalTypographyH1FontWeight = "700";
-export const GlobalTypographyH1LineHeight = "40";
-export const GlobalTypographyH1FontSize = "40";
-export const GlobalTypographyH1LetterSpacing = "0";
-export const GlobalTypographyH1ParagraphSpacing = "0";
-export const GlobalTypographyH1TextDecoration = "none";
-export const GlobalTypographyH1TextCase = "none";
+export const GlobalTypographyH1 = {"fontFamily":"Mulish","fontWeight":"700","lineHeight":"40","fontSize":"40","letterSpacing":"0","paragraphSpacing":"0","textDecoration":"none","textCase":"none"};
 export const GlobalTypographyH2FontFamily = "Mulish";
 export const GlobalTypographyH2FontWeight = "700";
 export const GlobalTypographyH2LineHeight = "40";
