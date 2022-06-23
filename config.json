@@ -1,3 +1,48 @@
 {
-  "source": ["data/tokens.json"]
+  "source": ["data/tokens.json"],
+
+  "platforms": {
+    "Owlery": {
+      "transformGroup": "scss",
+      "buildPath": "build/scss/",
+      "files": [
+        {
+          "destination": "colors.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "color"
+          }
+        },
+
+        {
+          "destination": "typography.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "typography"
+          }
+        }
+      ]
+    },
+
+    "Aviary": {
+      "transformGroup": "js",
+      "buildPath": "build/ts/",
+      "files": [
+        {
+          "format": "javascript/es6",
+          "destination": "colors.ts",
+          "filter": {
+            "type": "color"
+          }
+        },
+        {
+          "format": "javascript/es6",
+          "destination": "typography.ts",
+          "filter": {
+            "type": "typography"
+          }
+        }
+      ]
+    }
+  }
 }

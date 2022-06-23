@@ -7,7 +7,7 @@
     "index.js"
   ],
   "scripts": {
-    "build": "node build.js"
+    "build": "style-dictionary build"
   },
   "devDependencies": {
     "style-dictionary": "^3.7.0"
