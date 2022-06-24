@@ -3,40 +3,26 @@ name: Style dictionary build
 on:
   push:
     paths:
+      - 'data/tokens.json'
       - 'config.json'
-      - 'build.js'
     branches-ignore:
       - 'main'
-  workflow_run:
-    workflows:
-      - "Transform tokens using token-transformer"
-    types:
-      - "completed"
-    branches-ignore:
-    - 'main'
 
 jobs:
   generate_tokens:
     runs-on: ubuntu-latest
-    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.workflow_run.head_branch }}
-      - run: git branch
-      - run: env
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
       - name: Install Node Dependencies
         run: npm install
-      - name: Run token-transformer
-        run: npm run transform
       - name: Run style dictionary build
         run: npm run build
       - name: Commit built tokens
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Built and updated design tokens
+          commit_message: Updated design tokens
