@@ -7,9 +7,11 @@
     "index.js"
   ],
   "scripts": {
-    "build": "style-dictionary build"
+    "build": "node build.js",
+    "transform": "token-transformer data/tokens.json data/transformed-tokens.json --expandTypography=true"
   },
   "devDependencies": {
-    "style-dictionary": "^3.7.0"
+    "style-dictionary": "^3.7.0",
+    "token-transformer": "0.0.23"
   }
 }
