@@ -4,4 +4,4 @@ const blorg = () => {
   console.log("BLORG")
 }
 
-module.exports = { typography, blorg }
+export { typography, blorg };
