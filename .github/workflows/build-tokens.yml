@@ -3,20 +3,15 @@ name: Style dictionary build
 on:
   push:
     paths:
+      - 'data/tokens.json'
       - 'config.json'
       - 'build.js'
     branches-ignore:
       - 'main'
-  workflow_run:
-    workflows:
-      - "Transform tokens using token-transformer"
-    types:
-      - "completed"
-    branches-ignore:
-      - 'main'
 
 jobs:
-  generate_tokens:
+  transform_tokens:
+    name: "Token transformer"
     runs-on: ubuntu-latest
 
     steps:
@@ -26,12 +21,21 @@ jobs:
           node-version: "14"
       - name: Install Node Dependencies
         run: npm install
-      - name: Run token-transformer
+      - name: Run token transformer
         run: npm run transform
+      - name: Commit transformed tokens
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Transformed tokens
+
+  build_style_dictionary:
+    name: "Style Dictionary build"
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Run style dictionary build
         run: npm run build
       - name: Commit built tokens
-        id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Built and updated design tokens
