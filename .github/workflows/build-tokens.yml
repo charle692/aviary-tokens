@@ -18,11 +18,9 @@ on:
 jobs:
   generate_tokens:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v3
-      - run: git branch
-      - run: env
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
