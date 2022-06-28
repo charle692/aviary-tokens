@@ -29,6 +29,7 @@ jobs:
           commit_message: Transformed tokens
 
   build_style_dictionary:
+    needs: transform_tokens
     name: "Style Dictionary build"
     runs-on: ubuntu-latest
 
