@@ -551,7 +551,7 @@
       }
     },
     "fontFamily": {
-      "mulish": {
+      "sansSerif": {
         "value": "Mulish",
         "type": "fontFamilies"
       }

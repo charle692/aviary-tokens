@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 27 Jun 2022 20:02:51 GMT
+ * Generated on Tue, 28 Jun 2022 17:30:41 GMT
  */
 
 export const TypographyLetterSpacingBase = 0;
@@ -82,6 +82,6 @@ export const TypographyLineHeightXlarge = "40px";
 export const TypographyLineHeightLarge = "32px";
 export const TypographyLineHeightNormal = "24px";
 export const TypographyLineHeightSmall = "16px";
-export const TypographyFontFamilyMulish = "Mulish";
+export const TypographyFontFamilySansSerif = "Mulish";
 export const TypographyWeightHeading = 700;
 export const TypographyWeightBase = 500;
