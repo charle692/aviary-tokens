@@ -32,10 +32,6 @@
       "800": {
         "value": "#244C38",
         "type": "color"
-      },
-      "900": {
-        "value": "#fff",
-        "type": "color"
       }
     },
     "blue": {
