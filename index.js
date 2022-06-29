@@ -1,4 +1,1 @@
-import typography from "./build/ts/typography";
-
-
-module.exports = { typography }
+module.exports.typography = require('./build/ts/typography');
