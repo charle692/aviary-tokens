@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 28 Jun 2022 17:30:41 GMT
+ * Generated on Wed, 29 Jun 2022 16:02:37 GMT
  */
 
 export const TypographyLetterSpacingBase = 0;
