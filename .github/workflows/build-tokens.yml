@@ -21,6 +21,8 @@ jobs:
           node-version: "14"
       - name: Install Node Dependencies
         run: npm install
+      - name: Pull any branch changes
+        run: git pull origin ${{ github.head_ref }}
       - name: Run token transformer
         run: npm run transform
       - name: Commit transformed tokens
