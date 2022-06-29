@@ -2,15 +2,28 @@ const StyleDictionary = require("style-dictionary").extend("config.json");
 
 StyleDictionary.registerFilter({
   name: "filter-typography",
-  matcher: ({ attributes }) => {
-    return attributes.category === "typography";
+  matcher: function(token){
+    return token.attributes.category === "typography";
   },
+});
+
+StyleDictionary.registerTransform({
+  name: 'name/slice-path',
+  type: 'name',
+  transformer: function(token) {
+      return token.path.slice(1).join("");
+  }
+});
+
+StyleDictionary.registerTransformGroup({
+  name: 'custom/aviary',
+  transforms: ['name/slice-path', 'attribute/cti']
 });
 
 StyleDictionary.extend({
   platforms: {
     Owlery: {
-      transformGroup: "scss",
+      transformGroup: "custom/aviary",
       buildPath: "build/scss/",
       files: [
         {
@@ -29,7 +42,7 @@ StyleDictionary.extend({
     },
 
     Aviary: {
-      transformGroup: "js",
+      transformGroup: "custom/aviary",
       buildPath: "build/ts/",
       files: [
         {
