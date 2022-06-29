@@ -40,6 +40,8 @@ jobs:
           node-version: "14"
       - name: Install Node Dependencies
         run: npm install
+      - name: Pull transformed tokens changes
+        run: git pull origin ${{ github.head_ref }}
       - name: Run style dictionary build
         run: npm run build
       - name: Commit built tokens
