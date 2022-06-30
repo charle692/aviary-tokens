@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 29 Jun 2022 18:51:42 GMT
+ * Generated on Wed, 29 Jun 2022 16:10:55 GMT
  */
 
 export const green100 = "#FAFFFC";
