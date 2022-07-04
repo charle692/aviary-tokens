@@ -1,22 +1,22 @@
 /**
  * Do not edit directly
- * Generated on Mon, 04 Jul 2022 16:20:27 GMT
+ * Generated on Mon, 04 Jul 2022 16:37:20 GMT
  */
 
 export const letterSpacingbase = 0;
 export const paragraphSpacingbase = 0;
 export const textDecorationbase = "none";
 export const textCasebase = "none";
-export const sizeh1 = "40px";
-export const sizeh2 = "32px";
-export const sizeh3 = "24px";
-export const sizeh4 = "20px";
-export const sizebody = "16px";
-export const sizefootnote = "14px";
-export const sizecaption = "12px";
-export const mobileSizeh1 = "32px";
-export const mobileSizeh2 = "28px";
-export const mobileSizeh3 = "22px";
+export const sizedesktoph1 = "40px";
+export const sizedesktoph2 = "32px";
+export const sizedesktoph3 = "24px";
+export const sizedesktoph4 = "20px";
+export const sizedesktopbody = "16px";
+export const sizedesktopfootnote = "14px";
+export const sizedesktopcaption = "12px";
+export const sizemobileh1 = "32px";
+export const sizemobileh2 = "28px";
+export const sizemobileh3 = "22px";
 export const lineHeightxlarge = "40px";
 export const lineHeightlarge = "32px";
 export const lineHeightnormal = "24px";
