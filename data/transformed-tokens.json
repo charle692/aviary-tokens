@@ -231,47 +231,49 @@
       }
     },
     "size": {
-      "h1": {
-        "value": "40px",
-        "type": "fontSizes"
+      "desktop": {
+        "h1": {
+          "value": "40px",
+          "type": "fontSizes"
+        },
+        "h2": {
+          "value": "32px",
+          "type": "fontSizes"
+        },
+        "h3": {
+          "value": "24px",
+          "type": "fontSizes"
+        },
+        "h4": {
+          "value": "20px",
+          "type": "fontSizes"
+        },
+        "body": {
+          "value": "16px",
+          "type": "fontSizes"
+        },
+        "footnote": {
+          "value": "14px",
+          "type": "fontSizes"
+        },
+        "caption": {
+          "value": "12px",
+          "type": "fontSizes"
+        }
       },
-      "h2": {
-        "value": "32px",
-        "type": "fontSizes"
-      },
-      "h3": {
-        "value": "24px",
-        "type": "fontSizes"
-      },
-      "h4": {
-        "value": "20px",
-        "type": "fontSizes"
-      },
-      "body": {
-        "value": "16px",
-        "type": "fontSizes"
-      },
-      "footnote": {
-        "value": "14px",
-        "type": "fontSizes"
-      },
-      "caption": {
-        "value": "12px",
-        "type": "fontSizes"
-      }
-    },
-    "mobileSize": {
-      "h1": {
-        "value": "32px",
-        "type": "fontSizes"
-      },
-      "h2": {
-        "value": "28px",
-        "type": "fontSizes"
-      },
-      "h3": {
-        "value": "22px",
-        "type": "fontSizes"
+      "mobile": {
+        "h1": {
+          "value": "32px",
+          "type": "fontSizes"
+        },
+        "h2": {
+          "value": "28px",
+          "type": "fontSizes"
+        },
+        "h3": {
+          "value": "22px",
+          "type": "fontSizes"
+        }
       }
     },
     "lineHeight": {
@@ -335,7 +337,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "40px",
+          "value": "{typography.size.h1}",
           "type": "fontSize"
         },
         "letterSpacing": {
@@ -369,7 +371,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "32px",
+          "value": "{typography.size.h2}",
           "type": "fontSize"
         },
         "letterSpacing": {
@@ -403,7 +405,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "24px",
+          "value": "{typography.size.h3}",
           "type": "fontSize"
         },
         "letterSpacing": {
@@ -437,7 +439,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "20px",
+          "value": "{typography.size.h4}",
           "type": "fontSize"
         },
         "letterSpacing": {
@@ -471,7 +473,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "16px",
+          "value": "{typography.size.body}",
           "type": "fontSize"
         },
         "letterSpacing": {
@@ -505,7 +507,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "16px",
+          "value": "{typography.size.body}",
           "type": "fontSize"
         },
         "letterSpacing": {
@@ -539,7 +541,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "14px",
+          "value": "{typography.size.footnote}",
           "type": "fontSize"
         },
         "letterSpacing": {
@@ -573,7 +575,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "12px",
+          "value": "{typography.size.caption}",
           "type": "fontSize"
         },
         "letterSpacing": {
@@ -609,7 +611,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "32px",
+          "value": "{typography.mobileSize.h1}",
           "type": "fontSize"
         },
         "letterSpacing": {
@@ -643,7 +645,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "28px",
+          "value": "{typography.mobileSize.h2}",
           "type": "fontSize"
         },
         "letterSpacing": {
@@ -677,7 +679,7 @@
           "type": "lineHeight"
         },
         "fontSize": {
-          "value": "22px",
+          "value": "{typography.mobileSize.h3}",
           "type": "fontSize"
         },
         "letterSpacing": {
