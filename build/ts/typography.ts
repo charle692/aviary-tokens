@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 29 Jun 2022 16:10:55 GMT
+ * Generated on Mon, 04 Jul 2022 13:15:49 GMT
  */
 
 export const letterSpacingbase = 0;
@@ -85,3 +85,6 @@ export const lineHeightsmall = "16px";
 export const fontFamilysansSerif = "Mulish";
 export const weightheading = 700;
 export const weightbase = 500;
+export const weightlight = 400;
+export const weightstrong = 600;
+export const weightbold = 900;
