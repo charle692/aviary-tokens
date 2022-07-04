@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 04 Jul 2022 16:37:20 GMT
+ * Generated on Mon, 04 Jul 2022 16:40:50 GMT
  */
 
 export const letterSpacingbase = 0;
@@ -101,7 +101,7 @@ export const mobileh1textDecoration = "none";
 export const mobileh1textCase = "none";
 export const mobileh2fontFamily = "Mulish";
 export const mobileh2fontWeight = 700;
-export const mobileh2lineHeight = "24px";
+export const mobileh2lineHeight = "32px";
 export const mobileh2fontSize = "28px";
 export const mobileh2letterSpacing = 0;
 export const mobileh2paragraphSpacing = 0;
