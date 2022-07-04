@@ -590,10 +590,6 @@
       "h3": {
         "value": "22px",
         "type": "fontSizes"
-      },
-      "h4": {
-        "value": "20px",
-        "type": "fontSizes"
       }
     }
   }
