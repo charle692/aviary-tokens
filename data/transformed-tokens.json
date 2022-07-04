@@ -577,6 +577,40 @@
         "value": 900,
         "type": "fontWeights"
       }
+    },
+    "mobileSize": {
+      "h1": {
+        "value": "32px",
+        "type": "fontSizes"
+      },
+      "h2": {
+        "value": "28px",
+        "type": "fontSizes"
+      },
+      "h3": {
+        "value": "22px",
+        "type": "fontSizes"
+      },
+      "h4": {
+        "value": "20px",
+        "type": "fontSizes"
+      },
+      "h5": {
+        "value": "16px",
+        "type": "fontSizes"
+      },
+      "body": {
+        "value": "16px",
+        "type": "fontSizes"
+      },
+      "footnode": {
+        "value": "14px",
+        "type": "fontSizes"
+      },
+      "caption": {
+        "value": "12px",
+        "type": "fontSizes"
+      }
     }
   }
 }
