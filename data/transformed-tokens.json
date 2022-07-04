@@ -564,6 +564,18 @@
       "base": {
         "value": 500,
         "type": "fontWeights"
+      },
+      "light": {
+        "value": 400,
+        "type": "fontWeights"
+      },
+      "strong": {
+        "value": 600,
+        "type": "fontWeights"
+      },
+      "bold": {
+        "value": 900,
+        "type": "fontWeights"
       }
     }
   }
