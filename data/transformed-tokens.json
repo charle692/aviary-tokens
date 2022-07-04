@@ -641,7 +641,7 @@
           "type": "fontWeight"
         },
         "lineHeight": {
-          "value": "24px",
+          "value": "32px",
           "type": "lineHeight"
         },
         "fontSize": {
