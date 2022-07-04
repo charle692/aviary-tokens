@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 04 Jul 2022 13:57:24 GMT
+ * Generated on Mon, 04 Jul 2022 15:39:24 GMT
  */
 
 export const letterSpacingbase = 0;
@@ -92,7 +92,3 @@ export const mobileSizeh1 = "32px";
 export const mobileSizeh2 = "28px";
 export const mobileSizeh3 = "22px";
 export const mobileSizeh4 = "20px";
-export const mobileSizeh5 = "16px";
-export const mobileSizebody = "16px";
-export const mobileSizefootnote = "14px";
-export const mobileSizecaption = "12px";
