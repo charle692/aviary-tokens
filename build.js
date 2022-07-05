@@ -1,4 +1,5 @@
 const StyleDictionary = require("style-dictionary").extend("config.json");
+const ChangeCase = require('change-case')
 
 StyleDictionary.registerFilter({
   name: "filter-typography",
@@ -8,22 +9,50 @@ StyleDictionary.registerFilter({
 });
 
 StyleDictionary.registerTransform({
-  name: 'name/slice-path',
+  name: 'name/typography',
   type: 'name',
   transformer: function(token) {
-      return token.path.slice(1).join("");
+    const slicePrefix = token.path.slice(1);
+    const filterDesktop = slicePrefix.filter(prefix => prefix !== "desktop");
+
+    return ChangeCase.camelCase(filterDesktop.join(" "));
+  }
+});
+
+StyleDictionary.registerTransform({
+  name: 'name/slice-one',
+  type: 'name',
+  transformer: function(token) {
+    return ChangeCase.camelCase(token.path.slice(1).join(""));
   }
 });
 
 StyleDictionary.registerTransformGroup({
-  name: 'custom/aviary',
-  transforms: ['name/slice-path', 'attribute/cti']
+  name: 'custom/typography',
+  transforms: [ 'name/typography', 'attribute/cti']
+});
+
+StyleDictionary.registerTransformGroup({
+  name: 'custom/colors',
+  transforms: [ 'name/slice-one', 'attribute/cti']
 });
 
 StyleDictionary.extend({
   platforms: {
     Owlery: {
-      transformGroup: "custom/aviary",
+      transformGroup: "custom/typography",
+      buildPath: "build/scss/",
+      files: [
+        {
+          destination: "typography.scss",
+          format: "scss/variables",
+          filter: "filter-typography",
+        },
+      ],
+    },
+
+    Owlery: {
+      transformGroup: "custom/colors",
       buildPath: "build/scss/",
       files: [
         {
@@ -33,16 +62,24 @@ StyleDictionary.extend({
             type: "color",
           },
         },
+
+      ],
+    },
+
+    Aviary: {
+      transformGroup: "custom/typography",
+      buildPath: "build/ts/",
+      files: [
         {
-          destination: "typography.scss",
-          format: "scss/variables",
+          format: "javascript/es6",
+          destination: "typography.ts",
           filter: "filter-typography",
         },
       ],
     },
 
     Aviary: {
-      transformGroup: "custom/aviary",
+      transformGroup: "custom/colors",
       buildPath: "build/ts/",
       files: [
         {
@@ -51,11 +88,6 @@ StyleDictionary.extend({
           filter: {
             type: "color",
           },
-        },
-        {
-          format: "javascript/es6",
-          destination: "typography.ts",
-          filter: "filter-typography",
         },
       ],
     },
