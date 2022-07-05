@@ -21,6 +21,7 @@ StyleDictionary.registerTransform({
 
 StyleDictionary.registerTransform({
   name: 'name/slice-one',
+  matcher: (token) => token.type === "color",
   type: 'name',
   transformer: function(token) {
     return ChangeCase.camelCase(token.path.slice(1).join(""));
@@ -28,19 +29,14 @@ StyleDictionary.registerTransform({
 });
 
 StyleDictionary.registerTransformGroup({
-  name: 'custom/typography',
-  transforms: [ 'name/typography', 'attribute/cti']
-});
-
-StyleDictionary.registerTransformGroup({
-  name: 'custom/colors',
-  transforms: [ 'name/slice-one', 'attribute/cti']
+  name: 'custom/aviary',
+  transforms: [ 'name/typography', 'name/slice-one', 'attribute/cti']
 });
 
 StyleDictionary.extend({
   platforms: {
     Owlery: {
-      transformGroup: "custom/typography",
+      transformGroup: "custom/aviary",
       buildPath: "build/scss/",
       files: [
         {
@@ -48,13 +44,6 @@ StyleDictionary.extend({
           format: "scss/variables",
           filter: "filter-typography",
         },
-      ],
-    },
-
-    Owlery: {
-      transformGroup: "custom/colors",
-      buildPath: "build/scss/",
-      files: [
         {
           destination: "colors.scss",
           format: "scss/variables",
@@ -62,12 +51,11 @@ StyleDictionary.extend({
             type: "color",
           },
         },
-
       ],
     },
 
     Aviary: {
-      transformGroup: "custom/typography",
+      transformGroup: "custom/aviary",
       buildPath: "build/ts/",
       files: [
         {
@@ -75,13 +63,6 @@ StyleDictionary.extend({
           destination: "typography.ts",
           filter: "filter-typography",
         },
-      ],
-    },
-
-    Aviary: {
-      transformGroup: "custom/colors",
-      buildPath: "build/ts/",
-      files: [
         {
           format: "javascript/es6",
           destination: "colors.ts",
