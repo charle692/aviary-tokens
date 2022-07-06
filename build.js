@@ -1,4 +1,5 @@
 const StyleDictionary = require("style-dictionary").extend("config.json");
+const ChangeCase = require('change-case')
 
 StyleDictionary.registerFilter({
   name: "filter-typography",
@@ -8,16 +9,28 @@ StyleDictionary.registerFilter({
 });
 
 StyleDictionary.registerTransform({
-  name: 'name/slice-path',
+  name: 'name/typography',
   type: 'name',
   transformer: function(token) {
-      return token.path.slice(1).join("");
+    const slicePrefix = token.path.slice(1);
+    const filterDesktop = slicePrefix.filter(prefix => prefix !== "desktop");
+
+    return ChangeCase.camelCase(filterDesktop.join(" "));
+  }
+});
+
+StyleDictionary.registerTransform({
+  name: 'name/slice-one',
+  matcher: (token) => token.type === "color",
+  type: 'name',
+  transformer: function(token) {
+    return ChangeCase.camelCase(token.path.slice(1).join(""));
   }
 });
 
 StyleDictionary.registerTransformGroup({
   name: 'custom/aviary',
-  transforms: ['name/slice-path', 'attribute/cti']
+  transforms: [ 'name/typography', 'name/slice-one', 'attribute/cti']
 });
 
 StyleDictionary.extend({
@@ -27,16 +40,16 @@ StyleDictionary.extend({
       buildPath: "build/scss/",
       files: [
         {
+          destination: "typography.scss",
+          format: "scss/variables",
+          filter: "filter-typography",
+        },
+        {
           destination: "colors.scss",
           format: "scss/variables",
           filter: {
             type: "color",
           },
-        },
-        {
-          destination: "typography.scss",
-          format: "scss/variables",
-          filter: "filter-typography",
         },
       ],
     },
@@ -47,15 +60,15 @@ StyleDictionary.extend({
       files: [
         {
           format: "javascript/es6",
+          destination: "typography.ts",
+          filter: "filter-typography",
+        },
+        {
+          format: "javascript/es6",
           destination: "colors.ts",
           filter: {
             type: "color",
           },
-        },
-        {
-          format: "javascript/es6",
-          destination: "typography.ts",
-          filter: "filter-typography",
         },
       ],
     },
