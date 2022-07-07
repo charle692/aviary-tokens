@@ -1,21 +1,21 @@
 /**
  * Do not edit directly
- * Generated on Thu, 07 Jul 2022 16:30:02 GMT
+ * Generated on Thu, 07 Jul 2022 19:30:52 GMT
  */
 
 export const letterSpacingBase : number;
 export const paragraphSpacingBase : number;
 export const textDecorationBase : string;
 export const textCaseBase : string;
-export const size_3xlarge : string;
-export const size_2xlarge : string;
+export const size3xlarge : string;
+export const size2xlarge : string;
 export const sizeXlarge : string;
 export const sizeLarge : string;
 export const sizeNormal : string;
 export const sizeSmall : string;
 export const sizeXsmall : string;
-export const sizeMobile_3xlarge : string;
-export const sizeMobile_2xlarge : string;
+export const sizeMobile3xlarge : string;
+export const sizeMobile2xlarge : string;
 export const sizeMobileXlarge : string;
 export const lineHeightXlarge : string;
 export const lineHeightLarge : string;
