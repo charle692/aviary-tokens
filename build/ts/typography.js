@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 07 Jul 2022 13:19:06 GMT
+ * Generated on Thu, 07 Jul 2022 16:24:25 GMT
  */
 
 module.exports = {
@@ -8,16 +8,16 @@ module.exports = {
   "paragraphSpacingBase": 0,
   "textDecorationBase": "none",
   "textCaseBase": "none",
-  "sizeH1": "40px",
-  "sizeH2": "32px",
-  "sizeH3": "24px",
-  "sizeH4": "20px",
-  "sizeBody": "16px",
-  "sizeFootnote": "14px",
-  "sizeCaption": "12px",
-  "sizeMobileH1": "32px",
-  "sizeMobileH2": "28px",
-  "sizeMobileH3": "22px",
+  "size_3xlarge": "40px",
+  "size_2xlarge": "32px",
+  "sizeXlarge": "24px",
+  "sizeLarge": "20px",
+  "sizeNormal": "16px",
+  "sizeSmall": "14px",
+  "sizeXsmall": "12px",
+  "sizeMobile_3xlarge": "32px",
+  "sizeMobile_2xlarge": "28px",
+  "sizeMobileXlarge": "22px",
   "lineHeightXlarge": "40px",
   "lineHeightLarge": "32px",
   "lineHeightNormal": "24px",
