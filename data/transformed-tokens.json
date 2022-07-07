@@ -232,45 +232,45 @@
     },
     "size": {
       "desktop": {
-        "h1": {
+        "3xlarge": {
           "value": "40px",
           "type": "fontSizes"
         },
-        "h2": {
+        "2xlarge": {
           "value": "32px",
           "type": "fontSizes"
         },
-        "h3": {
+        "xlarge": {
           "value": "24px",
           "type": "fontSizes"
         },
-        "h4": {
+        "large": {
           "value": "20px",
           "type": "fontSizes"
         },
-        "body": {
+        "normal": {
           "value": "16px",
           "type": "fontSizes"
         },
-        "footnote": {
+        "small": {
           "value": "14px",
           "type": "fontSizes"
         },
-        "caption": {
+        "xsmall": {
           "value": "12px",
           "type": "fontSizes"
         }
       },
       "mobile": {
-        "h1": {
+        "3xlarge": {
           "value": "32px",
           "type": "fontSizes"
         },
-        "h2": {
+        "2xlarge": {
           "value": "28px",
           "type": "fontSizes"
         },
-        "h3": {
+        "xlarge": {
           "value": "22px",
           "type": "fontSizes"
         }
