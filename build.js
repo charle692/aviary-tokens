@@ -14,8 +14,7 @@ StyleDictionary.registerTransform({
   transformer: function(token) {
     const slicePrefix = token.path.slice(1);
     const filterDesktop = slicePrefix.filter(prefix => prefix !== "desktop");
-
-    return ChangeCase.camelCase(filterDesktop.join(" "));
+    return ChangeCase.camelCase(filterDesktop.join(" ")).replace("_","");
   }
 });
 
