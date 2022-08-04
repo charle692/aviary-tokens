@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 04 Aug 2022 14:54:26 GMT
+ * Generated on Thu, 04 Aug 2022 20:30:57 GMT
  */
 
 export const green100 : string;
@@ -53,3 +53,4 @@ export const grey700 : string;
 export const grey800 : string;
 export const shadeswhite : string;
 export const shadesblack : string;
+export const shadestransparent : string;
