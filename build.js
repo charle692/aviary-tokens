@@ -25,7 +25,7 @@ StyleDictionary.registerTransform({
 });
 
 StyleDictionary.registerTransform({
-  name: "name/slice-one",
+  name: "name/remove-color-prefix",
   matcher: (token) => token.type === "color",
   type: "name",
   transformer: function (token) {
@@ -55,7 +55,7 @@ StyleDictionary.registerTransformGroup({
   name: "custom/aviary",
   transforms: [
     "name/typography",
-    "name/slice-one",
+    "name/remove-color-prefix",
     "attribute/cti",
     "name/remove-shades-prefix",
   ],
@@ -65,7 +65,7 @@ StyleDictionary.registerTransformGroup({
   name: "custom/native",
   transforms: [
     "name/typography",
-    "name/slice-one",
+    "name/remove-color-prefix",
     "attribute/cti",
     "name/remove-shades-prefix",
     "value/rm-px",
