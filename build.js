@@ -15,7 +15,7 @@ StyleDictionary.registerFilter({
 });
 
 StyleDictionary.registerTransform({
-  name: "name/typography",
+  name: "name/remove-desktop-prefix",
   type: "name",
   transformer: function (token) {
     const slicePrefix = token.path.slice(1);
@@ -54,9 +54,9 @@ StyleDictionary.registerTransform({
 StyleDictionary.registerTransformGroup({
   name: "custom/aviary",
   transforms: [
-    "name/typography",
-    "name/remove-color-prefix",
     "attribute/cti",
+    "name/remove-color-prefix",
+    "name/remove-desktop-prefix",
     "name/remove-shades-prefix",
   ],
 });
@@ -64,9 +64,9 @@ StyleDictionary.registerTransformGroup({
 StyleDictionary.registerTransformGroup({
   name: "custom/native",
   transforms: [
-    "name/typography",
-    "name/remove-color-prefix",
     "attribute/cti",
+    "name/remove-color-prefix",
+    "name/remove-desktop-prefix",
     "name/remove-shades-prefix",
     "value/rm-px",
   ],
