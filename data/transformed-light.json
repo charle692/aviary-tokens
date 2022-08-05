@@ -15,19 +15,19 @@
       }
     },
     "surface": {
-      "surfaceLevel0": {
+      "level0": {
         "value": "#F5F7FA",
         "type": "color"
       },
-      "surfaceLevel1": {
+      "level1": {
         "value": "#FFFFFF",
         "type": "color"
       },
-      "surfaceLevel2": {
+      "level2": {
         "value": "#FCFEFF",
         "type": "color"
       },
-      "surfaceLevel3": {
+      "level3": {
         "value": "#FFFFFF",
         "type": "color"
       }
