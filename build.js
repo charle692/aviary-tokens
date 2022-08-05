@@ -1,41 +1,50 @@
 const StyleDictionary = require("style-dictionary").extend("config.json");
-const ChangeCase = require('change-case')
+const ChangeCase = require("change-case");
 
 function isStringPxValue(token) {
-  if (typeof token.value === 'string'){
-    return (token.value).endsWith('px');
+  if (typeof token.value === "string") {
+    return token.value.endsWith("px");
   }
 }
 
 StyleDictionary.registerFilter({
   name: "filter-typography",
-  matcher: function(token){
+  matcher: function (token) {
     return token.attributes.category === "typography";
   },
 });
 
 StyleDictionary.registerTransform({
-  name: 'name/typography',
-  type: 'name',
-  transformer: function(token) {
+  name: "name/remove-desktop-prefix",
+  type: "name",
+  transformer: function (token) {
     const slicePrefix = token.path.slice(1);
-    const filterDesktop = slicePrefix.filter(prefix => prefix !== "desktop");
-    return ChangeCase.camelCase(filterDesktop.join(" ")).replace("_","");
-  }
+    const filterDesktop = slicePrefix.filter((prefix) => prefix !== "desktop");
+    return ChangeCase.camelCase(filterDesktop.join(" ")).replace("_", "");
+  },
 });
 
 StyleDictionary.registerTransform({
-  name: 'name/slice-one',
+  name: "name/remove-color-prefix",
   matcher: (token) => token.type === "color",
-  type: 'name',
-  transformer: function(token) {
+  type: "name",
+  transformer: function (token) {
     return ChangeCase.camelCase(token.path.slice(1).join(""));
-  }
+  },
 });
 
 StyleDictionary.registerTransform({
-  name: 'value/rm-px',
-  type: 'value',
+  name: "name/remove-shades-prefix",
+  type: "name",
+  matcher: (token) => token.type === "color" && token.path.includes("shades"),
+  transformer: function (token) {
+    return ChangeCase.camelCase(token.path.slice(2).join(""));
+  },
+});
+
+StyleDictionary.registerTransform({
+  name: "value/rm-px",
+  type: "value",
   matcher: isStringPxValue,
   transformer: function (token) {
     return parseFloat(token.value);
@@ -43,13 +52,24 @@ StyleDictionary.registerTransform({
 });
 
 StyleDictionary.registerTransformGroup({
-  name: 'custom/aviary',
-  transforms: [ 'name/typography', 'name/slice-one', 'attribute/cti']
+  name: "custom/aviary",
+  transforms: [
+    "attribute/cti",
+    "name/remove-color-prefix",
+    "name/remove-desktop-prefix",
+    "name/remove-shades-prefix",
+  ],
 });
 
 StyleDictionary.registerTransformGroup({
-  name: 'custom/native',
-  transforms: [ 'name/typography', 'name/slice-one', 'attribute/cti', 'value/rm-px']
+  name: "custom/native",
+  transforms: [
+    "attribute/cti",
+    "name/remove-color-prefix",
+    "name/remove-desktop-prefix",
+    "name/remove-shades-prefix",
+    "value/rm-px",
+  ],
 });
 
 StyleDictionary.extend({
