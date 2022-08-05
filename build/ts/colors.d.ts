@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 04 Aug 2022 14:54:26 GMT
+ * Generated on Thu, 04 Aug 2022 21:59:25 GMT
  */
 
 export const green100 : string;
@@ -51,5 +51,5 @@ export const grey500 : string;
 export const grey600 : string;
 export const grey700 : string;
 export const grey800 : string;
-export const shadeswhite : string;
-export const shadesblack : string;
+export const white : string;
+export const black : string;
