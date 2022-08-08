@@ -292,7 +292,7 @@
     },
     "lineHeight": {
       "xlarge": {
-        "value": "40px",
+        "value": "400px",
         "type": "lineHeights"
       },
       "large": {
@@ -347,7 +347,7 @@
           "type": "fontWeight"
         },
         "lineHeight": {
-          "value": "40px",
+          "value": "400px",
           "type": "lineHeight"
         },
         "fontSize": {
@@ -381,7 +381,7 @@
           "type": "fontWeight"
         },
         "lineHeight": {
-          "value": "40px",
+          "value": "400px",
           "type": "lineHeight"
         },
         "fontSize": {
@@ -621,7 +621,7 @@
           "type": "fontWeight"
         },
         "lineHeight": {
-          "value": "40px",
+          "value": "400px",
           "type": "lineHeight"
         },
         "fontSize": {
