@@ -292,7 +292,7 @@
     },
     "lineHeight": {
       "xlarge": {
-        "value": "40px",
+        "value": "400px",
         "type": "lineHeights"
       },
       "large": {
