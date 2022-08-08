@@ -1,0 +1,118 @@
+{
+  "colors": {
+    "text": {
+      "base": {
+        "value": "#2E3A47",
+        "type": "color"
+      },
+      "emphasis": {
+        "value": "#36485C",
+        "type": "color"
+      },
+      "subdued": {
+        "value": "#596D84",
+        "type": "color"
+      }
+    },
+    "surface": {
+      "level0": {
+        "value": "#F5F7FA",
+        "type": "color"
+      },
+      "level1": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "level2": {
+        "value": "#FCFEFF",
+        "type": "color"
+      },
+      "level3": {
+        "value": "#FFFFFF",
+        "type": "color"
+      }
+    },
+    "primary": {
+      "text": {
+        "base": {
+          "value": "#307553",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#275E43",
+          "type": "color"
+        },
+        "active": {
+          "value": "#244C38",
+          "type": "color"
+        }
+      },
+      "background": {
+        "base": {
+          "value": "#307553",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#275E43",
+          "type": "color"
+        },
+        "active": {
+          "value": "#244C38",
+          "type": "color"
+        },
+        "muted": {
+          "value": "#EBF2EF",
+          "type": "color"
+        },
+        "mutedHover": {
+          "value": "#D1E0D9",
+          "type": "color"
+        },
+        "mutedActive": {
+          "value": "#B6CFC2",
+          "type": "color"
+        },
+        "box": {
+          "value": "#FAFFFC",
+          "type": "color"
+        }
+      },
+      "border": {
+        "base": {
+          "value": "#307553",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#275E43",
+          "type": "color"
+        },
+        "active": {
+          "value": "#244C38",
+          "type": "color"
+        }
+      }
+    },
+    "disabled": {
+      "text": {
+        "value": "#596D84",
+        "type": "color"
+      },
+      "background": {
+        "value": "#F5F7FA",
+        "type": "color"
+      },
+      "nakedContent": {
+        "value": "#F5F7FA",
+        "type": "color"
+      },
+      "nakedBackground": {
+        "value": "transparent",
+        "type": "color"
+      },
+      "border": {
+        "value": "#C8D3E0",
+        "type": "color"
+      }
+    }
+  }
+}

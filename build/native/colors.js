@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 04 Aug 2022 21:59:25 GMT
+ * Generated on Fri, 05 Aug 2022 14:07:55 GMT
  */
 
 module.exports = {
@@ -53,5 +53,6 @@ module.exports = {
   "grey700": "#36485C",
   "grey800": "#2E3A47",
   "white": "#FFFFFF",
-  "black": "#000000"
+  "black": "#000000",
+  "transparent": "transparent"
 };

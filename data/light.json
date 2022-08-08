@@ -1,0 +1,118 @@
+{
+  "colors": {
+    "text": {
+      "base": {
+        "value": "{colors.grey.800}",
+        "type": "color"
+      },
+      "emphasis": {
+        "value": "{colors.grey.700}",
+        "type": "color"
+      },
+      "subdued": {
+        "value": "{colors.grey.500}",
+        "type": "color"
+      }
+    },
+    "surface": {
+      "level0": {
+        "value": "{colors.grey.200}",
+        "type": "color"
+      },
+      "level1": {
+        "value": "{colors.shades.white}",
+        "type": "color"
+      },
+      "level2": {
+        "value": "{colors.grey.100}",
+        "type": "color"
+      },
+      "level3": {
+        "value": "{colors.shades.white}",
+        "type": "color"
+      }
+    },
+    "primary": {
+      "text": {
+        "base": {
+          "value": "{colors.green.600}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{colors.green.700}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{colors.green.800}",
+          "type": "color"
+        }
+      },
+      "background": {
+        "base": {
+          "value": "{colors.green.600}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{colors.green.700}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{colors.green.800}",
+          "type": "color"
+        },
+        "muted": {
+          "value": "{colors.green.200}",
+          "type": "color"
+        },
+        "mutedHover": {
+          "value": "{colors.green.300}",
+          "type": "color"
+        },
+        "mutedActive": {
+          "value": "{colors.green.400}",
+          "type": "color"
+        },
+        "box": {
+          "value": "{colors.green.100}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "base": {
+          "value": "{colors.green.600}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{colors.green.700}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{colors.green.800}",
+          "type": "color"
+        }
+      }
+    },
+    "disabled": {
+      "text": {
+        "value": "{colors.grey.500}",
+        "type": "color"
+      },
+      "background": {
+        "value": "{colors.grey.200}",
+        "type": "color"
+      },
+      "nakedContent": {
+        "value": "{colors.disabled.background}",
+        "type": "color"
+      },
+      "nakedBackground": {
+        "value": "{colors.shades.transparent}",
+        "type": "color"
+      },
+      "border": {
+        "value": "{colors.grey.400}",
+        "type": "color"
+      }
+    }
+  }
+}
