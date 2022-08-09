@@ -149,7 +149,7 @@ function getStyleDictionaryConfig(theme) {
           },
           {
             format: "typescript/es6-declarations",
-            destination: `themes/${theme}.d.ts",
+            destination: `themes/${theme}.d.ts`,
             filter: {
               type: "color",
             },
