@@ -72,7 +72,8 @@ StyleDictionary.registerTransformGroup({
   ],
 });
 
-function getStyleDictionaryConfig(theme) {
+const getStyleDictionaryConfig = (theme) => {
+  const core = theme === "core";
   return {
     source: [`transformed/transformed-${theme}.json`],
     platforms: {
@@ -86,7 +87,7 @@ function getStyleDictionaryConfig(theme) {
             filter: "filter-typography",
           },
           {
-            destination: `themes/${theme}.scss`,
+            destination: core ? "colors.scss" : `themes/${theme}.scss`,
             format: "scss/variables",
             filter: {
               type: "color",
@@ -111,14 +112,14 @@ function getStyleDictionaryConfig(theme) {
           },
           {
             format: "javascript/module-flat",
-            destination: `themes/${theme}.js`,
+            destination: core ? "colors.js" : `themes/${theme}.js`,
             filter: {
               type: "color",
             },
           },
           {
             format: "typescript/es6-declarations",
-            destination: `themes/${theme}.d.ts`,
+            destination: core ? "colors.d.ts" : `themes/${theme}.d.ts`,
             filter: {
               type: "color",
             },
@@ -142,14 +143,14 @@ function getStyleDictionaryConfig(theme) {
           },
           {
             format: "javascript/module-flat",
-            destination: `themes/${theme}.js`,
+            destination: core ? "colors.js" : `themes/${theme}.js`,
             filter: {
               type: "color",
             },
           },
           {
             format: "typescript/es6-declarations",
-            destination: `themes/${theme}.d.ts`,
+            destination: core ? "colors.d.ts" : `themes/${theme}.d.ts`,
             filter: {
               type: "color",
             },
@@ -158,8 +159,10 @@ function getStyleDictionaryConfig(theme) {
       },
     },
   };
-}
+};
 
-["core", "light"].map(function (theme) {
+// Add themes to the array to create theme-specific files under themes folder
+// "core" theme will build files outside of the themes folder
+["core", "light"].map((theme) => {
   StyleDictionary.extend(getStyleDictionaryConfig(theme)).buildAllPlatforms();
 });
