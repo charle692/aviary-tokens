@@ -352,6 +352,72 @@
       "border": {
         "value": "{colors.grey.400}",
         "type": "color"
+      },
+      "input": {
+        "background": {
+          "value": "{colors.grey.300}",
+          "type": "color"
+        },
+        "LabelText": {
+          "value": "{colors.grey.500}",
+          "type": "color"
+        }
+      }
+    },
+    "input": {
+      "background": {
+        "base": {
+          "value": "{colors.grey.200}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{colors.grey.200}",
+          "type": "color"
+        },
+        "information": {
+          "value": "{colors.shades.white}",
+          "type": "color"
+        }
+      },
+      "text": {
+        "base": {
+          "value": "{colors.grey.600}",
+          "type": "color"
+        },
+        "information": {
+          "value": "{colors.grey.600}",
+          "type": "color"
+        },
+        "informationError": {
+          "value": "{colors.red.600}",
+          "type": "color"
+        },
+        "label": {
+          "value": "{colors.grey.600}",
+          "type": "color"
+        },
+        "floatingLabel": {
+          "value": "{colors.blue.600}",
+          "type": "color"
+        },
+        "floatingLabelError": {
+          "value": "{colors.red.600}",
+          "type": "color"
+        },
+        "placeholder": {
+          "value": "{colors.grey.500}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "base": {
+          "value": "{colors.grey.300}",
+          "type": "color"
+        },
+        "error": {
+          "value": "{colors.red.600}",
+          "type": "color"
+        }
       }
     }
   }

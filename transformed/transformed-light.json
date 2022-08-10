@@ -352,6 +352,72 @@
       "border": {
         "value": "#C8D3E0",
         "type": "color"
+      },
+      "input": {
+        "background": {
+          "value": "#E6EDF5",
+          "type": "color"
+        },
+        "LabelText": {
+          "value": "#596D84",
+          "type": "color"
+        }
+      }
+    },
+    "input": {
+      "background": {
+        "base": {
+          "value": "#F5F7FA",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#F5F7FA",
+          "type": "color"
+        },
+        "information": {
+          "value": "#FFFFFF",
+          "type": "color"
+        }
+      },
+      "text": {
+        "base": {
+          "value": "#475A70",
+          "type": "color"
+        },
+        "information": {
+          "value": "#475A70",
+          "type": "color"
+        },
+        "informationError": {
+          "value": "#AF2645",
+          "type": "color"
+        },
+        "label": {
+          "value": "#475A70",
+          "type": "color"
+        },
+        "floatingLabel": {
+          "value": "#3971A8",
+          "type": "color"
+        },
+        "floatingLabelError": {
+          "value": "#AF2645",
+          "type": "color"
+        },
+        "placeholder": {
+          "value": "#596D84",
+          "type": "color"
+        }
+      },
+      "border": {
+        "base": {
+          "value": "#E6EDF5",
+          "type": "color"
+        },
+        "error": {
+          "value": "#AF2645",
+          "type": "color"
+        }
       }
     }
   }

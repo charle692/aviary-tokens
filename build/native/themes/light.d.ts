@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 09 Aug 2022 21:44:09 GMT
+ * Generated on Wed, 10 Aug 2022 17:59:15 GMT
  */
 
 export const textBase : string;
@@ -80,3 +80,17 @@ export const disabledBackground : string;
 export const disabledNakedContent : string;
 export const disabledNakedBackground : string;
 export const disabledBorder : string;
+export const disabledInputBackground : string;
+export const disabledInputLabelText : string;
+export const inputBackgroundBase : string;
+export const inputBackgroundHover : string;
+export const inputBackgroundInformation : string;
+export const inputTextBase : string;
+export const inputTextInformation : string;
+export const inputTextInformationError : string;
+export const inputTextLabel : string;
+export const inputTextFloatingLabel : string;
+export const inputTextFloatingLabelError : string;
+export const inputTextPlaceholder : string;
+export const inputBorderBase : string;
+export const inputBorderError : string;
