@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 09 Aug 2022 21:44:09 GMT
+ * Generated on Wed, 10 Aug 2022 17:59:15 GMT
  */
 
 module.exports = {
@@ -80,5 +80,19 @@ module.exports = {
   "disabledBackground": "#F5F7FA",
   "disabledNakedContent": "#F5F7FA",
   "disabledNakedBackground": "transparent",
-  "disabledBorder": "#C8D3E0"
+  "disabledBorder": "#C8D3E0",
+  "disabledInputBackground": "#E6EDF5",
+  "disabledInputLabelText": "#596D84",
+  "inputBackgroundBase": "#F5F7FA",
+  "inputBackgroundHover": "#F5F7FA",
+  "inputBackgroundInformation": "#FFFFFF",
+  "inputTextBase": "#475A70",
+  "inputTextInformation": "#475A70",
+  "inputTextInformationError": "#AF2645",
+  "inputTextLabel": "#475A70",
+  "inputTextFloatingLabel": "#3971A8",
+  "inputTextFloatingLabelError": "#AF2645",
+  "inputTextPlaceholder": "#596D84",
+  "inputBorderBase": "#E6EDF5",
+  "inputBorderError": "#AF2645"
 };
