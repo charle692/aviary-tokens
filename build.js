@@ -1,4 +1,4 @@
-const StyleDictionary = require("style-dictionary").extend("config.json");
+const StyleDictionary = require("style-dictionary");
 const ChangeCase = require("change-case");
 
 function isStringPxValue(token) {
@@ -72,87 +72,97 @@ StyleDictionary.registerTransformGroup({
   ],
 });
 
-StyleDictionary.extend({
-  platforms: {
-    Owlery: {
-      transformGroup: "custom/aviary",
-      buildPath: "build/scss/",
-      files: [
-        {
-          destination: "typography.scss",
-          format: "scss/variables",
-          filter: "filter-typography",
-        },
-        {
-          destination: "colors.scss",
-          format: "scss/variables",
-          filter: {
-            type: "color",
+const getStyleDictionaryConfig = (theme) => {
+  const core = theme === "core";
+  return {
+    source: [`transformed/transformed-${theme}.json`],
+    platforms: {
+      Owlery: {
+        transformGroup: "custom/aviary",
+        buildPath: "build/scss/",
+        files: [
+          {
+            destination: `typography.scss`,
+            format: "scss/variables",
+            filter: "filter-typography",
           },
-        },
-      ],
-    },
+          {
+            destination: core ? "colors.scss" : `themes/${theme}.scss`,
+            format: "scss/variables",
+            filter: {
+              type: "color",
+            },
+          },
+        ],
+      },
 
-    Aviary: {
-      transformGroup: "custom/aviary",
-      buildPath: "build/ts/",
-      files: [
-        {
-          format: "javascript/module-flat",
-          destination: "typography.js",
-          filter: "filter-typography",
-        },
-        {
-          format: "typescript/es6-declarations",
-          destination: "typography.d.ts",
-          filter: "filter-typography",
-        },
-        {
-          format: "javascript/module-flat",
-          destination: "colors.js",
-          filter: {
-            type: "color",
+      Aviary: {
+        transformGroup: "custom/aviary",
+        buildPath: "build/ts/",
+        files: [
+          {
+            format: "javascript/module-flat",
+            destination: "typography.js",
+            filter: "filter-typography",
           },
-        },
-        {
-          format: "typescript/es6-declarations",
-          destination: "colors.d.ts",
-          filter: {
-            type: "color",
+          {
+            format: "typescript/es6-declarations",
+            destination: "typography.d.ts",
+            filter: "filter-typography",
           },
-        },
-      ],
-    },
+          {
+            format: "javascript/module-flat",
+            destination: core ? "colors.js" : `themes/${theme}.js`,
+            filter: {
+              type: "color",
+            },
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: core ? "colors.d.ts" : `themes/${theme}.d.ts`,
+            filter: {
+              type: "color",
+            },
+          },
+        ],
+      },
 
-    Native: {
-      transformGroup: "custom/native",
-      buildPath: "build/native/",
-      files: [
-        {
-          format: "javascript/module-flat",
-          destination: "typography.js",
-          filter: "filter-typography",
-        },
-        {
-          format: "typescript/es6-declarations",
-          destination: "typography.d.ts",
-          filter: "filter-typography",
-        },
-        {
-          format: "javascript/module-flat",
-          destination: "colors.js",
-          filter: {
-            type: "color",
+      Native: {
+        transformGroup: "custom/native",
+        buildPath: "build/native/",
+        files: [
+          {
+            format: "javascript/module-flat",
+            destination: "typography.js",
+            filter: "filter-typography",
           },
-        },
-        {
-          format: "typescript/es6-declarations",
-          destination: "colors.d.ts",
-          filter: {
-            type: "color",
+          {
+            format: "typescript/es6-declarations",
+            destination: "typography.d.ts",
+            filter: "filter-typography",
           },
-        },
-      ],
+          {
+            format: "javascript/module-flat",
+            destination: core ? "colors.js" : `themes/${theme}.js`,
+            filter: {
+              type: "color",
+            },
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: core ? "colors.d.ts" : `themes/${theme}.d.ts`,
+            filter: {
+              type: "color",
+            },
+          },
+        ],
+      },
     },
-  },
-}).buildAllPlatforms();
+  };
+};
+
+// Add themes to the array to create theme-specific files under themes folder
+// "core" theme will build files outside of the themes folder
+["core", "light"].map((theme) => {
+  StyleDictionary.extend(getStyleDictionaryConfig(theme)).buildAllPlatforms();
+});
