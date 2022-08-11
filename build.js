@@ -1,11 +1,12 @@
 const StyleDictionary = require("style-dictionary");
 const ChangeCase = require("change-case");
+const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
 
-function isStringPxValue(token) {
+const isStringPxValue = (token) => {
   if (typeof token.value === "string") {
     return token.value.endsWith("px");
   }
-}
+};
 
 StyleDictionary.registerFilter({
   name: "filter-typography",
@@ -48,6 +49,24 @@ StyleDictionary.registerTransform({
   matcher: isStringPxValue,
   transformer: function (token) {
     return parseFloat(token.value);
+  },
+});
+
+StyleDictionary.registerFormat({
+  name: `typescript/color-declaration`,
+  formatter: ({ dictionary, file }) => {
+    return (
+      fileHeader({ file }) +
+      Object.entries(dictionary.properties.colors)
+        .map((tokens) => {
+          return `export const ${tokens[0]} : {${Object.entries(tokens[1]).map(
+            (token) => {
+              return `${token[0]} : ${getTypeScriptType(token[1].value)}`;
+            }
+          )}};`;
+        })
+        .join(`\n`)
+    );
   },
 });
 
@@ -118,7 +137,7 @@ const getStyleDictionaryConfig = (theme) => {
             },
           },
           {
-            format: "typescript/es6-declarations",
+            format: "typescript/color-declaration",
             destination: core ? "colors.d.ts" : `themes/${theme}.d.ts`,
             filter: {
               type: "color",
@@ -149,7 +168,7 @@ const getStyleDictionaryConfig = (theme) => {
             },
           },
           {
-            format: "typescript/es6-declarations",
+            format: "typescript/color-declaration",
             destination: core ? "colors.d.ts" : `themes/${theme}.d.ts`,
             filter: {
               type: "color",
