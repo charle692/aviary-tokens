@@ -106,13 +106,18 @@ StyleDictionary.registerTransformGroup({
   ],
 });
 
+StyleDictionary.registerTransformGroup({
+  name: "custom/owlery",
+  transforms: ["attribute/cti", "name/remove-desktop-prefix"],
+});
+
 const getStyleDictionaryConfig = (theme) => {
   const core = theme === "core";
   return {
     source: [`transformed/transformed-${theme}.json`],
     platforms: {
       Owlery: {
-        transformGroup: "custom/aviary",
+        transformGroup: "custom/owlery",
         buildPath: "build/scss/",
         files: [
           {
