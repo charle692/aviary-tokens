@@ -1,11 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Wed, 10 Aug 2022 17:59:15 GMT
+ * Generated on Mon, 15 Aug 2022 14:51:01 GMT
  */
 
 export const textBase : string;
 export const textEmphasis : string;
 export const textSubdued : string;
+export const textOnBackground : string;
 export const surfaceLevel0 : string;
 export const surfaceLevel1 : string;
 export const surfaceLevel2 : string;
@@ -94,3 +95,14 @@ export const inputTextFloatingLabelError : string;
 export const inputTextPlaceholder : string;
 export const inputBorderBase : string;
 export const inputBorderError : string;
+export const systemTextBase : string;
+export const systemTextHover : string;
+export const systemTextActive : string;
+export const systemBackgroundBase : string;
+export const systemBorderBase : string;
+export const systemBorderHover : string;
+export const systemBorderActive : string;
+export const systemBorderFocused : string;
+export const interactiveSurfaceBackground : string;
+export const interactiveSurfaceHover : string;
+export const interactiveSurfaceActive : string;

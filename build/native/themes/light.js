@@ -1,12 +1,13 @@
 /**
  * Do not edit directly
- * Generated on Wed, 10 Aug 2022 17:59:15 GMT
+ * Generated on Mon, 15 Aug 2022 14:51:01 GMT
  */
 
 module.exports = {
   "textBase": "#2E3A47",
   "textEmphasis": "#36485C",
   "textSubdued": "#596D84",
+  "textOnBackground": "#FFFFFF",
   "surfaceLevel0": "#F5F7FA",
   "surfaceLevel1": "#FFFFFF",
   "surfaceLevel2": "#FCFEFF",
@@ -94,5 +95,16 @@ module.exports = {
   "inputTextFloatingLabelError": "#AF2645",
   "inputTextPlaceholder": "#596D84",
   "inputBorderBase": "#E6EDF5",
-  "inputBorderError": "#AF2645"
+  "inputBorderError": "#AF2645",
+  "systemTextBase": "#475A70",
+  "systemTextHover": "#36485C",
+  "systemTextActive": "#2E3A47",
+  "systemBackgroundBase": "#FFFFFF",
+  "systemBorderBase": "#C8D3E0",
+  "systemBorderHover": "#596D84",
+  "systemBorderActive": "#475A70",
+  "systemBorderFocused": "#3971A8",
+  "interactiveSurfaceBackground": "transparent",
+  "interactiveSurfaceHover": "#F5F7FA",
+  "interactiveSurfaceActive": "#E6EDF5"
 };
