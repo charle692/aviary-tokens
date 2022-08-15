@@ -100,9 +100,9 @@ StyleDictionary.registerTransformGroup({
   name: "custom/native",
   transforms: [
     "attribute/cti",
-    "name/remove-color-prefix",
     "name/remove-desktop-prefix",
     "value/rm-px",
+    "name/remove-color-prefix",
   ],
 });
 
