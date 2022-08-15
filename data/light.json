@@ -12,6 +12,10 @@
       "subdued": {
         "value": "{colors.grey.500}",
         "type": "color"
+      },
+      "onBackground": {
+        "value": "{colors.shades.white}",
+        "type": "color"
       }
     },
     "surface": {
@@ -29,6 +33,20 @@
       },
       "level3": {
         "value": "{colors.shades.white}",
+        "type": "color"
+      }
+    },
+    "interactiveSurface": {
+      "background": {
+        "value": "{colors.shades.transparent}",
+        "type": "color"
+      },
+      "hover": {
+        "value": "{colors.grey.200}",
+        "type": "color"
+      },
+      "active": {
+        "value": "{colors.grey.300}",
         "type": "color"
       }
     },
@@ -328,6 +346,46 @@
         },
         "active": {
           "value": "{colors.purple.800}",
+          "type": "color"
+        }
+      }
+    },
+    "system": {
+      "text": {
+        "base": {
+          "value": "{colors.grey.600}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{colors.grey.700}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{colors.grey.800}",
+          "type": "color"
+        }
+      },
+      "background": {
+        "base": {
+          "value": "{colors.shades.white}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "base": {
+          "value": "{colors.grey.400}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{colors.grey.500}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{colors.grey.600}",
+          "type": "color"
+        },
+        "focused": {
+          "value": "{colors.blue.600}",
           "type": "color"
         }
       }
