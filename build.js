@@ -59,13 +59,45 @@ StyleDictionary.registerFormat({
       fileHeader({ file }) +
       Object.entries(dictionary.properties.colors)
         .map((tokens) => {
-          return `export const ${tokens[0]} : {${Object.entries(tokens[1]).map(
-            (token) => {
-              return `${token[0]} : ${getTypeScriptType(token[1].value)}`;
-            }
-          )}};`;
+          const colorObj = tokens[0];
+          const filtered = dictionary.allTokens.filter(
+            (token) => token.attributes.type === colorObj
+          );
+          return (
+            `export const ${colorObj} : { ` +
+            filtered.map((token) => {
+              return `${token.name} : ${getTypeScriptType(token.value)}`;
+            }) +
+            `};`
+          );
         })
         .join(`\n`)
+    );
+  },
+});
+
+StyleDictionary.registerFormat({
+  name: `javascript/colors`,
+  formatter: ({ dictionary, file }) => {
+    return (
+      fileHeader({ file }) +
+      `module.exports = {` +
+      Object.entries(dictionary.properties.colors)
+        .map((tokens) => {
+          const colorObj = tokens[0];
+          const filtered = dictionary.allTokens.filter(
+            (token) => token.attributes.type === colorObj
+          );
+          return (
+            `${colorObj} : { ` +
+            filtered.map((token) => {
+              return `${token.name} : "${token.value}"`;
+            }) +
+            `},`
+          );
+        })
+        .join(`\n`) +
+      `};`
     );
   },
 });
@@ -130,7 +162,7 @@ const getStyleDictionaryConfig = (theme) => {
             filter: "filter-typography",
           },
           {
-            format: "javascript/module-flat",
+            format: "javascript/colors",
             destination: core ? "colors.js" : `themes/${theme}.js`,
             filter: {
               type: "color",
@@ -161,7 +193,7 @@ const getStyleDictionaryConfig = (theme) => {
             filter: "filter-typography",
           },
           {
-            format: "javascript/module-flat",
+            format: "javascript/colors",
             destination: core ? "colors.js" : `themes/${theme}.js`,
             filter: {
               type: "color",
