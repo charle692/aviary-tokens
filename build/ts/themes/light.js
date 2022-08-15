@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 15 Aug 2022 14:51:01 GMT
+ * Generated on Mon, 15 Aug 2022 15:00:29 GMT
  */
 
 module.exports = {
@@ -12,6 +12,9 @@ module.exports = {
   "surfaceLevel1": "#FFFFFF",
   "surfaceLevel2": "#FCFEFF",
   "surfaceLevel3": "#FFFFFF",
+  "interactiveSurfaceBackground": "transparent",
+  "interactiveSurfaceHover": "#F5F7FA",
+  "interactiveSurfaceActive": "#E6EDF5",
   "primaryTextBase": "#307553",
   "primaryTextHover": "#275E43",
   "primaryTextActive": "#244C38",
@@ -77,6 +80,14 @@ module.exports = {
   "highlightBorderBase": "#533E7D",
   "highlightBorderHover": "#3B2566",
   "highlightBorderActive": "#2A174F",
+  "systemTextBase": "#475A70",
+  "systemTextHover": "#36485C",
+  "systemTextActive": "#2E3A47",
+  "systemBackgroundBase": "#FFFFFF",
+  "systemBorderBase": "#C8D3E0",
+  "systemBorderHover": "#596D84",
+  "systemBorderActive": "#475A70",
+  "systemBorderFocused": "#3971A8",
   "disabledText": "#596D84",
   "disabledBackground": "#F5F7FA",
   "disabledNakedContent": "#F5F7FA",
@@ -95,16 +106,5 @@ module.exports = {
   "inputTextFloatingLabelError": "#AF2645",
   "inputTextPlaceholder": "#596D84",
   "inputBorderBase": "#E6EDF5",
-  "inputBorderError": "#AF2645",
-  "systemTextBase": "#475A70",
-  "systemTextHover": "#36485C",
-  "systemTextActive": "#2E3A47",
-  "systemBackgroundBase": "#FFFFFF",
-  "systemBorderBase": "#C8D3E0",
-  "systemBorderHover": "#596D84",
-  "systemBorderActive": "#475A70",
-  "systemBorderFocused": "#3971A8",
-  "interactiveSurfaceBackground": "transparent",
-  "interactiveSurfaceHover": "#F5F7FA",
-  "interactiveSurfaceActive": "#E6EDF5"
+  "inputBorderError": "#AF2645"
 };

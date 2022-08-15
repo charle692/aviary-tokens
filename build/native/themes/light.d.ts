@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 15 Aug 2022 14:51:01 GMT
+ * Generated on Mon, 15 Aug 2022 15:00:29 GMT
  */
 
 export const textBase : string;
@@ -11,6 +11,9 @@ export const surfaceLevel0 : string;
 export const surfaceLevel1 : string;
 export const surfaceLevel2 : string;
 export const surfaceLevel3 : string;
+export const interactiveSurfaceBackground : string;
+export const interactiveSurfaceHover : string;
+export const interactiveSurfaceActive : string;
 export const primaryTextBase : string;
 export const primaryTextHover : string;
 export const primaryTextActive : string;
@@ -76,6 +79,14 @@ export const highlightBackgroundBox : string;
 export const highlightBorderBase : string;
 export const highlightBorderHover : string;
 export const highlightBorderActive : string;
+export const systemTextBase : string;
+export const systemTextHover : string;
+export const systemTextActive : string;
+export const systemBackgroundBase : string;
+export const systemBorderBase : string;
+export const systemBorderHover : string;
+export const systemBorderActive : string;
+export const systemBorderFocused : string;
 export const disabledText : string;
 export const disabledBackground : string;
 export const disabledNakedContent : string;
@@ -95,14 +106,3 @@ export const inputTextFloatingLabelError : string;
 export const inputTextPlaceholder : string;
 export const inputBorderBase : string;
 export const inputBorderError : string;
-export const systemTextBase : string;
-export const systemTextHover : string;
-export const systemTextActive : string;
-export const systemBackgroundBase : string;
-export const systemBorderBase : string;
-export const systemBorderHover : string;
-export const systemBorderActive : string;
-export const systemBorderFocused : string;
-export const interactiveSurfaceBackground : string;
-export const interactiveSurfaceHover : string;
-export const interactiveSurfaceActive : string;
