@@ -1,56 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Wed, 10 Aug 2022 17:59:15 GMT
+ * Generated on Mon, 15 Aug 2022 15:21:29 GMT
  */
 
-export const green100 : string;
-export const green200 : string;
-export const green300 : string;
-export const green400 : string;
-export const green500 : string;
-export const green600 : string;
-export const green700 : string;
-export const green800 : string;
-export const blue100 : string;
-export const blue200 : string;
-export const blue300 : string;
-export const blue400 : string;
-export const blue500 : string;
-export const blue600 : string;
-export const blue700 : string;
-export const blue800 : string;
-export const red100 : string;
-export const red200 : string;
-export const red300 : string;
-export const red400 : string;
-export const red500 : string;
-export const red600 : string;
-export const red700 : string;
-export const red800 : string;
-export const purple100 : string;
-export const purple200 : string;
-export const purple300 : string;
-export const purple400 : string;
-export const purple500 : string;
-export const purple600 : string;
-export const purple700 : string;
-export const purple800 : string;
-export const orange100 : string;
-export const orange200 : string;
-export const orange300 : string;
-export const orange400 : string;
-export const orange500 : string;
-export const orange600 : string;
-export const orange700 : string;
-export const orange800 : string;
-export const grey100 : string;
-export const grey200 : string;
-export const grey300 : string;
-export const grey400 : string;
-export const grey500 : string;
-export const grey600 : string;
-export const grey700 : string;
-export const grey800 : string;
-export const white : string;
-export const black : string;
-export const transparent : string;
+export const green : { green100 : string,green200 : string,green300 : string,green400 : string,green500 : string,green600 : string,green700 : string,green800 : string};
+export const blue : { blue100 : string,blue200 : string,blue300 : string,blue400 : string,blue500 : string,blue600 : string,blue700 : string,blue800 : string};
+export const red : { red100 : string,red200 : string,red300 : string,red400 : string,red500 : string,red600 : string,red700 : string,red800 : string};
+export const purple : { purple100 : string,purple200 : string,purple300 : string,purple400 : string,purple500 : string,purple600 : string,purple700 : string,purple800 : string};
+export const orange : { orange100 : string,orange200 : string,orange300 : string,orange400 : string,orange500 : string,orange600 : string,orange700 : string,orange800 : string};
+export const grey : { grey100 : string,grey200 : string,grey300 : string,grey400 : string,grey500 : string,grey600 : string,grey700 : string,grey800 : string};
+export const shades : { white : string,black : string,transparent : string};
