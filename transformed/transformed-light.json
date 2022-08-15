@@ -36,6 +36,20 @@
         "type": "color"
       }
     },
+    "interactiveSurface": {
+      "background": {
+        "value": "transparent",
+        "type": "color"
+      },
+      "hover": {
+        "value": "#F5F7FA",
+        "type": "color"
+      },
+      "active": {
+        "value": "#E6EDF5",
+        "type": "color"
+      }
+    },
     "primary": {
       "text": {
         "base": {
@@ -336,6 +350,46 @@
         }
       }
     },
+    "system": {
+      "text": {
+        "base": {
+          "value": "#475A70",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#36485C",
+          "type": "color"
+        },
+        "active": {
+          "value": "#2E3A47",
+          "type": "color"
+        }
+      },
+      "background": {
+        "base": {
+          "value": "#FFFFFF",
+          "type": "color"
+        }
+      },
+      "border": {
+        "base": {
+          "value": "#C8D3E0",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#596D84",
+          "type": "color"
+        },
+        "active": {
+          "value": "#475A70",
+          "type": "color"
+        },
+        "focused": {
+          "value": "#3971A8",
+          "type": "color"
+        }
+      }
+    },
     "disabled": {
       "text": {
         "value": "#596D84",
@@ -422,60 +476,6 @@
           "value": "#AF2645",
           "type": "color"
         }
-      }
-    },
-    "system": {
-      "text": {
-        "base": {
-          "value": "#475A70",
-          "type": "color"
-        },
-        "hover": {
-          "value": "#36485C",
-          "type": "color"
-        },
-        "active": {
-          "value": "#2E3A47",
-          "type": "color"
-        }
-      },
-      "background": {
-        "base": {
-          "value": "#FFFFFF",
-          "type": "color"
-        }
-      },
-      "border": {
-        "base": {
-          "value": "#C8D3E0",
-          "type": "color"
-        },
-        "hover": {
-          "value": "#596D84",
-          "type": "color"
-        },
-        "active": {
-          "value": "#475A70",
-          "type": "color"
-        },
-        "focused": {
-          "value": "#3971A8",
-          "type": "color"
-        }
-      }
-    },
-    "interactiveSurface": {
-      "background": {
-        "value": "transparent",
-        "type": "color"
-      },
-      "hover": {
-        "value": "#F5F7FA",
-        "type": "color"
-      },
-      "active": {
-        "value": "#E6EDF5",
-        "type": "color"
       }
     }
   }
