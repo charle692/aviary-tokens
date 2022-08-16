@@ -1,7 +1,7 @@
 {
   "colors": {
     "text": {
-      "base": {
+      "header": {
         "value": "#2E3A47",
         "type": "color"
       },
@@ -15,6 +15,10 @@
       },
       "onBackground": {
         "value": "#FFFFFF",
+        "type": "color"
+      },
+      "body": {
+        "value": "#475A70",
         "type": "color"
       }
     },
