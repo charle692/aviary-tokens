@@ -1,7 +1,7 @@
 {
   "colors": {
     "text": {
-      "base": {
+      "header": {
         "value": "{colors.grey.800}",
         "type": "color"
       },
@@ -15,6 +15,10 @@
       },
       "onBackground": {
         "value": "{colors.shades.white}",
+        "type": "color"
+      },
+      "body": {
+        "value": "{colors.grey.600}",
         "type": "color"
       }
     },
