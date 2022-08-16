@@ -9,16 +9,16 @@
         "value": "{colors.grey.700}",
         "type": "color"
       },
+      "body": {
+        "value": "{colors.grey.600}",
+        "type": "color"
+      },
       "subdued": {
         "value": "{colors.grey.500}",
         "type": "color"
       },
       "onBackground": {
         "value": "{colors.shades.white}",
-        "type": "color"
-      },
-      "body": {
-        "value": "{colors.grey.600}",
         "type": "color"
       }
     },
