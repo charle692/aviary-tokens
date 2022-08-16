@@ -1,10 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Mon, 15 Aug 2022 18:01:22 GMT
+ * Generated on Tue, 16 Aug 2022 14:14:24 GMT
  */
 
 module.exports = {text : { textBase : "#2E3A47",textEmphasis : "#36485C",textSubdued : "#596D84",textOnBackground : "#FFFFFF"},
-surface : { surfaceLevel0 : "#F5F7FA",surfaceLevel1 : "#FFFFFF",surfaceLevel2 : "#FCFEFF",surfaceLevel3 : "#FFFFFF"},
+surface : { surfaceLevel0 : "#F5F7FA",surfaceLevel1 : "#FFFFFF",surfaceLevel2 : "#F5F7FA",surfaceLevel3 : "#FFFFFF"},
 interactiveSurface : { interactiveSurfaceBackground : "transparent",interactiveSurfaceHover : "#F5F7FA",interactiveSurfaceActive : "#E6EDF5"},
 primary : { primaryTextBase : "#307553",primaryTextHover : "#275E43",primaryTextActive : "#244C38",primaryBackgroundBase : "#307553",primaryBackgroundHover : "#275E43",primaryBackgroundActive : "#244C38",primaryBackgroundMuted : "#EBF2EF",primaryBackgroundMutedHover : "#D1E0D9",primaryBackgroundMutedActive : "#B6CFC2",primaryBackgroundBox : "#FAFFFC",primaryBorderBase : "#307553",primaryBorderHover : "#275E43",primaryBorderActive : "#244C38"},
 info : { infoTextBase : "#3971A8",infoTextHover : "#21588F",infoTextActive : "#194673",infoBackgroundBase : "#3971A8",infoBackgroundHover : "#21588F",infoBackgroundActive : "#194673",infoBackgroundMuted : "#E6F1FC",infoBackgroundMutedHover : "#C0D8F0",infoBackgroundMutedActive : "#88B1D9",infoBackgroundBox : "#F5FAFF",infoBorderBase : "#3971A8",infoBorderHover : "#21588F",infoBorderActive : "#194673"},
