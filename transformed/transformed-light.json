@@ -9,16 +9,16 @@
         "value": "#36485C",
         "type": "color"
       },
+      "body": {
+        "value": "#475A70",
+        "type": "color"
+      },
       "subdued": {
         "value": "#596D84",
         "type": "color"
       },
       "onBackground": {
         "value": "#FFFFFF",
-        "type": "color"
-      },
-      "body": {
-        "value": "#475A70",
         "type": "color"
       }
     },
