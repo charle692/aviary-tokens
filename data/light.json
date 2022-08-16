@@ -28,7 +28,7 @@
         "type": "color"
       },
       "level2": {
-        "value": "{colors.grey.100}",
+        "value": "{colors.grey.200}",
         "type": "color"
       },
       "level3": {
