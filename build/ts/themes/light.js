@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 16 Aug 2022 14:38:53 GMT
+ * Generated on Tue, 16 Aug 2022 15:25:48 GMT
  */
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
   surface: {
     level0: "#F5F7FA",
     level1: "#FFFFFF",
-    level2: "#FCFEFF",
+    level2: "#F5F7FA",
     level3: "#FFFFFF",
   },
   interactiveSurface: {
