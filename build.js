@@ -69,14 +69,14 @@ const customColorObjectFormatter = (dictionary, isJS) => {
 };
 
 StyleDictionary.registerFormat({
-  name: `custom/typescript-color-declaration`,
+  name: "custom/typescript-color-declaration",
   formatter: ({ dictionary, file }) => {
     return fileHeader({ file }) + customColorObjectFormatter(dictionary, false);
   },
 });
 
 StyleDictionary.registerFormat({
-  name: `custom/javascript-colors`,
+  name: "custom/javascript-colors",
   formatter: ({ dictionary, file }) => {
     return (
       fileHeader({ file }) +
