@@ -6,6 +6,7 @@ on:
       - "data/light.json"
       - "data/core.json"
       - "build.js"
+      - "helpers/custom.js"
     branches-ignore:
       - "main"
 
