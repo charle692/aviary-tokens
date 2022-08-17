@@ -1,11 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Wed, 17 Aug 2022 13:10:20 GMT
+ * Generated on Tue, 16 Aug 2022 20:06:19 GMT
  */
 
 export const text: {
-  base: string;
+  header: string;
   emphasis: string;
+  body: string;
   subdued: string;
   onBackground: string;
 };

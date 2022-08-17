@@ -1,12 +1,16 @@
 {
   "colors": {
     "text": {
-      "base": {
+      "header": {
         "value": "#2E3A47",
         "type": "color"
       },
       "emphasis": {
         "value": "#36485C",
+        "type": "color"
+      },
+      "body": {
+        "value": "#475A70",
         "type": "color"
       },
       "subdued": {
