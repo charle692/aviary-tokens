@@ -1,115 +1,6 @@
-const StyleDictionary = require("style-dictionary");
-const ChangeCase = require("change-case");
-const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
+import StyleDictionary from "style-dictionary";
 
-const isStringPxValue = (token) => {
-  if (typeof token.value === "string") {
-    return token.value.endsWith("px");
-  }
-};
-
-StyleDictionary.registerFilter({
-  name: "filter-typography",
-  matcher: function (token) {
-    return token.attributes.category === "typography";
-  },
-});
-
-StyleDictionary.registerTransform({
-  name: "name/remove-desktop-prefix",
-  type: "name",
-  transformer: function (token) {
-    const slicePrefix = token.path.slice(1);
-    const filterDesktop = slicePrefix.filter((prefix) => prefix !== "desktop");
-    return ChangeCase.camelCase(filterDesktop.join(" ")).replace("_", "");
-  },
-});
-
-StyleDictionary.registerTransform({
-  name: "name/remove-color-prefix",
-  matcher: (token) => token.type === "color",
-  type: "name",
-  transformer: function (token) {
-    return ChangeCase.camelCase(token.path.slice(2).join(" "));
-  },
-});
-
-StyleDictionary.registerTransform({
-  name: "value/rm-px",
-  type: "value",
-  matcher: isStringPxValue,
-  transformer: function (token) {
-    return parseFloat(token.value);
-  },
-});
-
-const customColorObjectFormatter = (dictionary, isJS) => {
-  const valueOrType = (token) =>
-    isJS ? `"${token.value}"` : `${getTypeScriptType(token.value)}`;
-  const declaration = isJS ? "" : `export const `;
-  const commaOrColon = isJS ? `,` : `;`;
-
-  return Object.entries(dictionary.properties.colors)
-    .map((tokens) => {
-      const colorObj = tokens[0];
-      const filteredTokens = dictionary.allTokens.filter(
-        (token) => token.attributes.type === colorObj
-      );
-
-      return (
-        declaration +
-        `${colorObj} : {` +
-        filteredTokens.map((token) => {
-          return `${token.name} : ` + valueOrType(token);
-        }) +
-        `}${commaOrColon}`
-      );
-    })
-    .join(`\n`);
-};
-
-StyleDictionary.registerFormat({
-  name: "custom/typescript-color-declaration",
-  formatter: ({ dictionary, file }) => {
-    return fileHeader({ file }) + customColorObjectFormatter(dictionary, false);
-  },
-});
-
-StyleDictionary.registerFormat({
-  name: "custom/javascript-colors",
-  formatter: ({ dictionary, file }) => {
-    return (
-      fileHeader({ file }) +
-      `module.exports = {` +
-      customColorObjectFormatter(dictionary, true) +
-      `};`
-    );
-  },
-});
-
-StyleDictionary.registerTransformGroup({
-  name: "custom/aviary",
-  transforms: [
-    "attribute/cti",
-    "name/remove-desktop-prefix",
-    "name/remove-color-prefix",
-  ],
-});
-
-StyleDictionary.registerTransformGroup({
-  name: "custom/native",
-  transforms: [
-    "attribute/cti",
-    "name/remove-desktop-prefix",
-    "value/rm-px",
-    "name/remove-color-prefix",
-  ],
-});
-
-StyleDictionary.registerTransformGroup({
-  name: "custom/owlery",
-  transforms: ["attribute/cti", "name/remove-desktop-prefix"],
-});
+import "./helpers/custom.js";
 
 const getStyleDictionaryConfig = (theme) => {
   const core = theme === "core";
@@ -123,7 +14,7 @@ const getStyleDictionaryConfig = (theme) => {
           {
             destination: `typography.scss`,
             format: "scss/variables",
-            filter: "filter-typography",
+            filter: "custom/filter/typography",
           },
           {
             destination: core ? "colors.scss" : `themes/${theme}.scss`,
@@ -142,22 +33,22 @@ const getStyleDictionaryConfig = (theme) => {
           {
             format: "javascript/module-flat",
             destination: "typography.js",
-            filter: "filter-typography",
+            filter: "custom/filter/typography",
           },
           {
             format: "typescript/es6-declarations",
             destination: "typography.d.ts",
-            filter: "filter-typography",
+            filter: "custom/filter/typography",
           },
           {
-            format: "custom/javascript-colors",
+            format: "custom/format/javascript-colors",
             destination: core ? "colors.js" : `themes/${theme}.js`,
             filter: {
               type: "color",
             },
           },
           {
-            format: "custom/typescript-color-declaration",
+            format: "custom/format/typescript-color-declarations",
             destination: core ? "colors.d.ts" : `themes/${theme}.d.ts`,
             filter: {
               type: "color",
@@ -173,22 +64,22 @@ const getStyleDictionaryConfig = (theme) => {
           {
             format: "javascript/module-flat",
             destination: "typography.js",
-            filter: "filter-typography",
+            filter: "custom/filter/typography",
           },
           {
             format: "typescript/es6-declarations",
             destination: "typography.d.ts",
-            filter: "filter-typography",
+            filter: "custom/filter/typography",
           },
           {
-            format: "custom/javascript-colors",
+            format: "custom/format/javascript-colors",
             destination: core ? "colors.js" : `themes/${theme}.js`,
             filter: {
               type: "color",
             },
           },
           {
-            format: "custom/typescript-color-declaration",
+            format: "custom/format/typescript-color-declarations",
             destination: core ? "colors.d.ts" : `themes/${theme}.d.ts`,
             filter: {
               type: "color",

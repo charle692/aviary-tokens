@@ -6,6 +6,7 @@
   "files": [
     "index.js"
   ],
+  "type": "module",
   "scripts": {
     "build": "node build.js",
     "transform-core": "yarn token-transformer data transformed/transformed-core.json core --expandTypography",
