@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 16 Aug 2022 15:25:48 GMT
+ * Generated on Tue, 16 Aug 2022 20:06:19 GMT
  */
 
 export const green: {
