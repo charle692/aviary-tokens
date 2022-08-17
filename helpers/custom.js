@@ -2,8 +2,6 @@ import StyleDictionary from "style-dictionary";
 const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
 import ChangeCase from "change-case";
 
-// RENAME ALL TO STANDARDIZE CUSTOM
-
 // FILTERS
 StyleDictionary.registerFilter({
   name: "custom/filter/typography",
