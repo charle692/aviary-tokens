@@ -1,6 +1,6 @@
-import StyleDictionary from "style-dictionary";
+const StyleDictionary = require("style-dictionary");
+const ChangeCase = require("change-case");
 const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
-import ChangeCase from "change-case";
 
 // FILTERS
 StyleDictionary.registerFilter({

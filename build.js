@@ -1,6 +1,5 @@
-import StyleDictionary from "style-dictionary";
-
-import "./helpers/custom.js";
+const StyleDictionary = require("style-dictionary");
+require("./helpers/custom");
 
 const getStyleDictionaryConfig = (theme) => {
   const core = theme === "core";
