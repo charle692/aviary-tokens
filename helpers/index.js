@@ -1,1 +1,5 @@
-module.exports.colorProfileMapper = require("./colorProfileMapper");
+const colorProfileMapper = require("./colorProfileMapper");
+
+module.exports = {
+  colorProfileMapper,
+};
