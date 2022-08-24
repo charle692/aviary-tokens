@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 19 Aug 2022 13:51:25 GMT
+ * Generated on Wed, 24 Aug 2022 18:23:03 GMT
  */
 
 export const text: {
@@ -15,11 +15,9 @@ export const surface: {
   level1: string;
   level2: string;
   level3: string;
-};
-export const interactiveSurface: {
-  background: string;
-  hover: string;
-  active: string;
+  interactiveBackground: string;
+  interactiveHover: string;
+  interactiveActive: string;
 };
 export const primary: {
   textBase: string;
@@ -101,6 +99,10 @@ export const system: {
   textHover: string;
   textActive: string;
   backgroundBase: string;
+  backgroundMuted: string;
+  backgroundMutedHover: string;
+  backgroundMutedActive: string;
+  backgroundBox: string;
   borderBase: string;
   borderHover: string;
   borderActive: string;

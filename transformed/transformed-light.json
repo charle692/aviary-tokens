@@ -38,20 +38,20 @@
       "level3": {
         "value": "#FFFFFF",
         "type": "color"
-      }
-    },
-    "interactiveSurface": {
-      "background": {
-        "value": "transparent",
-        "type": "color"
       },
-      "hover": {
-        "value": "#F5F7FA",
-        "type": "color"
-      },
-      "active": {
-        "value": "#E6EDF5",
-        "type": "color"
+      "interactive": {
+        "background": {
+          "value": "#FFFFFF",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#F5F7FA",
+          "type": "color"
+        },
+        "active": {
+          "value": "#E6EDF5",
+          "type": "color"
+        }
       }
     },
     "primary": {
@@ -372,6 +372,22 @@
       "background": {
         "base": {
           "value": "#FFFFFF",
+          "type": "color"
+        },
+        "muted": {
+          "value": "#F5F7FA",
+          "type": "color"
+        },
+        "mutedHover": {
+          "value": "#E6EDF5",
+          "type": "color"
+        },
+        "mutedActive": {
+          "value": "#C8D3E0",
+          "type": "color"
+        },
+        "box": {
+          "value": "#FCFEFF",
           "type": "color"
         }
       },

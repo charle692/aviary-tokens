@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 19 Aug 2022 13:51:25 GMT
+ * Generated on Wed, 24 Aug 2022 18:23:03 GMT
  */
 
 module.exports = {
@@ -16,11 +16,9 @@ module.exports = {
     level1: "#FFFFFF",
     level2: "#F5F7FA",
     level3: "#FFFFFF",
-  },
-  interactiveSurface: {
-    background: "transparent",
-    hover: "#F5F7FA",
-    active: "#E6EDF5",
+    interactiveBackground: "#FFFFFF",
+    interactiveHover: "#F5F7FA",
+    interactiveActive: "#E6EDF5",
   },
   primary: {
     textBase: "#307553",
@@ -102,6 +100,10 @@ module.exports = {
     textHover: "#36485C",
     textActive: "#2E3A47",
     backgroundBase: "#FFFFFF",
+    backgroundMuted: "#F5F7FA",
+    backgroundMutedHover: "#E6EDF5",
+    backgroundMutedActive: "#C8D3E0",
+    backgroundBox: "#FCFEFF",
     borderBase: "#C8D3E0",
     borderHover: "#596D84",
     borderActive: "#475A70",
