@@ -1,4 +1,4 @@
-import { AviaryTheme } from "../themes";
+import type { AviaryTheme } from "../themes";
 
 export const colorProfileMapper = (currentTheme: AviaryTheme) => {
   return {
