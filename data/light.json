@@ -38,20 +38,20 @@
       "level3": {
         "value": "{colors.shades.white}",
         "type": "color"
-      }
-    },
-    "interactiveSurface": {
-      "background": {
-        "value": "{colors.shades.transparent}",
-        "type": "color"
       },
-      "hover": {
-        "value": "{colors.grey.200}",
-        "type": "color"
-      },
-      "active": {
-        "value": "{colors.grey.300}",
-        "type": "color"
+      "interactive": {
+        "background": {
+          "value": "{colors.shades.white}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{colors.grey.200}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{colors.grey.300}",
+          "type": "color"
+        }
       }
     },
     "primary": {
