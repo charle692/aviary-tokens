@@ -10,7 +10,8 @@
     "build": "node build.js",
     "transform-core": "yarn token-transformer data transformed/transformed-core.json core --expandTypography",
     "transform-light": "yarn token-transformer data transformed/transformed-light.json core,light core",
-    "transform": "yarn transform-core && yarn transform-light"
+    "transform": "yarn transform-core && yarn transform-light",
+    "compile": "tsc -p ./tsconfig.json"
   },
   "devDependencies": {
     "style-dictionary": "^3.7.0",
