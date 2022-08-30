@@ -7,7 +7,7 @@ const colorProfileMapper = (currentTheme) => {
         info: currentTheme.info,
         warning: currentTheme.warning,
         danger: currentTheme.danger,
-        highlight: currentTheme.highlight,
+        // highlight: currentTheme.highlight,
     };
 };
 exports.colorProfileMapper = colorProfileMapper;
