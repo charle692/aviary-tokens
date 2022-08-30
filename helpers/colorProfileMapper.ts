@@ -6,6 +6,6 @@ export const colorProfileMapper = (currentTheme: AviaryTheme) => {
     info: currentTheme.info,
     warning: currentTheme.warning,
     danger: currentTheme.danger,
-    // highlight: currentTheme.highlight,
+    highlight: currentTheme.highlight,
   };
 };
