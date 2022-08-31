@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 24 Aug 2022 18:23:03 GMT
+ * Generated on Wed, 31 Aug 2022 17:09:46 GMT
  */
 
 export const text: {
@@ -130,4 +130,7 @@ export const input: {
   textPlaceholder: string;
   borderBase: string;
   borderError: string;
+  borderHover: string;
+  borderEmphasized: string;
+  borderActive: string;
 };

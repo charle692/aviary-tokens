@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 24 Aug 2022 18:23:03 GMT
+ * Generated on Wed, 31 Aug 2022 17:09:46 GMT
  */
 
 module.exports = {
@@ -131,5 +131,8 @@ module.exports = {
     textPlaceholder: "#596D84",
     borderBase: "#E6EDF5",
     borderError: "#AF2645",
+    borderHover: "#C8D3E0",
+    borderEmphasized: "#475A70",
+    borderActive: "#3971A8",
   },
 };
