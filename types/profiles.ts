@@ -1,5 +1,8 @@
 import * as light from "../build/ts/themes/light";
 
-type ColorProfileTheme = typeof light.primary;
+type StandardColorsProfileTheme = typeof light.primary;
+type SystemColorProfileTheme = typeof light.system;
+
+type ColorProfileTheme = StandardColorsProfileTheme | SystemColorProfileTheme;
 
 export type { ColorProfileTheme };
