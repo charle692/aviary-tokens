@@ -1,7 +1,7 @@
-import { primary, system } from "../build/ts/themes/light";
+import type * as light from "../build/ts/themes/light";
 
-type StandardColorsProfileTheme = typeof primary;
-type SystemColorProfileTheme = typeof system;
+type StandardColorsProfileTheme = typeof light.primary;
+type SystemColorProfileTheme = typeof light.system;
 
 type ColorProfileTheme = StandardColorsProfileTheme | SystemColorProfileTheme;
 
