@@ -9,7 +9,6 @@ const AVIARY_COLORS = {
 const EXTENDED_AVIARY_COLORS = {
   ...AVIARY_COLORS,
   system: "system",
-  light: "light"
 };
 
 type AviaryColors = keyof typeof AVIARY_COLORS;
@@ -23,5 +22,10 @@ interface AviaryExtendedColorProps {
   isColor?: ExtendedAviaryColors;
 }
 
-export type { AviaryColors, AviaryColorProps, AviaryExtendedColorProps, ExtendedAviaryColors };
+export type {
+  AviaryColors,
+  AviaryColorProps,
+  AviaryExtendedColorProps,
+  ExtendedAviaryColors,
+};
 export { AVIARY_COLORS, EXTENDED_AVIARY_COLORS };
