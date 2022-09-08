@@ -25,7 +25,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.light = void 0;
 
-var light = _interopRequireWildcard(require("./dist/tokens/ts/themes/light"));
+var light = _interopRequireWildcard(require("../../dist/tokens/ts/themes/light"));
 
 exports.light = light;
 
