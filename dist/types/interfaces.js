@@ -30,12 +30,13 @@ var AVIARY_COLORS = {
   info: "info",
   warning: "warning",
   danger: "danger",
-  highlight: "highlight"
+  highlight: "highlight",
+  system: "system"
 };
 exports.AVIARY_COLORS = AVIARY_COLORS;
 
 var EXTENDED_AVIARY_COLORS = _objectSpread(_objectSpread({}, AVIARY_COLORS), {}, {
-  system: "system"
+  light: "light"
 });
 
 exports.EXTENDED_AVIARY_COLORS = EXTENDED_AVIARY_COLORS;
