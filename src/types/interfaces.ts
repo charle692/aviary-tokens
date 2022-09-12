@@ -4,12 +4,11 @@ const AVIARY_COLORS = {
   warning: "warning",
   danger: "danger",
   highlight: "highlight",
-  system: "system",
 };
 
 const EXTENDED_AVIARY_COLORS = {
   ...AVIARY_COLORS,
-  light: "light",
+  system: "system",
 };
 
 type AviaryColors = keyof typeof AVIARY_COLORS;
