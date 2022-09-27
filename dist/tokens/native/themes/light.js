@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 21 Sep 2022 14:00:11 GMT
+ * Generated on Mon, 26 Sep 2022 18:48:34 GMT
  */
 
 module.exports = {text : {header : "#2E3A47",emphasis : "#36485C",body : "#475A70",subdued : "#596D84",onBackground : "#FFFFFF"},
@@ -12,5 +12,5 @@ danger : {textBase : "#AF2645",textHover : "#980B29",textActive : "#800D25",back
 highlight : {textBase : "#533E7D",textHover : "#3B2566",textActive : "#2A174F",backgroundBase : "#533E7D",backgroundHover : "#3B2566",backgroundActive : "#2A174F",backgroundMuted : "#F2ECFE",backgroundMutedHover : "#D7CEE9",backgroundMutedActive : "#B9ABD5",backgroundBox : "#FCFAFF",borderBase : "#533E7D",borderHover : "#3B2566",borderActive : "#2A174F"},
 system : {textBase : "#475A70",textHover : "#36485C",textActive : "#2E3A47",backgroundBase : "#FFFFFF",backgroundMuted : "#F5F7FA",backgroundMutedHover : "#E6EDF5",backgroundMutedActive : "#C8D3E0",backgroundBox : "#FCFEFF",borderBase : "#C8D3E0",borderHover : "#596D84",borderActive : "#475A70",borderFocused : "#3971A8"},
 disabled : {text : "#596D84",background : "#F5F7FA",nakedContent : "#F5F7FA",nakedBackground : "transparent",border : "#C8D3E0",inputBackground : "#E6EDF5",inputLabelText : "#596D84"},
-input : {backgroundBase : "#F5F7FA",backgroundHover : "#F5F7FA",backgroundInformation : "#FFFFFF",textBase : "#475A70",textInformation : "#475A70",textInformationError : "#AF2645",textLabel : "#475A70",textFloatingLabel : "#3971A8",textFloatingLabelError : "#AF2645",textPlaceholder : "#596D84",borderBase : "#E6EDF5",borderError : "#AF2645",borderHover : "#C8D3E0",borderEmphasized : "#596D84",borderEmphasizedHover : "#475A70",borderActive : "#3971A8"},
+input : {backgroundBase : "#F5F7FA",backgroundHover : "#E6EDF5",backgroundInformation : "#FFFFFF",textBase : "#475A70",textInformation : "#475A70",textInformationError : "#AF2645",textLabel : "#475A70",textFloatingLabel : "#3971A8",textFloatingLabelError : "#AF2645",textPlaceholder : "#596D84",textActive : "#2E3A47",borderBase : "#E6EDF5",borderError : "#AF2645",borderHover : "#C8D3E0",borderEmphasized : "#596D84",borderEmphasizedHover : "#475A70",borderActive : "#3971A8"},
 separator : {base : "#E6EDF5"},};

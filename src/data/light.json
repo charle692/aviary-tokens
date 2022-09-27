@@ -463,7 +463,7 @@
           "type": "color"
         },
         "hover": {
-          "value": "{colors.grey.200}",
+          "value": "{colors.grey.300}",
           "type": "color"
         },
         "information": {
@@ -498,6 +498,10 @@
         },
         "placeholder": {
           "value": "{colors.grey.500}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{colors.grey.800}",
           "type": "color"
         }
       },

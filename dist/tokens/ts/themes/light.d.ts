@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 21 Sep 2022 14:00:11 GMT
+ * Generated on Mon, 26 Sep 2022 18:48:34 GMT
  */
 
 export const text : {header : string,emphasis : string,body : string,subdued : string,onBackground : string};
@@ -12,5 +12,5 @@ export const danger : {textBase : string,textHover : string,textActive : string,
 export const highlight : {textBase : string,textHover : string,textActive : string,backgroundBase : string,backgroundHover : string,backgroundActive : string,backgroundMuted : string,backgroundMutedHover : string,backgroundMutedActive : string,backgroundBox : string,borderBase : string,borderHover : string,borderActive : string};
 export const system : {textBase : string,textHover : string,textActive : string,backgroundBase : string,backgroundMuted : string,backgroundMutedHover : string,backgroundMutedActive : string,backgroundBox : string,borderBase : string,borderHover : string,borderActive : string,borderFocused : string};
 export const disabled : {text : string,background : string,nakedContent : string,nakedBackground : string,border : string,inputBackground : string,inputLabelText : string};
-export const input : {backgroundBase : string,backgroundHover : string,backgroundInformation : string,textBase : string,textInformation : string,textInformationError : string,textLabel : string,textFloatingLabel : string,textFloatingLabelError : string,textPlaceholder : string,borderBase : string,borderError : string,borderHover : string,borderEmphasized : string,borderEmphasizedHover : string,borderActive : string};
+export const input : {backgroundBase : string,backgroundHover : string,backgroundInformation : string,textBase : string,textInformation : string,textInformationError : string,textLabel : string,textFloatingLabel : string,textFloatingLabelError : string,textPlaceholder : string,textActive : string,borderBase : string,borderError : string,borderHover : string,borderEmphasized : string,borderEmphasizedHover : string,borderActive : string};
 export const separator : {base : string};

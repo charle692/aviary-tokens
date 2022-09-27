@@ -463,7 +463,7 @@
           "type": "color"
         },
         "hover": {
-          "value": "#F5F7FA",
+          "value": "#E6EDF5",
           "type": "color"
         },
         "information": {
@@ -498,6 +498,10 @@
         },
         "placeholder": {
           "value": "#596D84",
+          "type": "color"
+        },
+        "active": {
+          "value": "#2E3A47",
           "type": "color"
         }
       },
