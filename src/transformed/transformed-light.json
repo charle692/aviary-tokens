@@ -1,10 +1,6 @@
 {
   "colors": {
     "text": {
-      "header": {
-        "value": "#2E3A47",
-        "type": "color"
-      },
       "emphasis": {
         "value": "#36485C",
         "type": "color"
@@ -20,10 +16,66 @@
       "onBackground": {
         "value": "#FFFFFF",
         "type": "color"
+      }
+    },
+    "system": {
+      "text": {
+        "labelEmphasis": {
+          "value": "#2E3A47",
+          "type": "color"
+        },
+        "base": {
+          "value": "#475A70",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#36485C",
+          "type": "color"
+        },
+        "active": {
+          "value": "#2E3A47",
+          "type": "color"
+        }
       },
-      "labelEmphasis": {
-        "value": "#2E3A47",
-        "type": "color"
+      "background": {
+        "base": {
+          "value": "#FFFFFF",
+          "type": "color"
+        },
+        "muted": {
+          "value": "#F5F7FA",
+          "type": "color"
+        },
+        "mutedHover": {
+          "value": "#E6EDF5",
+          "type": "color"
+        },
+        "mutedActive": {
+          "value": "#C8D3E0",
+          "type": "color"
+        },
+        "box": {
+          "value": "#FCFEFF",
+          "type": "color"
+        }
+      },
+      "border": {
+        "base": {
+          "value": "#C8D3E0",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#596D84",
+          "type": "color"
+        },
+        "active": {
+          "value": "#475A70",
+          "type": "color"
+        },
+        "focused": {
+          "value": "#3971A8",
+          "type": "color"
+        }
       }
     },
     "surface": {
@@ -368,62 +420,6 @@
         },
         "active": {
           "value": "#2A174F",
-          "type": "color"
-        }
-      }
-    },
-    "system": {
-      "text": {
-        "base": {
-          "value": "#475A70",
-          "type": "color"
-        },
-        "hover": {
-          "value": "#36485C",
-          "type": "color"
-        },
-        "active": {
-          "value": "#2E3A47",
-          "type": "color"
-        }
-      },
-      "background": {
-        "base": {
-          "value": "#FFFFFF",
-          "type": "color"
-        },
-        "muted": {
-          "value": "#F5F7FA",
-          "type": "color"
-        },
-        "mutedHover": {
-          "value": "#E6EDF5",
-          "type": "color"
-        },
-        "mutedActive": {
-          "value": "#C8D3E0",
-          "type": "color"
-        },
-        "box": {
-          "value": "#FCFEFF",
-          "type": "color"
-        }
-      },
-      "border": {
-        "base": {
-          "value": "#C8D3E0",
-          "type": "color"
-        },
-        "hover": {
-          "value": "#596D84",
-          "type": "color"
-        },
-        "active": {
-          "value": "#475A70",
-          "type": "color"
-        },
-        "focused": {
-          "value": "#3971A8",
           "type": "color"
         }
       }
