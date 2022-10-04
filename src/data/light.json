@@ -20,6 +20,10 @@
       "onBackground": {
         "value": "{colors.shades.white}",
         "type": "color"
+      },
+      "labelEmphasis": {
+        "value": "{colors.grey.800}",
+        "type": "color"
       }
     },
     "surface": {
@@ -536,6 +540,34 @@
       "base": {
         "value": "{colors.grey.300}",
         "type": "color"
+      }
+    },
+    "light": {
+      "background": {
+        "base": {
+          "value": "{colors.shades.white}",
+          "type": "color"
+        },
+        "contrast": {
+          "value": "{colors.grey.600}",
+          "type": "color"
+        }
+      },
+      "text": {
+        "base": {
+          "value": "{colors.grey.800}",
+          "type": "color"
+        }
+      },
+      "link": {
+        "mutedBase": {
+          "value": "{colors.grey.200}",
+          "type": "color"
+        },
+        "mutedHover": {
+          "value": "{colors.shades.white}",
+          "type": "color"
+        }
       }
     }
   }
