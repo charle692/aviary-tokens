@@ -76,6 +76,7 @@ export declare const colorProfileMapper: (currentTheme: AviaryTheme) => {
         borderActive: string;
     };
     system: {
+        textLabelEmphasis: string;
         textBase: string;
         textHover: string;
         textActive: string;

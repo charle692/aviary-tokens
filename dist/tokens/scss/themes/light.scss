@@ -1,12 +1,24 @@
 
 // Do not edit directly
-// Generated on Mon, 26 Sep 2022 18:48:34 GMT
+// Generated on Tue, 04 Oct 2022 20:41:01 GMT
 
-$textHeader: #2E3A47;
 $textEmphasis: #36485C;
 $textBody: #475A70;
 $textSubdued: #596D84;
 $textOnBackground: #FFFFFF;
+$systemTextLabelEmphasis: #2E3A47;
+$systemTextBase: #475A70;
+$systemTextHover: #36485C;
+$systemTextActive: #2E3A47;
+$systemBackgroundBase: #FFFFFF;
+$systemBackgroundMuted: #F5F7FA;
+$systemBackgroundMutedHover: #E6EDF5;
+$systemBackgroundMutedActive: #C8D3E0;
+$systemBackgroundBox: #FCFEFF;
+$systemBorderBase: #C8D3E0;
+$systemBorderHover: #596D84;
+$systemBorderActive: #475A70;
+$systemBorderFocused: #3971A8;
 $surfaceLevel0: #F5F7FA;
 $surfaceLevel1: #FFFFFF;
 $surfaceLevel2: #F5F7FA;
@@ -82,18 +94,6 @@ $highlightBackgroundBox: #FCFAFF;
 $highlightBorderBase: #533E7D;
 $highlightBorderHover: #3B2566;
 $highlightBorderActive: #2A174F;
-$systemTextBase: #475A70;
-$systemTextHover: #36485C;
-$systemTextActive: #2E3A47;
-$systemBackgroundBase: #FFFFFF;
-$systemBackgroundMuted: #F5F7FA;
-$systemBackgroundMutedHover: #E6EDF5;
-$systemBackgroundMutedActive: #C8D3E0;
-$systemBackgroundBox: #FCFEFF;
-$systemBorderBase: #C8D3E0;
-$systemBorderHover: #596D84;
-$systemBorderActive: #475A70;
-$systemBorderFocused: #3971A8;
 $disabledText: #596D84;
 $disabledBackground: #F5F7FA;
 $disabledNakedContent: #F5F7FA;
@@ -119,3 +119,8 @@ $inputBorderEmphasized: #596D84;
 $inputBorderEmphasizedHover: #475A70;
 $inputBorderActive: #3971A8;
 $separatorBase: #E6EDF5;
+$lightBackgroundBase: #FFFFFF;
+$lightBackgroundContrast: #475A70;
+$lightTextBase: #2E3A47;
+$lightLinkMutedBase: #F5F7FA;
+$lightLinkMutedHover: #FFFFFF;
