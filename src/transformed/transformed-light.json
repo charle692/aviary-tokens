@@ -20,6 +20,10 @@
       "onBackground": {
         "value": "#FFFFFF",
         "type": "color"
+      },
+      "labelEmphasis": {
+        "value": "#2E3A47",
+        "type": "color"
       }
     },
     "surface": {
@@ -536,6 +540,34 @@
       "base": {
         "value": "#E6EDF5",
         "type": "color"
+      }
+    },
+    "light": {
+      "background": {
+        "base": {
+          "value": "#FFFFFF",
+          "type": "color"
+        },
+        "contrast": {
+          "value": "#475A70",
+          "type": "color"
+        }
+      },
+      "text": {
+        "base": {
+          "value": "#2E3A47",
+          "type": "color"
+        }
+      },
+      "link": {
+        "mutedBase": {
+          "value": "#F5F7FA",
+          "type": "color"
+        },
+        "mutedHover": {
+          "value": "#FFFFFF",
+          "type": "color"
+        }
       }
     }
   }
