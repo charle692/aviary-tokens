@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 04 Oct 2022 20:41:01 GMT
+ * Generated on Thu, 06 Oct 2022 15:47:26 GMT
  */
 
 module.exports = {text : {emphasis : "#36485C",body : "#475A70",subdued : "#596D84",onBackground : "#FFFFFF"},
@@ -14,4 +14,4 @@ highlight : {textBase : "#533E7D",textHover : "#3B2566",textActive : "#2A174F",b
 disabled : {text : "#596D84",background : "#F5F7FA",nakedContent : "#F5F7FA",nakedBackground : "transparent",border : "#C8D3E0",inputBackground : "#E6EDF5",inputLabelText : "#596D84"},
 input : {backgroundBase : "#F5F7FA",backgroundHover : "#E6EDF5",backgroundInformation : "#FFFFFF",textBase : "#475A70",textInformation : "#475A70",textInformationError : "#AF2645",textLabel : "#475A70",textFloatingLabel : "#3971A8",textFloatingLabelError : "#AF2645",textPlaceholder : "#596D84",textActive : "#2E3A47",borderBase : "#E6EDF5",borderError : "#AF2645",borderHover : "#C8D3E0",borderEmphasized : "#596D84",borderEmphasizedHover : "#475A70",borderActive : "#3971A8"},
 separator : {base : "#E6EDF5"},
-light : {backgroundBase : "#FFFFFF",backgroundContrast : "#475A70",textBase : "#2E3A47",linkMutedBase : "#F5F7FA",linkMutedHover : "#FFFFFF"},};
+light : {backgroundBase : "#FFFFFF",backgroundContrast : "#475A70",backgroundHover : "#F5F7FA",backgroundActive : "#E6EDF5",textBase : "#2E3A47",linkMutedBase : "#F5F7FA",linkMutedHover : "#FFFFFF"},};
