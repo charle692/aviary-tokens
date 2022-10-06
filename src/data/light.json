@@ -547,6 +547,14 @@
         "contrast": {
           "value": "{colors.grey.600}",
           "type": "color"
+        },
+        "hover": {
+          "value": "{colors.grey.200}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{colors.grey.300}",
+          "type": "color"
         }
       },
       "text": {
