@@ -549,35 +549,42 @@
       "background": {
         "base": {
           "value": "{colors.shades.white}",
-          "type": "color"
+          "type": "color",
+          "description": "For use as background colour in light profile components on contrasting surface backgrounds"
         },
         "contrast": {
           "value": "{colors.grey.600}",
-          "type": "color"
+          "type": "color",
+          "description": "For use as a contrasting background colour in light profile components, to match shade of surface background"
         },
         "hover": {
           "value": "{colors.grey.200}",
-          "type": "color"
+          "type": "color",
+          "description": "For use as background hover colour in light profile components on contrasting surface backgrounds"
         },
         "active": {
           "value": "{colors.grey.300}",
-          "type": "color"
+          "type": "color",
+          "description": "For use as background active colour in light profile components on contrasting surface backgrounds"
         }
       },
       "text": {
         "base": {
           "value": "{colors.grey.800}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the content colour (text, icons) for light profile components, to match shade of constrasting surface background"
         }
       },
       "link": {
         "mutedBase": {
           "value": "{colors.grey.200}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as link colour for light profile components on contrasting surface backgrounds"
         },
         "mutedHover": {
           "value": "{colors.shades.white}",
-          "type": "color"
+          "type": "color",
+          "description": "Used for link hover colour for light profile components on contrasting surface backgrounds"
         }
       }
     }
