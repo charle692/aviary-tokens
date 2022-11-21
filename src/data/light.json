@@ -129,34 +129,34 @@
         "base": {
           "value": "{colors.green.600}",
           "type": "color",
-          "description": "Used as the text colour for primary text, content, and links"
+          "description": "Used as the text or fill colour for interactive and static primary components such as links, text, and icons"
         },
         "hover": {
           "value": "{colors.green.700}",
           "type": "color",
-          "description": "Used as the hovered colour for interactive primary components such as links and text buttons"
+          "description": "Used as the hovered text or fill colour for interactive primary components such as links and text buttons"
         },
         "active": {
           "value": "{colors.green.800}",
           "type": "color",
-          "description": "Used as the pressed colour for interactive primary components such as links and text buttons"
+          "description": "Used as the pressed text or fill colour for interactive primary components such as links and text buttons"
         }
       },
       "background": {
         "base": {
           "value": "{colors.green.600}",
           "type": "color",
-          "description": "Used as the background or fill colour for primary components such as plain buttons. Paired with text.onBackground for contrast"
+          "description": "Used as the background for primary components such as plain buttons. Paired with text.onBackground for contrast"
         },
         "hover": {
           "value": "{colors.green.700}",
           "type": "color",
-          "description": "Used as the hovered background or fill colour for primary components such as plain buttons"
+          "description": "Used as the hovered background for primary components such as plain buttons"
         },
         "active": {
           "value": "{colors.green.800}",
           "type": "color",
-          "description": "Used as the hovered background or fill colour for primary components such as plain buttons"
+          "description": "Used as the hovered background for primary components such as plain buttons"
         },
         "muted": {
           "value": "{colors.green.200}",
@@ -202,7 +202,7 @@
         "base": {
           "value": "{colors.blue.600}",
           "type": "color",
-          "description": "Used as the text colour for informational text, content, and links"
+          "description": "Used as the text or fill colour for interactive and static informational components such as links, text, and icons"
         },
         "hover": {
           "value": "{colors.blue.700}",
@@ -219,17 +219,17 @@
         "base": {
           "value": "{colors.blue.600}",
           "type": "color",
-          "description": "Used as the background or fill colour for informational components such as plain buttons. Paired with text.onBackground for contrast"
+          "description": "Used as the background for informational components such as plain buttons. Paired with text.onBackground for contrast"
         },
         "hover": {
           "value": "{colors.blue.700}",
           "type": "color",
-          "description": "Used as the hovered background or fill colour for informational components such as plain buttons"
+          "description": "Used as the hovered background for informational components such as plain buttons"
         },
         "active": {
           "value": "{colors.blue.800}",
           "type": "color",
-          "description": "Used as the pressed background or fill colour for informational components such as plain buttons"
+          "description": "Used as the pressed background for informational components such as plain buttons"
         },
         "muted": {
           "value": "{colors.blue.200}",
@@ -274,59 +274,72 @@
       "text": {
         "base": {
           "value": "{colors.orange.600}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the text or fill colour for interactive and static warning components such as links, text, and icons"
         },
         "hover": {
           "value": "{colors.orange.700}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the hovered text or fill colour for interactive and static warning components such as links, text, and icons"
         },
         "active": {
           "value": "{colors.orange.800}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the pressed text or fill colour for interactive and static warning components such as links, text, and icons"
         }
       },
       "background": {
         "base": {
           "value": "{colors.orange.600}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the background for warning components such as plain buttons. Paired with text.onBackground for contrast"
         },
         "hover": {
           "value": "{colors.orange.700}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the hovered background for warning components such as plain buttons"
         },
         "active": {
           "value": "{colors.orange.800}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the pressed background for primary components such as plain buttons"
         },
         "muted": {
           "value": "{colors.orange.200}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the subdued background for warning components such as pills. Paired with warning.textBase for a subtler contrast"
         },
         "mutedHover": {
           "value": "{colors.orange.300}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the hovered subdued background for warning components such as pills. Paired with warning.textBase for a subtler contrast"
         },
         "mutedActive": {
           "value": "{colors.orange.400}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the pressed subdued background for warning components such as pills. Paired with warning.textBase for a subtler contrast"
         },
         "box": {
           "value": "{colors.orange.100}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as a very light background for warning components such as Message and Box. Used for containers with content blocks"
         }
       },
       "border": {
         "base": {
           "value": "{colors.orange.600}",
-          "type": "color"
+          "type": "color",
+          "description": "Used for the border colour for warning components such as buttons and Message"
         },
         "hover": {
           "value": "{colors.orange.700}",
-          "type": "color"
+          "type": "color",
+          "description": "Used for the hovered border colour for warning components"
         },
         "active": {
           "value": "{colors.orange.800}",
-          "type": "color"
+          "type": "color",
+          "description": "Used for the pressed border colour for primary components such as buttons and Message"
         }
       }
     },
