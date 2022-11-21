@@ -302,7 +302,7 @@
         "active": {
           "value": "{colors.orange.800}",
           "type": "color",
-          "description": "Used as the pressed background for primary components such as plain buttons"
+          "description": "Used as the pressed background for warning components such as plain buttons"
         },
         "muted": {
           "value": "{colors.orange.200}",
@@ -339,7 +339,7 @@
         "active": {
           "value": "{colors.orange.800}",
           "type": "color",
-          "description": "Used for the pressed border colour for primary components such as buttons and Message"
+          "description": "Used for the pressed border colour for warning components such as buttons and Message"
         }
       }
     },
@@ -420,59 +420,72 @@
       "text": {
         "base": {
           "value": "{colors.purple.600}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the text or fill colour for interactive and static highlight components such as links, text, and icons"
         },
         "hover": {
           "value": "{colors.purple.700}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the hovered text or fill colour for interactive and static highlight components such as links, text, and icons"
         },
         "active": {
           "value": "{colors.purple.800}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the pressed text or fill colour for interactive and static highlight components such as links, text, and icons"
         }
       },
       "background": {
         "base": {
           "value": "{colors.purple.600}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the background for highlight components such as plain buttons. Paired with text.onBackground for contrast"
         },
         "hover": {
           "value": "{colors.purple.700}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the hovered background for highlight components such as plain buttons"
         },
         "active": {
           "value": "{colors.purple.800}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the pressed background for highlight components such as plain buttons"
         },
         "muted": {
           "value": "{colors.purple.200}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the subdued background for highlight components such as pills. Paired with highlight.textBase for a subtler contrast"
         },
         "mutedHover": {
           "value": "{colors.purple.300}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the hovered subdued background for highlight components such as pills. Paired with highlight.textBase for a subtler contrast"
         },
         "mutedActive": {
           "value": "{colors.purple.400}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the pressed subdued background for highlight components such as pills. Paired with highlight.textBase for a subtler contrast"
         },
         "box": {
           "value": "{colors.purple.100}",
-          "type": "color"
+          "type": "color",
+          "description": "Used as a very light background for highlight components such as Message and Box. Used for containers with content blocks"
         }
       },
       "border": {
         "base": {
           "value": "{colors.purple.600}",
-          "type": "color"
+          "type": "color",
+          "description": "Used for the border colour for highlight components such as buttons and Message"
         },
         "hover": {
           "value": "{colors.purple.700}",
-          "type": "color"
+          "type": "color",
+          "description": "Used for the hovered border colour for highlight components"
         },
         "active": {
           "value": "{colors.purple.800}",
-          "type": "color"
+          "type": "color",
+          "description": "Used for the pressed border colour for highlight components such as buttons and Message"
         }
       }
     },
