@@ -3,19 +3,23 @@
     "text": {
       "emphasis": {
         "value": "#36485C",
-        "type": "color"
+        "type": "color",
+        "description": "Used for any text that has font weight of 700 and up"
       },
       "body": {
         "value": "#475A70",
-        "type": "color"
+        "type": "color",
+        "description": "Used for any text that has font weight of 600 and below"
       },
       "subdued": {
         "value": "#596D84",
-        "type": "color"
+        "type": "color",
+        "description": "Used for any text that requires less prominence"
       },
       "onBackground": {
         "value": "#FFFFFF",
-        "type": "color"
+        "type": "color",
+        "description": "For use on darker or colour profile backgrounds that require contrasted text"
       }
     },
     "system": {
