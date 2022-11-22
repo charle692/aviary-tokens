@@ -433,10 +433,6 @@
         "value": "{colors.grey.200}",
         "type": "color"
       },
-      "nakedContent": {
-        "value": "{colors.disabled.background}",
-        "type": "color"
-      },
       "nakedBackground": {
         "value": "{colors.shades.transparent}",
         "type": "color"
