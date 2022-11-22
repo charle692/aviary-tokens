@@ -437,8 +437,7 @@
       },
       "nakedContent": {
         "value": "#F5F7FA",
-        "type": "color",
-        "description": "Used for content in disabled components with little to no styling"
+        "type": "color"
       },
       "nakedBackground": {
         "value": "transparent",
