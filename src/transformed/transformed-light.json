@@ -4,22 +4,22 @@
       "emphasis": {
         "value": "#36485C",
         "type": "color",
-        "description": "Used for any text that has font weight of 700 and up"
+        "description": "Used for any text content and icons used with text that needs emphasizing"
       },
       "body": {
         "value": "#475A70",
         "type": "color",
-        "description": "Used for any text that has font weight of 600 and below"
+        "description": "Used for default text content and icons used with text"
       },
       "subdued": {
         "value": "#596D84",
         "type": "color",
-        "description": "Used for any text that requires less prominence"
+        "description": "Used for any text content and icons used with text that requires less prominence"
       },
       "onBackground": {
         "value": "#FFFFFF",
         "type": "color",
-        "description": "For use on darker or colour profile backgrounds that require contrasted text"
+        "description": "For use on darker or colour profile backgrounds that require highly contrasted text"
       }
     },
     "system": {
