@@ -435,10 +435,6 @@
         "type": "color",
         "description": "Used as the background colour for disabled components"
       },
-      "nakedContent": {
-        "value": "{colors.disabled.background}",
-        "type": "color"
-      },
       "nakedBackground": {
         "value": "{colors.shades.transparent}",
         "type": "color",
