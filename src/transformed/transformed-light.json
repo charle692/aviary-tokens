@@ -3,19 +3,23 @@
     "text": {
       "emphasis": {
         "value": "#36485C",
-        "type": "color"
+        "type": "color",
+        "description": "Used for any text content and icons used with text that needs emphasizing"
       },
       "body": {
         "value": "#475A70",
-        "type": "color"
+        "type": "color",
+        "description": "Used for default text content and icons used with text"
       },
       "subdued": {
         "value": "#596D84",
-        "type": "color"
+        "type": "color",
+        "description": "Used for any text content and icons used with text that requires less prominence"
       },
       "onBackground": {
         "value": "#FFFFFF",
-        "type": "color"
+        "type": "color",
+        "description": "For use on darker or colour profile backgrounds that require highly contrasted text"
       }
     },
     "system": {
