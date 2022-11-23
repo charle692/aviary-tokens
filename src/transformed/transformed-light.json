@@ -427,28 +427,34 @@
     "disabled": {
       "text": {
         "value": "#596D84",
-        "type": "color"
+        "type": "color",
+        "description": "For use in disabled content like text and icons"
       },
       "background": {
         "value": "#F5F7FA",
-        "type": "color"
+        "type": "color",
+        "description": "Used as the background colour for disabled components"
       },
       "nakedBackground": {
         "value": "transparent",
-        "type": "color"
+        "type": "color",
+        "description": "Used for the background in disabled components with little to no styling"
       },
       "border": {
         "value": "#C8D3E0",
-        "type": "color"
+        "type": "color",
+        "description": "Used as the border for disabled components"
       },
       "input": {
         "background": {
           "value": "#E6EDF5",
-          "type": "color"
+          "type": "color",
+          "description": "For use in disabled inputs as the background colour"
         },
         "LabelText": {
           "value": "#596D84",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the label colour for disabled inputs"
         }
       }
     },
@@ -538,35 +544,42 @@
       "background": {
         "base": {
           "value": "#FFFFFF",
-          "type": "color"
+          "type": "color",
+          "description": "For use as background colour in light profile components on contrasting surface backgrounds"
         },
         "contrast": {
           "value": "#475A70",
-          "type": "color"
+          "type": "color",
+          "description": "For use as a contrasting background colour in light profile components, to match shade of surface background"
         },
         "hover": {
           "value": "#F5F7FA",
-          "type": "color"
+          "type": "color",
+          "description": "For use as background hover colour in light profile components on contrasting surface backgrounds"
         },
         "active": {
           "value": "#E6EDF5",
-          "type": "color"
+          "type": "color",
+          "description": "For use as background active colour in light profile components on contrasting surface backgrounds"
         }
       },
       "text": {
         "base": {
           "value": "#2E3A47",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the content colour (text, icons) for light profile components, to match shade of constrasting surface background"
         }
       },
       "link": {
         "mutedBase": {
           "value": "#F5F7FA",
-          "type": "color"
+          "type": "color",
+          "description": "Used as link colour for light profile components on contrasting surface backgrounds"
         },
         "mutedHover": {
           "value": "#FFFFFF",
-          "type": "color"
+          "type": "color",
+          "description": "Used for link hover colour for light profile components on contrasting surface backgrounds"
         }
       }
     }
