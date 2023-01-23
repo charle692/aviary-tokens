@@ -1,8 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Mon, 05 Dec 2022 18:56:57 GMT
+ * Generated on Mon, 23 Jan 2023 19:04:34 GMT
  */
 
+export const theme: string;
 export const text : {emphasis : string,body : string,subdued : string,onBackground : string};
 export const system : {textLabelEmphasis : string,textBase : string,textHover : string,textActive : string,backgroundBase : string,backgroundMuted : string,backgroundMutedHover : string,backgroundMutedActive : string,backgroundBox : string,borderBase : string,borderHover : string,borderActive : string,borderFocused : string};
 export const surface : {level0 : string,level1 : string,level2 : string,interactiveBackground : string,interactiveHover : string,interactiveActive : string,overlayContrast : string,overlayTheme : string,overlayBackdrop : string};
