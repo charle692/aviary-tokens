@@ -84,6 +84,26 @@ const getStyleDictionaryConfig = (theme) => {
           },
         ],
       },
+      Documentation: {
+        transformGroup: "custom/documentation",
+        buildPath: "dist/documentation/",
+        files: [
+          {
+            format: "custom/format/javascript-colors-documentation",
+            destination: isCore ? `${theme}-colors.js` : `themes/${theme}.js`,
+            filter: {
+              type: "color",
+            },
+          },
+          {
+            format: "custom/format/typescript-color-declarations-documentation",
+            destination: isCore ? `${theme}-colors.d.ts` : `themes/${theme}.d.ts`,
+            filter: {
+              type: "color",
+            },
+          },
+        ],
+      },
     },
   };
 };
