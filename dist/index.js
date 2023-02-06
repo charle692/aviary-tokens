@@ -28,9 +28,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var _exportNames = {
-  typography: true
+  typography: true,
+  lightThemeDocumentation: true,
+  darkThemeDocumentation: true,
+  coreDarkDocumentation: true,
+  coreLightDocumentation: true
 };
-exports.typography = void 0;
+exports.typography = exports.lightThemeDocumentation = exports.darkThemeDocumentation = exports.coreLightDocumentation = exports.coreDarkDocumentation = void 0;
 
 var _helpers = require("./helpers");
 
@@ -63,6 +67,22 @@ Object.keys(_types).forEach(function (key) {
 var _typography = _interopRequireWildcard(require("../dist/tokens/ts/typography"));
 
 exports.typography = _typography;
+
+var _lightThemeDocumentation = _interopRequireWildcard(require("../dist/documentation/themes/light"));
+
+exports.lightThemeDocumentation = _lightThemeDocumentation;
+
+var _darkThemeDocumentation = _interopRequireWildcard(require("../dist/documentation/themes/dark"));
+
+exports.darkThemeDocumentation = _darkThemeDocumentation;
+
+var _coreDarkDocumentation = _interopRequireWildcard(require("../dist/documentation/core-dark-colors"));
+
+exports.coreDarkDocumentation = _coreDarkDocumentation;
+
+var _coreLightDocumentation = _interopRequireWildcard(require("../dist/documentation/core-light-colors"));
+
+exports.coreLightDocumentation = _coreLightDocumentation;
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
