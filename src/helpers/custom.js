@@ -10,6 +10,13 @@ StyleDictionary.registerFilter({
   },
 });
 
+StyleDictionary.registerFilter({
+  name: "custom/filter/borders",
+  matcher: (token) => {
+    return token.attributes.category === "borderRadius" || token.attributes.category === "border";
+  }
+})
+
 // TRANSFORMS
 const isStringPxValue = (token) => {
   if (typeof token.value === "string") {

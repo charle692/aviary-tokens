@@ -16,6 +16,11 @@ const getStyleDictionaryConfig = (theme) => {
             filter: "custom/filter/typography",
           },
           {
+            destination: `borders.scss`,
+            format: "scss/variables",
+            filter: "custom/filter/borders",
+          },
+          {
             destination: isCore
               ? `${theme}-colors.scss`
               : `themes/${theme}.scss`,
@@ -39,6 +44,16 @@ const getStyleDictionaryConfig = (theme) => {
             format: "typescript/es6-declarations",
             destination: "typography.d.ts",
             filter: "custom/filter/typography",
+          },
+          {
+            format: "javascript/module-flat",
+            destination: "borders.js",
+            filter: "custom/filter/borders",
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: "borders.d.ts",
+            filter: "custom/filter/borders",
           },
           {
             format: "custom/format/javascript-colors",
@@ -71,6 +86,16 @@ const getStyleDictionaryConfig = (theme) => {
             format: "typescript/es6-declarations",
             destination: "typography.d.ts",
             filter: "custom/filter/typography",
+          },
+          {
+            format: "javascript/module-flat",
+            destination: "borders.js",
+            filter: "custom/filter/borders",
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: "borders.d.ts",
+            filter: "custom/filter/borders",
           },
           {
             format: "custom/format/javascript-colors",
