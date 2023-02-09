@@ -16,7 +16,9 @@ const getStyleDictionaryConfig = (theme) => {
             filter: "custom/filter/typography",
           },
           {
-            destination: isCore ? `${theme}-colors.scss` : `themes/${theme}.scss`,
+            destination: isCore
+              ? `${theme}-colors.scss`
+              : `themes/${theme}.scss`,
             format: "scss/variables",
             filter: {
               type: "color",
@@ -47,7 +49,9 @@ const getStyleDictionaryConfig = (theme) => {
           },
           {
             format: "custom/format/typescript-color-declarations",
-            destination: isCore ? `${theme}-colors.d.ts` : `themes/${theme}.d.ts`,
+            destination: isCore
+              ? `${theme}-colors.d.ts`
+              : `themes/${theme}.d.ts`,
             filter: {
               type: "color",
             },
@@ -77,7 +81,9 @@ const getStyleDictionaryConfig = (theme) => {
           },
           {
             format: "custom/format/typescript-color-declarations",
-            destination: isCore ? `${theme}-colors.d.ts` : `themes/${theme}.d.ts`,
+            destination: isCore
+              ? `${theme}-colors.d.ts`
+              : `themes/${theme}.d.ts`,
             filter: {
               type: "color",
             },
@@ -97,7 +103,9 @@ const getStyleDictionaryConfig = (theme) => {
           },
           {
             format: "custom/format/typescript-color-declarations-documentation",
-            destination: isCore ? `${theme}-colors.d.ts` : `themes/${theme}.d.ts`,
+            destination: isCore
+              ? `${theme}-colors.d.ts`
+              : `themes/${theme}.d.ts`,
             filter: {
               type: "color",
             },
@@ -110,6 +118,8 @@ const getStyleDictionaryConfig = (theme) => {
 
 // Add themes to the array to create theme-specific files under themes folder
 // "core" theme will build files outside of the themes folder
-["core-light", "core-dark", "light", "dark", "emerson"].map((theme) => {
-  StyleDictionary.extend(getStyleDictionaryConfig(theme)).buildAllPlatforms();
-});
+["primitives", "core-light", "core-dark", "light", "dark", "emerson"].map(
+  (theme) => {
+    StyleDictionary.extend(getStyleDictionaryConfig(theme)).buildAllPlatforms();
+  }
+);
