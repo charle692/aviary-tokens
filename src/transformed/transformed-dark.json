@@ -26,59 +26,72 @@
       "text": {
         "labelEmphasis": {
           "value": "#FFFFFF",
-          "type": "color"
+          "type": "color",
+          "description": "Used for any text content and icons used with text that needs emphasizing"
         },
         "base": {
           "value": "#98999B",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the text or fill colour for interactive and static system components such as links, text, and icons"
         },
         "hover": {
           "value": "#E8E9EA",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the hovered text or fill colour for interactive system components such as links and text buttons"
         },
         "active": {
           "value": "#FFFFFF",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the pressed text or fill colour for interactive system components such as links and text buttons"
         }
       },
       "background": {
         "base": {
           "value": "#1A1D21",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the background for system components"
         },
         "muted": {
           "value": "#22272B",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the muted background for system components"
         },
         "mutedHover": {
           "value": "#2D3238",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the hovered muted background for system components"
         },
         "mutedActive": {
           "value": "#515357",
-          "type": "color"
+          "type": "color",
+          "description": "Used as the pressed muted background for system components"
         },
         "box": {
           "value": "#1A1D21",
-          "type": "color"
+          "type": "color",
+          "description": "Used as a background for a ColorProfile Box."
         }
       },
       "border": {
         "base": {
           "value": "#515357",
-          "type": "color"
+          "type": "color",
+          "description": "Used for the border colour for system components"
         },
         "hover": {
           "value": "#616568",
-          "type": "color"
+          "type": "color",
+          "description": "Used for the hovered border colour for system components"
         },
         "active": {
           "value": "#98999B",
-          "type": "color"
+          "type": "color",
+          "description": "Used for the pressed border colour for system components"
         },
         "focused": {
           "value": "#6597CE",
-          "type": "color"
+          "type": "color",
+          "description": "Used for the focused border colour for system components"
         }
       }
     },
@@ -119,7 +132,7 @@
         "dark": {
           "value": "#22272B",
           "type": "color",
-          "description": "Used for elements that are absolutely positioned to overlay content on the page. Has a high contrast versus the current theme. Ex: Things like Toasts and Tooltips"
+          "description": "Used for elements that are absolutely positioned to overlay content on the page. Is always a dark background regardless of theme. Ex: Things like Toasts and Tooltips"
         },
         "theme": {
           "value": "#22272B",
