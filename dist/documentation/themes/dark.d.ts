@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 02 Feb 2023 17:15:53 GMT
+ * Generated on Fri, 10 Feb 2023 15:52:38 GMT
  */
 
 export const text : {emphasis:{
@@ -23,55 +23,55 @@ export const text : {emphasis:{
 export const system : {textLabelEmphasis:{
             name: string,
             hex: string,
-            
+            description: string
           },textBase:{
             name: string,
             hex: string,
-            
+            description: string
           },textHover:{
             name: string,
             hex: string,
-            
+            description: string
           },textActive:{
             name: string,
             hex: string,
-            
+            description: string
           },backgroundBase:{
             name: string,
             hex: string,
-            
+            description: string
           },backgroundMuted:{
             name: string,
             hex: string,
-            
+            description: string
           },backgroundMutedHover:{
             name: string,
             hex: string,
-            
+            description: string
           },backgroundMutedActive:{
             name: string,
             hex: string,
-            
+            description: string
           },backgroundBox:{
             name: string,
             hex: string,
-            
+            description: string
           },borderBase:{
             name: string,
             hex: string,
-            
+            description: string
           },borderHover:{
             name: string,
             hex: string,
-            
+            description: string
           },borderActive:{
             name: string,
             hex: string,
-            
+            description: string
           },borderFocused:{
             name: string,
             hex: string,
-            
+            description: string
           }};
 export const surface : {level0:{
             name: string,

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 02 Feb 2023 17:15:53 GMT
+ * Generated on Fri, 10 Feb 2023 15:52:39 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -23,55 +23,55 @@ module.exports = {text : {emphasis:{
 system : {textLabelEmphasis:{
             name: "system.textLabelEmphasis",
             hex: "#101012",
-            
+            description: "Used for any text content and icons used with text that needs emphasizing"
           },textBase:{
             name: "system.textBase",
             hex: "#22272B",
-            
+            description: "Used as the text or fill colour for interactive and static system components such as links, text, and icons"
           },textHover:{
             name: "system.textHover",
             hex: "#1A1D21",
-            
+            description: "Used as the hovered text or fill colour for interactive system components such as links and text buttons"
           },textActive:{
             name: "system.textActive",
             hex: "#101012",
-            
+            description: "Used as the pressed text or fill colour for interactive system components such as links and text buttons"
           },backgroundBase:{
             name: "system.backgroundBase",
             hex: "#FFFFFF",
-            
+            description: "Used as the background for system components"
           },backgroundMuted:{
             name: "system.backgroundMuted",
             hex: "#98999B",
-            
+            description: "Used as the muted background for system components"
           },backgroundMutedHover:{
             name: "system.backgroundMutedHover",
             hex: "#616568",
-            
+            description: "Used as the hovered muted background for system components"
           },backgroundMutedActive:{
             name: "system.backgroundMutedActive",
             hex: "#515357",
-            
+            description: "Used as the pressed muted background for system components"
           },backgroundBox:{
             name: "system.backgroundBox",
             hex: "#E8E9EA",
-            
+            description: "Used as a background colour for a system container like Box or Message"
           },borderBase:{
             name: "system.borderBase",
             hex: "#515357",
-            
+            description: "Used for the border colour for system components"
           },borderHover:{
             name: "system.borderHover",
             hex: "#2D3238",
-            
+            description: "Used for the hovered border colour for system components"
           },borderActive:{
             name: "system.borderActive",
             hex: "#22272B",
-            
+            description: "Used for the pressed border colour for system components"
           },borderFocused:{
             name: "system.borderFocused",
             hex: "#0281d7",
-            
+            description: "Used for the focused border colour for system components"
           }},
 surface : {level0:{
             name: "surface.level0",
@@ -100,7 +100,7 @@ surface : {level0:{
           },overlayDark:{
             name: "surface.overlayDark",
             hex: "#101012",
-            description: "Used for elements that are absolutely positioned to overlay content on the page. Has a high contrast versus the current theme. Ex: Things like Toasts and Tooltips"
+            description: "Used for elements that are absolutely positioned to overlay content on the page. Is always a dark background regardless of theme. Ex: Things like Toasts and Tooltips"
           },overlayTheme:{
             name: "surface.overlayTheme",
             hex: "#FFFFFF",
