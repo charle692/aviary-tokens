@@ -26,15 +26,6 @@
       "description": "Used for Pills"
     }
   },
-  "border": {
-    "width": {
-      "base": {
-        "value": "[object Object]",
-        "type": "border",
-        "description": "Used for default borders"
-      }
-    }
-  },
   "typography": {
     "letterSpacing": {
       "base": {
