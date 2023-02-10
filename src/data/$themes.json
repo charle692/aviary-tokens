@@ -4,8 +4,7 @@
     "name": "light",
     "selectedTokenSets": {
       "core-light": "source",
-      "light": "enabled",
-      "primitives": "disabled"
+      "light": "enabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -14,8 +13,7 @@
     "name": "dark",
     "selectedTokenSets": {
       "core-dark": "source",
-      "dark": "enabled",
-      "primitives": "disabled"
+      "dark": "enabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -24,8 +22,7 @@
     "name": "emerson",
     "selectedTokenSets": {
       "emerson": "enabled",
-      "core-emerson": "source",
-      "primitives": "disabled"
+      "core-emerson": "source"
     },
     "$figmaStyleReferences": {}
   }
