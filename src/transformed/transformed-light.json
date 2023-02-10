@@ -69,7 +69,7 @@
         "box": {
           "value": "#FCFEFF",
           "type": "color",
-          "description": "Used as a background for a ColorProfile Box."
+          "description": "Used as a background colour for a system container like Box or Message"
         }
       },
       "border": {
