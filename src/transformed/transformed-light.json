@@ -674,6 +674,13 @@
           "description": "Used for link hover colour for light profile components on contrasting surface backgrounds"
         }
       }
+    },
+    "shadow": {
+      "base": {
+        "value": "#36485C",
+        "type": "color",
+        "description": "For use only with box shadow tokens"
+      }
     }
   },
   "shadows": {
@@ -684,7 +691,7 @@
           "y": 1,
           "blur": 2,
           "spread": 0,
-          "color": "",
+          "color": "#36485C 16%",
           "type": "dropShadow"
         },
         "type": "boxShadow",
@@ -696,7 +703,7 @@
           "y": 2,
           "blur": 8,
           "spread": 0,
-          "color": "",
+          "color": "#36485C 20%",
           "type": "dropShadow"
         },
         "type": "boxShadow",
@@ -710,8 +717,8 @@
           "y": 4,
           "blur": 16,
           "spread": 0,
-          "color": "",
-          "type": "boxShadow"
+          "color": "#36485C 16%",
+          "type": "dropShadow"
         },
         "type": "boxShadow"
       }
@@ -723,8 +730,8 @@
           "y": 8,
           "blur": 32,
           "spread": 0,
-          "color": "",
-          "type": "boxShadow"
+          "color": "#36485C 24%",
+          "type": "dropShadow"
         },
         "type": "boxShadow",
         "description": "Used for modals"
