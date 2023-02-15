@@ -21,7 +21,7 @@ StyleDictionary.registerFilter({
   name: "custom/filter/boxShadows",
   matcher: (token) => {
     return (
-      token.attributes.category === "boxShadow"
+      token.attributes.category === "shadow"
     );
   },
 });
