@@ -17,6 +17,15 @@ StyleDictionary.registerFilter({
   }
 })
 
+StyleDictionary.registerFilter({
+  name: "custom/filter/boxShadows",
+  matcher: (token) => {
+    return (
+      token.attributes.category === "boxShadow"
+    );
+  },
+});
+
 // TRANSFORMS
 const isStringPxValue = (token) => {
   if (typeof token.value === "string") {
