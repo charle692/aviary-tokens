@@ -1,5 +1,6 @@
 const StyleDictionary = require("style-dictionary");
 const ChangeCase = require("change-case");
+const tinycolor = require("tinycolor2");
 const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
 
 // FILTERS
@@ -13,18 +14,21 @@ StyleDictionary.registerFilter({
 StyleDictionary.registerFilter({
   name: "custom/filter/borders",
   matcher: (token) => {
-    return token.attributes.category === "borderRadius" || token.attributes.category === "border";
-  }
-})
-
-StyleDictionary.registerFilter({
-  name: "custom/filter/boxShadows",
-  matcher: (token) => {
     return (
-      token.attributes.category === "shadow"
+      token.attributes.category === "borderRadius" ||
+      token.attributes.category === "border"
     );
   },
 });
+
+// StyleDictionary.registerFilter({
+//   name: "custom/filter/boxShadows",
+//   matcher: (token) => {
+//     return (
+//       token.attributes.category === "shadow"
+//     );
+//   },
+// });
 
 // TRANSFORMS
 const isStringPxValue = (token) => {
@@ -53,6 +57,25 @@ StyleDictionary.registerTransform({
 });
 
 StyleDictionary.registerTransform({
+  name: "custom/value/box-shadows",
+  type: "value",
+  matcher: function (token) {
+    return token.attributes.category === "shadow";
+  },
+  transformer: function (token) {
+    // destructure shadow values from original token value
+    const { x, y, blur, spread, color, alpha } = token.original.value;
+
+    // convert hex code to rgba string
+    const shadowColor = tinycolor(color);
+    shadowColor.setAlpha(alpha);
+    shadowColor.toRgbString();
+
+    return `${x}px ${y}px ${blur}px ${spread}px ${shadowColor}`;
+  },
+});
+
+StyleDictionary.registerTransform({
   name: "custom/value/rm-px",
   type: "value",
   matcher: isStringPxValue,
@@ -64,7 +87,8 @@ StyleDictionary.registerTransform({
 StyleDictionary.registerTransform({
   name: "custom/value/font-weight-to-string",
   type: "value",
-  matcher: (token) => token.type === "fontWeights" || token.type === "fontWeight",
+  matcher: (token) =>
+    token.type === "fontWeights" || token.type === "fontWeight",
   transformer: function (token) {
     return token.value.toString();
   },
@@ -80,11 +104,15 @@ const customColorObjectFormatter = (dictionary, theme, isJS) => {
   let prefix = ``;
   // Only add a prefix for theme files, not core ones
   if (!theme?.destination.includes("core")) {
-    const themeWithSlash = theme.destination.substring(0, theme.destination.indexOf("."));
+    const themeWithSlash = theme.destination.substring(
+      0,
+      theme.destination.indexOf(".")
+    );
     const extractedThemeName = { value: themeWithSlash.split("/")[1] };
-    prefix = `${declaration(isJS)}theme: ${valueOrType(extractedThemeName, isJS)}${commaOrColon(
+    prefix = `${declaration(isJS)}theme: ${valueOrType(
+      extractedThemeName,
       isJS
-    )}\n`;
+    )}${commaOrColon(isJS)}\n`;
   }
 
   return (
@@ -112,7 +140,9 @@ const customColorObjectFormatter = (dictionary, theme, isJS) => {
 StyleDictionary.registerFormat({
   name: "custom/format/typescript-color-declarations",
   formatter: ({ dictionary, file }) => {
-    return fileHeader({ file }) + customColorObjectFormatter(dictionary, file, false);
+    return (
+      fileHeader({ file }) + customColorObjectFormatter(dictionary, file, false)
+    );
   },
 });
 
@@ -174,7 +204,9 @@ StyleDictionary.registerFormat({
 StyleDictionary.registerFormat({
   name: "custom/format/typescript-color-declarations-documentation",
   formatter: ({ dictionary, file }) => {
-    return fileHeader({ file }) + colorDocumentationFormatter(dictionary, false);
+    return (
+      fileHeader({ file }) + colorDocumentationFormatter(dictionary, false)
+    );
   },
 });
 
@@ -185,6 +217,7 @@ StyleDictionary.registerTransformGroup({
     "attribute/cti",
     "custom/name/remove-desktop-prefix",
     "custom/name/remove-color-prefix",
+    "custom/value/box-shadows",
   ],
 });
 
@@ -210,5 +243,9 @@ StyleDictionary.registerTransformGroup({
 
 StyleDictionary.registerTransformGroup({
   name: "custom/scss",
-  transforms: ["attribute/cti", "custom/name/remove-desktop-prefix"],
+  transforms: [
+    "attribute/cti",
+    "custom/name/remove-desktop-prefix",
+    "custom/value/box-shadows",
+  ],
 });

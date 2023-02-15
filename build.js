@@ -21,11 +21,6 @@ const getStyleDictionaryConfig = (theme) => {
             filter: "custom/filter/borders",
           },
           {
-            destination: `boxShadows.scss`,
-            format: "scss/variables",
-            filter: "custom/filter/boxShadows",
-          },
-          {
             destination: isCore
               ? `${theme}-colors.scss`
               : `themes/${theme}.scss`,
@@ -59,16 +54,6 @@ const getStyleDictionaryConfig = (theme) => {
             format: "typescript/es6-declarations",
             destination: "borders.d.ts",
             filter: "custom/filter/borders",
-          },
-          {
-            format: "javascript/module-flat",
-            destination: "boxShadows.js",
-            filter: "custom/filter/boxShadows",
-          },
-          {
-            format: "typescript/es6-declarations",
-            destination: "boxShadows.d.ts",
-            filter: "custom/filter/boxShadows",
           },
           {
             format: "custom/format/javascript-colors",
@@ -111,16 +96,6 @@ const getStyleDictionaryConfig = (theme) => {
             format: "typescript/es6-declarations",
             destination: "borders.d.ts",
             filter: "custom/filter/borders",
-          },
-          {
-            format: "javascript/module-flat",
-            destination: "boxShadows.js",
-            filter: "custom/filter/boxShadows",
-          },
-          {
-            format: "typescript/es6-declarations",
-            destination: "boxShadows.d.ts",
-            filter: "custom/filter/boxShadows",
           },
           {
             format: "custom/format/javascript-colors",
