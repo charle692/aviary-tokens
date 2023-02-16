@@ -679,55 +679,112 @@
   "shadows": {
     "card": {
       "base": {
-        "value": {
-          "x": 0,
-          "y": 1,
-          "blur": 2,
-          "spread": 0,
-          "color": "",
-          "type": "dropShadow"
+        "x": {
+          "value": 0,
+          "type": "x"
         },
-        "type": "boxShadow",
-        "description": "Used for static card-like components like Box"
+        "y": {
+          "value": 1,
+          "type": "y"
+        },
+        "blur": {
+          "value": 2,
+          "type": "blur"
+        },
+        "spread": {
+          "value": 0,
+          "type": "spread"
+        },
+        "color": {
+          "value": "",
+          "type": "color"
+        },
+        "type": {
+          "value": "dropShadow",
+          "type": "type"
+        }
       },
       "hover": {
-        "value": {
-          "x": 0,
-          "y": 2,
-          "blur": 8,
-          "spread": 0,
-          "color": "",
-          "type": "dropShadow"
+        "x": {
+          "value": 0,
+          "type": "x"
         },
-        "type": "boxShadow",
-        "description": "Used for hover states on card-like components like Box"
+        "y": {
+          "value": 2,
+          "type": "y"
+        },
+        "blur": {
+          "value": 8,
+          "type": "blur"
+        },
+        "spread": {
+          "value": 0,
+          "type": "spread"
+        },
+        "color": {
+          "value": "",
+          "type": "color"
+        },
+        "type": {
+          "value": "dropShadow",
+          "type": "type"
+        }
       }
     },
     "popover": {
       "base": {
-        "value": {
-          "x": 0,
-          "y": 4,
-          "blur": 16,
-          "spread": 0,
-          "color": "",
-          "type": "boxShadow"
+        "x": {
+          "value": 0,
+          "type": "x"
         },
-        "type": "boxShadow"
+        "y": {
+          "value": 4,
+          "type": "y"
+        },
+        "blur": {
+          "value": 16,
+          "type": "blur"
+        },
+        "spread": {
+          "value": 0,
+          "type": "spread"
+        },
+        "color": {
+          "value": "",
+          "type": "color"
+        },
+        "type": {
+          "value": "boxShadow",
+          "type": "type"
+        }
       }
     },
     "modal": {
       "base": {
-        "value": {
-          "x": 0,
-          "y": 8,
-          "blur": 32,
-          "spread": 0,
-          "color": "",
-          "type": "boxShadow"
+        "x": {
+          "value": 0,
+          "type": "x"
         },
-        "type": "boxShadow",
-        "description": "Used for modals"
+        "y": {
+          "value": 8,
+          "type": "y"
+        },
+        "blur": {
+          "value": 32,
+          "type": "blur"
+        },
+        "spread": {
+          "value": 0,
+          "type": "spread"
+        },
+        "color": {
+          "value": "",
+          "type": "color"
+        },
+        "type": {
+          "value": "boxShadow",
+          "type": "type"
+        }
       }
     }
   }
