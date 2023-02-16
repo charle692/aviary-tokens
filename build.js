@@ -58,9 +58,7 @@ const getStyleDictionaryConfig = (theme) => {
           {
             format: "custom/format/javascript-colors",
             destination: isCore ? `${theme}-colors.js` : `themes/${theme}.js`,
-            filter: {
-              type: "color",
-            },
+            filter: "custom/filter/themeTokens",
           },
           {
             format: "custom/format/typescript-color-declarations",
@@ -100,9 +98,7 @@ const getStyleDictionaryConfig = (theme) => {
           {
             format: "custom/format/javascript-colors",
             destination: isCore ? `${theme}-colors.js` : `themes/${theme}.js`,
-            filter: {
-              type: "color",
-            },
+            filter: "custom/filter/themeTokens",
           },
           {
             format: "custom/format/typescript-color-declarations",
@@ -143,8 +139,8 @@ const getStyleDictionaryConfig = (theme) => {
 
 // Add themes to the array to create theme-specific files under themes folder
 // "core" theme will build files outside of the themes folder
-["primitives", "core-light", "core-dark", "light", "dark", "emerson"].map(
-  (theme) => {
-    StyleDictionary.extend(getStyleDictionaryConfig(theme)).buildAllPlatforms();
-  }
-);
+// const themes = ["primitives", "core-light", "core-dark", "light", "dark", "emerson"];
+
+["core-light", "light"].map((theme) => {
+  StyleDictionary.extend(getStyleDictionaryConfig(theme)).buildAllPlatforms();
+});

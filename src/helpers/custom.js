@@ -21,14 +21,15 @@ StyleDictionary.registerFilter({
   },
 });
 
-// StyleDictionary.registerFilter({
-//   name: "custom/filter/boxShadows",
-//   matcher: (token) => {
-//     return (
-//       token.attributes.category === "shadow"
-//     );
-//   },
-// });
+StyleDictionary.registerFilter({
+  name: "custom/filter/themeTokens",
+  matcher: (token) => {
+    return (
+      token.attributes.category === "shadows" ||
+      token.attributes.category === "colors"
+    );
+  },
+});
 
 // TRANSFORMS
 const isStringPxValue = (token) => {
@@ -60,7 +61,7 @@ StyleDictionary.registerTransform({
   name: "custom/value/box-shadows",
   type: "value",
   matcher: function (token) {
-    return token.attributes.category === "shadow";
+    return token.attributes.category === "shadows";
   },
   transformer: function (token) {
     // destructure shadow values from original token value
@@ -137,6 +138,55 @@ const customColorObjectFormatter = (dictionary, theme, isJS) => {
   );
 };
 
+const customBoxShadowObjectFormatter = (dictionary) => {
+  console.log(dictionary.properties.shadows);
+  // format and flatten these into one line
+  // can we use the custom transform above?
+  // look into TS files
+  // yeet emerson box shadow tokens
+// {
+//   card: {
+//     base: {
+//       x: [Object],
+//       y: [Object],
+//       blur: [Object],
+//       spread: [Object],
+//       color: [Object],
+//       type: [Object]
+//     },
+//     hover: {
+//       x: [Object],
+//       y: [Object],
+//       blur: [Object],
+//       spread: [Object],
+//       color: [Object],
+//       type: [Object]
+//     }
+//   },
+//   popover: {
+//     base: {
+//       x: [Object],
+//       y: [Object],
+//       blur: [Object],
+//       spread: [Object],
+//       color: [Object],
+//       type: [Object]
+//     }
+//   },
+//   modal: {
+//     base: {
+//       x: [Object],
+//       y: [Object],
+//       blur: [Object],
+//       spread: [Object],
+//       color: [Object],
+//       type: [Object]
+//     }
+//   }
+// }
+  return dictionary.properties.shadows;
+};
+
 StyleDictionary.registerFormat({
   name: "custom/format/typescript-color-declarations",
   formatter: ({ dictionary, file }) => {
@@ -152,6 +202,7 @@ StyleDictionary.registerFormat({
     return (
       fileHeader({ file }) +
       `module.exports = {` +
+      customBoxShadowObjectFormatter(dictionary) +
       customColorObjectFormatter(dictionary, file, true) +
       `};`
     );
