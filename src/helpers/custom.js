@@ -145,13 +145,15 @@ const customBoxShadowObjectFormatter = (dictionary, isJS) => {
     // Object.entries(boxShadows).map((tokens) => {
     //   const shadowObj = tokens[0];
     //   console.log(shadowObj);
-      // const filteredTokens = dictionary.allTokens.filter(
-      //   (token) => token.attributes.type === shadowObj
-      // );
+    // const filteredTokens = dictionary.allTokens.filter(
+    //   (token) => token.attributes.type === shadowObj
+    // );
 
-      console.log(Object.entries(boxShadows));
+    console.log(Object.entries(boxShadows));
 
-      return `boxShadows: {` + boxShadows?.card.base.x.value + `}${commaOrColon(isJS)}`;
+    return (
+      `boxShadows: {` + boxShadows?.card.base.x.value + `}${commaOrColon(isJS)}`
+    );
 
     // });
     // .join(`\n`);
