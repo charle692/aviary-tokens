@@ -691,7 +691,7 @@
           "y": "1",
           "blur": "2",
           "spread": "0",
-          "color": "{colors.shadow.base} 16%",
+          "color": "rgba({colors.shadow.base}, 0.16)",
           "type": "dropShadow"
         },
         "type": "boxShadow",
@@ -703,7 +703,7 @@
           "y": "2",
           "blur": "8",
           "spread": "0",
-          "color": "{colors.shadow.base} 20%",
+          "color": "rgba({colors.shadow.base}, 0.20)",
           "type": "dropShadow"
         },
         "type": "boxShadow",
@@ -717,7 +717,7 @@
           "y": "4",
           "blur": "16",
           "spread": "0",
-          "color": "{colors.shadow.base} 16%",
+          "color": "rgba({colors.shadow.base}, 0.16)",
           "type": "dropShadow"
         },
         "type": "boxShadow"
@@ -730,7 +730,7 @@
           "y": "8",
           "blur": "32",
           "spread": "0",
-          "color": "{colors.shadow.base} 24%",
+          "color": "rgba({colors.shadow.base}, 0.24)",
           "type": "dropShadow"
         },
         "type": "boxShadow",
