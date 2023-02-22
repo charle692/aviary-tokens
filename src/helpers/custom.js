@@ -25,7 +25,7 @@ StyleDictionary.registerFilter({
   name: "custom/filter/themeTokens",
   matcher: (token) => {
     return (
-      token.attributes.category === "shadows" ||
+      token.attributes.category === "boxShadows" ||
       token.attributes.category === "colors"
     );
   },
@@ -138,12 +138,29 @@ const customColorObjectFormatter = (dictionary, theme, isJS) => {
   );
 };
 
-const customBoxShadowObjectFormatter = (dictionary) => {
-  console.log(dictionary.properties.shadows);
-  // format and flatten these into one line
-  // can we use the custom transform above?
-  // look into TS files
-  // yeet emerson box shadow tokens
+const customBoxShadowObjectFormatter = (dictionary, isJS) => {
+  const boxShadows = dictionary?.properties?.boxShadows;
+
+  if (boxShadows) {
+    // Object.entries(boxShadows).map((tokens) => {
+    //   const shadowObj = tokens[0];
+    //   console.log(shadowObj);
+      // const filteredTokens = dictionary.allTokens.filter(
+      //   (token) => token.attributes.type === shadowObj
+      // );
+
+      console.log(Object.entries(boxShadows));
+
+      return `boxShadows: {` + boxShadows?.card.base.x.value + `}${commaOrColon(isJS)}`;
+
+    // });
+    // .join(`\n`);
+  }
+};
+// format and flatten these into one line
+// can we use the custom transform above?
+// look into TS files
+// yeet emerson box shadow tokens
 // {
 //   card: {
 //     base: {
@@ -184,8 +201,6 @@ const customBoxShadowObjectFormatter = (dictionary) => {
 //     }
 //   }
 // }
-  return dictionary.properties.shadows;
-};
 
 StyleDictionary.registerFormat({
   name: "custom/format/typescript-color-declarations",
@@ -202,8 +217,8 @@ StyleDictionary.registerFormat({
     return (
       fileHeader({ file }) +
       `module.exports = {` +
-      customBoxShadowObjectFormatter(dictionary) +
       customColorObjectFormatter(dictionary, file, true) +
+      customBoxShadowObjectFormatter(dictionary, true) +
       `};`
     );
   },
