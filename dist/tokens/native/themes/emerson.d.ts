@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 10 Feb 2023 15:52:39 GMT
+ * Generated on Wed, 22 Feb 2023 22:40:13 GMT
  */
 
 export const theme: string;
