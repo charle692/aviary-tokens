@@ -7,7 +7,8 @@ StyleDictionary.registerFilter({
   name: "custom/filter/borders",
   matcher: (token) => {
     return (
-      token.attributes.category === "borderRadius"
+      token.attributes.category === "borderRadius" ||
+      token.attributes.category === "borderWidth"
     );
   },
 });
