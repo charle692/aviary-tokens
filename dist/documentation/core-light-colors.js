@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 22 Feb 2023 22:40:12 GMT
+ * Generated on Tue, 02 May 2023 17:50:47 GMT
  */
 
 module.exports = {green : {100:{
@@ -212,5 +212,38 @@ shades : {white:{
           },transparent:{
             name: "shades.transparent",
             hex: "transparent",
+            
+          }},
+yellow : {100:{
+            name: "yellow.100",
+            hex: "#faf8f2",
+            
+          },200:{
+            name: "yellow.200",
+            hex: "#fcf3dd",
+            
+          },300:{
+            name: "yellow.300",
+            hex: "#fce7b1",
+            
+          },400:{
+            name: "yellow.400",
+            hex: "#fcd97e",
+            
+          },500:{
+            name: "yellow.500",
+            hex: "#fccb4c",
+            
+          },600:{
+            name: "yellow.600",
+            hex: "#ffc121",
+            
+          },700:{
+            name: "yellow.700",
+            hex: "#f7b200",
+            
+          },800:{
+            name: "yellow.800",
+            hex: "#e5a500",
             
           }},};
