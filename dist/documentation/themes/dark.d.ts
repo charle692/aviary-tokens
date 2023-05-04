@@ -1,6 +1,10 @@
 /**
  * Do not edit directly
+<<<<<<< HEAD
  * Generated on Fri, 21 Apr 2023 15:32:02 GMT
+=======
+ * Generated on Tue, 02 May 2023 17:50:47 GMT
+>>>>>>> 749e990c7e694e41b569b0fce344b83592575011
  */
 
 export const text : {emphasis:{
