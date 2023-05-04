@@ -4,12 +4,7 @@
       "base": {
         "value": "4px",
         "type": "borderRadius",
-        "description": "Default border radius option for most components"
-      },
-      "card": {
-        "value": "8px",
-        "type": "borderRadius",
-        "description": "Used for card-type components like NewBox, Accordion, etc."
+        "description": "Default border radius option for most components including card-type components like NewBox, Accordion, etc."
       },
       "circle": {
         "value": "50%",
