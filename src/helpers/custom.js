@@ -4,6 +4,16 @@ const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
 
 // FILTERS
 StyleDictionary.registerFilter({
+  name: "custom/filter/borders",
+  matcher: (token) => {
+    return (
+      token.type === "borderRadius" ||
+      token.type === "borderWidth"
+    );
+  },
+});
+
+StyleDictionary.registerFilter({
   name: "custom/filter/typography",
   matcher: function (token) {
     return token.attributes.category === "typography";
@@ -48,7 +58,8 @@ StyleDictionary.registerTransform({
 StyleDictionary.registerTransform({
   name: "custom/value/font-weight-to-string",
   type: "value",
-  matcher: (token) => token.type === "fontWeights" || token.type === "fontWeight",
+  matcher: (token) =>
+    token.type === "fontWeights" || token.type === "fontWeight",
   transformer: function (token) {
     return token.value.toString();
   },
@@ -64,11 +75,15 @@ const customColorObjectFormatter = (dictionary, theme, isJS) => {
   let prefix = ``;
   // Only add a prefix for theme files, not core ones
   if (!theme?.destination.includes("core")) {
-    const themeWithSlash = theme.destination.substring(0, theme.destination.indexOf("."));
+    const themeWithSlash = theme.destination.substring(
+      0,
+      theme.destination.indexOf(".")
+    );
     const extractedThemeName = { value: themeWithSlash.split("/")[1] };
-    prefix = `${declaration(isJS)}theme: ${valueOrType(extractedThemeName, isJS)}${commaOrColon(
+    prefix = `${declaration(isJS)}theme: ${valueOrType(
+      extractedThemeName,
       isJS
-    )}\n`;
+    )}${commaOrColon(isJS)}\n`;
   }
 
   return (
@@ -96,7 +111,9 @@ const customColorObjectFormatter = (dictionary, theme, isJS) => {
 StyleDictionary.registerFormat({
   name: "custom/format/typescript-color-declarations",
   formatter: ({ dictionary, file }) => {
-    return fileHeader({ file }) + customColorObjectFormatter(dictionary, file, false);
+    return (
+      fileHeader({ file }) + customColorObjectFormatter(dictionary, file, false)
+    );
   },
 });
 
@@ -158,7 +175,9 @@ StyleDictionary.registerFormat({
 StyleDictionary.registerFormat({
   name: "custom/format/typescript-color-declarations-documentation",
   formatter: ({ dictionary, file }) => {
-    return fileHeader({ file }) + colorDocumentationFormatter(dictionary, false);
+    return (
+      fileHeader({ file }) + colorDocumentationFormatter(dictionary, false)
+    );
   },
 });
 

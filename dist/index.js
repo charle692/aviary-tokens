@@ -28,13 +28,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var _exportNames = {
+  borders: true,
   typography: true,
   lightThemeDocumentation: true,
   darkThemeDocumentation: true,
   coreDarkDocumentation: true,
   coreLightDocumentation: true
 };
-exports.typography = exports.lightThemeDocumentation = exports.darkThemeDocumentation = exports.coreLightDocumentation = exports.coreDarkDocumentation = void 0;
+exports.typography = exports.lightThemeDocumentation = exports.darkThemeDocumentation = exports.coreLightDocumentation = exports.coreDarkDocumentation = exports.borders = void 0;
 
 var _helpers = require("./helpers");
 
@@ -63,6 +64,10 @@ Object.keys(_types).forEach(function (key) {
     }
   });
 });
+
+var _borders = _interopRequireWildcard(require("../dist/tokens/ts/borders"));
+
+exports.borders = _borders;
 
 var _typography = _interopRequireWildcard(require("../dist/tokens/ts/typography"));
 

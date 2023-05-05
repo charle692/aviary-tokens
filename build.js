@@ -11,6 +11,11 @@ const getStyleDictionaryConfig = (theme) => {
         buildPath: "dist/tokens/scss/",
         files: [
           {
+            destination: `borders.scss`,
+            format: "scss/variables",
+            filter: "custom/filter/borders",
+          },
+          {
             destination: `typography.scss`,
             format: "scss/variables",
             filter: "custom/filter/typography",
@@ -30,6 +35,16 @@ const getStyleDictionaryConfig = (theme) => {
         transformGroup: "custom/aviary",
         buildPath: "dist/tokens/ts/",
         files: [
+          {
+            format: "javascript/module-flat",
+            destination: "borders.js",
+            filter: "custom/filter/borders",
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: "borders.d.ts",
+            filter: "custom/filter/borders",
+          },
           {
             format: "javascript/module-flat",
             destination: "typography.js",
@@ -62,6 +77,16 @@ const getStyleDictionaryConfig = (theme) => {
         transformGroup: "custom/native",
         buildPath: "dist/tokens/native/",
         files: [
+          {
+            format: "javascript/module-flat",
+            destination: "borders.js",
+            filter: "custom/filter/borders",
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: "borders.d.ts",
+            filter: "custom/filter/borders",
+          },
           {
             format: "javascript/module-flat",
             destination: "typography.js",
