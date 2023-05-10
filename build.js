@@ -11,14 +11,14 @@ const getStyleDictionaryConfig = (theme) => {
         buildPath: "dist/tokens/scss/",
         files: [
           {
-            destination: `typography.scss`,
-            format: "scss/variables",
-            filter: "custom/filter/typography",
-          },
-          {
             destination: `borders.scss`,
             format: "scss/variables",
             filter: "custom/filter/borders",
+          },
+          {
+            destination: `typography.scss`,
+            format: "scss/variables",
+            filter: "custom/filter/typography",
           },
           {
             destination: isCore
@@ -35,6 +35,16 @@ const getStyleDictionaryConfig = (theme) => {
         transformGroup: "custom/aviary",
         buildPath: "dist/tokens/ts/",
         files: [
+          {
+            format: "javascript/module-flat",
+            destination: "borders.js",
+            filter: "custom/filter/borders",
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: "borders.d.ts",
+            filter: "custom/filter/borders",
+          },
           {
             format: "javascript/module-flat",
             destination: "typography.js",
@@ -75,6 +85,16 @@ const getStyleDictionaryConfig = (theme) => {
         transformGroup: "custom/native",
         buildPath: "dist/tokens/native/",
         files: [
+          {
+            format: "javascript/module-flat",
+            destination: "borders.js",
+            filter: "custom/filter/borders",
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: "borders.d.ts",
+            filter: "custom/filter/borders",
+          },
           {
             format: "javascript/module-flat",
             destination: "typography.js",
@@ -139,8 +159,15 @@ const getStyleDictionaryConfig = (theme) => {
 
 // Add themes to the array to create theme-specific files under themes folder
 // "core" theme will build files outside of the themes folder
-// const themes = ["primitives", "core-light", "core-dark", "light", "dark", "emerson"];
+const themes = [
+  "primitives",
+  "core-light",
+  "core-dark",
+  "light",
+  "dark",
+  "emerson",
+];
 
-["core-light", "light"].map((theme) => {
+themes.map((theme) => {
   StyleDictionary.extend(getStyleDictionaryConfig(theme)).buildAllPlatforms();
 });

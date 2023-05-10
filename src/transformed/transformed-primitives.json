@@ -1,29 +1,32 @@
 {
-  "borderRadius": {
-    "base": {
-      "value": "4px",
-      "type": "borderRadius",
-      "description": "Default border radius option for most components"
+  "borders": {
+    "radius": {
+      "base": {
+        "value": "8px",
+        "type": "borderRadius",
+        "description": "Default border radius option for most components including card-type components like Box, Accordion, etc."
+      },
+      "circle": {
+        "value": "50%",
+        "type": "borderRadius",
+        "description": "Used for circular components like Avatar"
+      },
+      "modal": {
+        "value": "8px",
+        "type": "borderRadius",
+        "description": "Used for Modals"
+      },
+      "pill": {
+        "value": "100px",
+        "type": "borderRadius",
+        "description": "Used for Pills"
+      }
     },
-    "card": {
-      "value": "8px",
-      "type": "borderRadius",
-      "description": "Used for card-type components like NewBox, Accordion, etc."
-    },
-    "circle": {
-      "value": "50%",
-      "type": "borderRadius",
-      "description": "Used for circular components like Avatar"
-    },
-    "modal": {
-      "value": "8px",
-      "type": "borderRadius",
-      "description": "Used for Modals"
-    },
-    "pill": {
-      "value": "100px",
-      "type": "borderRadius",
-      "description": "Used for Pills"
+    "width": {
+      "base": {
+        "value": "1px",
+        "type": "borderWidth"
+      }
     }
   },
   "typography": {
