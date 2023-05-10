@@ -21,13 +21,6 @@ StyleDictionary.registerFilter({
 });
 
 StyleDictionary.registerFilter({
-  name: "custom/filter/borders",
-  matcher: (token) => {
-    return token.attributes.category === "borderRadius" || token.attributes.category === "border";
-  },
-});
-
-StyleDictionary.registerFilter({
   name: "custom/filter/themeTokens",
   matcher: (token) => {
     return token.attributes.category === "boxShadows" || token.attributes.category === "colors";
