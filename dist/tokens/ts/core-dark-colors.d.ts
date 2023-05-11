@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 05 May 2023 14:00:05 GMT
+ * Generated on Wed, 10 May 2023 23:21:54 GMT
  */
 
 export const green : {100 : string,200 : string,300 : string,400 : string,500 : string,600 : string,700 : string,800 : string};
@@ -9,4 +9,4 @@ export const red : {100 : string,200 : string,300 : string,400 : string,500 : st
 export const purple : {100 : string,200 : string,300 : string,400 : string,500 : string,600 : string,700 : string,800 : string};
 export const orange : {100 : string,200 : string,300 : string,400 : string,500 : string,600 : string,700 : string,800 : string};
 export const grey : {100 : string,200 : string,300 : string,400 : string,500 : string,600 : string,700 : string,800 : string};
-export const shades : {white : string,black : string,transparent : string};
+export const shades : {white : string,black : string,transparent : string};export const boxShadows: {};
