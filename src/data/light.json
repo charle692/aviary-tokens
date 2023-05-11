@@ -733,7 +733,8 @@
           "color": "rgba({colors.shadow.base}, 0.16)",
           "type": "dropShadow"
         },
-        "type": "boxShadow"
+        "type": "boxShadow",
+        "description": "Used for popover components like Tooltip"
       }
     },
     "modal": {
