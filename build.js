@@ -75,9 +75,7 @@ const getStyleDictionaryConfig = (theme) => {
             destination: isCore
               ? `${theme}-colors.d.ts`
               : `themes/${theme}.d.ts`,
-            filter: {
-              type: "color",
-            },
+            filter: "custom/filter/themeTokens",
           },
         ],
       },
@@ -125,9 +123,7 @@ const getStyleDictionaryConfig = (theme) => {
             destination: isCore
               ? `${theme}-colors.d.ts`
               : `themes/${theme}.d.ts`,
-            filter: {
-              type: "color",
-            },
+            filter: "custom/filter/themeTokens",
           },
         ],
       },

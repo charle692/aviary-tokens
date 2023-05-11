@@ -6,10 +6,7 @@ const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
 StyleDictionary.registerFilter({
   name: "custom/filter/borders",
   matcher: (token) => {
-    return (
-      token.type === "borderRadius" ||
-      token.type === "borderWidth"
-    );
+    return token.type === "borderRadius" || token.type === "borderWidth";
   },
 });
 
@@ -23,7 +20,10 @@ StyleDictionary.registerFilter({
 StyleDictionary.registerFilter({
   name: "custom/filter/themeTokens",
   matcher: (token) => {
-    return token.attributes.category === "boxShadows" || token.attributes.category === "colors";
+    return (
+      token.attributes.category === "boxShadows" ||
+      token.attributes.category === "colors"
+    );
   },
 });
 
@@ -119,12 +119,18 @@ const customBoxShadowObjectFormatter = (dictionary, isJS) => {
   const boxShadows = dictionary.allTokens.filter(
     (token) => token.attributes.category === "boxShadows"
   );
+  const valueOrType = (token, isJS) => {
+    console.log(token.value);
+    isJS
+      ? `${token.value.x}px ${token.value.y}px ${token.value.blur}px ${token.value.spread}px ${token.value.color}`
+      : `${getTypeScriptType(token.value)}`;
+  };
 
   return (
     declaration(isJS) +
     `boxShadows: {` +
     boxShadows.map((token) => {
-      return `${token.name} : "${token.value.x}px ${token.value.y}px ${token.value.blur}px ${token.value.spread}px ${token.value.color}"`;
+      return `${token.name} : ` + valueOrType(token, isJS);
     }) +
     `}` +
     commaOrColon(isJS)
