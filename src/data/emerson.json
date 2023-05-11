@@ -696,7 +696,7 @@
       }
     }
   },
-  "shadows": {
+  "boxShadows": {
     "card": {
       "base": {
         "value": {
