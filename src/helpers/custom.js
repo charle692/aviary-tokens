@@ -122,7 +122,7 @@ const customBoxShadowObjectFormatter = (dictionary, isJS) => {
   const valueOrType = (token, isJS) => {
     return isJS
       ? `"${token.value.x}px ${token.value.y}px ${token.value.blur}px ${token.value.spread}px ${token.value.color}"`
-      : `${getTypeScriptType(token.value)}`;
+      : `string`;
   };
 
   return (
