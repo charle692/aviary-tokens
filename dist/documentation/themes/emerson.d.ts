@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 10 May 2023 23:21:54 GMT
+ * Generated on Thu, 11 May 2023 14:25:58 GMT
  */
 
 export const text : {emphasis:{
@@ -499,6 +499,11 @@ export const light : {backgroundBase:{
             hex: string,
             description: string
           },linkMutedHover:{
+            name: string,
+            hex: string,
+            description: string
+          }};
+export const shadow : {base:{
             name: string,
             hex: string,
             description: string

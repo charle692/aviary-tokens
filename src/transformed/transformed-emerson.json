@@ -687,6 +687,13 @@
           "description": "Used for link hover colour for light profile components on contrasting surface backgrounds"
         }
       }
+    },
+    "shadow": {
+      "base": {
+        "value": "#000000",
+        "type": "color",
+        "description": "For use only with box shadow tokens"
+      }
     }
   },
   "shadows": {
@@ -726,7 +733,8 @@
           "color": "",
           "type": "boxShadow"
         },
-        "type": "boxShadow"
+        "type": "boxShadow",
+        "description": "Used for popover components like Tooltip"
       }
     },
     "modal": {

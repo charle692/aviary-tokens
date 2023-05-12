@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 10 May 2023 23:21:54 GMT
+ * Generated on Thu, 11 May 2023 14:25:58 GMT
  */
 
 export const theme: string;
@@ -15,4 +15,5 @@ export const highlight : {textBase : string,textHover : string,textActive : stri
 export const disabled : {text : string,background : string,nakedBackground : string,border : string,inputBackground : string,inputLabelText : string};
 export const input : {backgroundBase : string,backgroundHover : string,backgroundInformation : string,textBase : string,textInformation : string,textInformationError : string,textLabel : string,textFloatingLabel : string,textFloatingLabelError : string,textPlaceholder : string,textActive : string,borderBase : string,borderError : string,borderHover : string,borderEmphasized : string,borderEmphasizedHover : string,borderActive : string};
 export const separator : {base : string};
-export const light : {backgroundBase : string,backgroundContrast : string,backgroundHover : string,backgroundActive : string,textBase : string,linkMutedBase : string,linkMutedHover : string};export const boxShadows: {};
+export const light : {backgroundBase : string,backgroundContrast : string,backgroundHover : string,backgroundActive : string,textBase : string,linkMutedBase : string,linkMutedHover : string};
+export const shadow : {base : string};export const boxShadows: {};
