@@ -120,10 +120,12 @@ const customBoxShadowObjectFormatter = (dictionary, isJS) => {
     (token) => token.attributes.category === "boxShadows"
   );
   const valueOrType = (token, isJS) => {
-    console.log(token.value);
-    isJS
-      ? `${token.value.x}px ${token.value.y}px ${token.value.blur}px ${token.value.spread}px ${token.value.color}`
-      : `${getTypeScriptType(token.value)}`;
+    console.log(token.value.color);
+    console.log({ isJS });
+    // isJS
+    //   ? `${token.value.x}px ${token.value.y}px ${token.value.blur}px ${token.value.spread}px`
+    //   : `${getTypeScriptType(token.value)}`;
+    isJS ? "true" : "False";
   };
 
   return (
