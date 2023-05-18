@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 05 May 2023 14:00:05 GMT
+ * Generated on Fri, 12 May 2023 16:40:48 GMT
  */
 
 module.exports = {theme: "emerson",
@@ -15,4 +15,5 @@ highlight : {textBase : "#533E7D",textHover : "#3B2566",textActive : "#2A174F",b
 disabled : {text : "#2D3238",background : "#98999B",nakedBackground : "transparent",border : "#515357",inputBackground : "#616568",inputLabelText : "#2D3238"},
 input : {backgroundBase : "#98999B",backgroundHover : "#616568",backgroundInformation : "#FFFFFF",textBase : "#22272B",textInformation : "#22272B",textInformationError : "#AF2645",textLabel : "#22272B",textFloatingLabel : "#0281d7",textFloatingLabelError : "#AF2645",textPlaceholder : "#2D3238",textActive : "#101012",borderBase : "#616568",borderError : "#AF2645",borderHover : "#515357",borderEmphasized : "#2D3238",borderEmphasizedHover : "#22272B",borderActive : "#0281d7"},
 separator : {base : "#616568"},
-light : {backgroundBase : "#FFFFFF",backgroundContrast : "#22272B",backgroundHover : "#98999B",backgroundActive : "#616568",textBase : "#101012",linkMutedBase : "#98999B",linkMutedHover : "#FFFFFF"},};
+light : {backgroundBase : "#FFFFFF",backgroundContrast : "#22272B",backgroundHover : "#98999B",backgroundActive : "#616568",textBase : "#101012",linkMutedBase : "#98999B",linkMutedHover : "#FFFFFF"},
+shadow : {base : "#000000"},boxShadows: {cardBase : "0px 1px 2px 0px #00000029",cardHover : "0px 2px 8px 0px #00000033",popoverBase : "0px 4px 16px 0px #00000029",modalBase : "0px 8px 32px 0px #0000003d"},};

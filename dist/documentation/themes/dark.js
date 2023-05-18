@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 05 May 2023 14:00:05 GMT
+ * Generated on Fri, 12 May 2023 16:40:48 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -502,4 +502,9 @@ light : {backgroundBase:{
             name: "light.linkMutedHover",
             hex: "#FFFFFF",
             description: "Used for link hover colour for light profile components on contrasting surface backgrounds"
+          }},
+shadow : {base:{
+            name: "shadow.base",
+            hex: "#000000",
+            description: "For use only with box shadow tokens"
           }},};

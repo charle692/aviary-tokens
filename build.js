@@ -56,20 +56,26 @@ const getStyleDictionaryConfig = (theme) => {
             filter: "custom/filter/typography",
           },
           {
+            format: "javascript/module-flat",
+            destination: "borders.js",
+            filter: "custom/filter/borders",
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: "borders.d.ts",
+            filter: "custom/filter/borders",
+          },
+          {
             format: "custom/format/javascript-colors",
             destination: isCore ? `${theme}-colors.js` : `themes/${theme}.js`,
-            filter: {
-              type: "color",
-            },
+            filter: "custom/filter/themeTokens",
           },
           {
             format: "custom/format/typescript-color-declarations",
             destination: isCore
               ? `${theme}-colors.d.ts`
               : `themes/${theme}.d.ts`,
-            filter: {
-              type: "color",
-            },
+            filter: "custom/filter/themeTokens",
           },
         ],
       },
@@ -98,20 +104,26 @@ const getStyleDictionaryConfig = (theme) => {
             filter: "custom/filter/typography",
           },
           {
+            format: "javascript/module-flat",
+            destination: "borders.js",
+            filter: "custom/filter/borders",
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: "borders.d.ts",
+            filter: "custom/filter/borders",
+          },
+          {
             format: "custom/format/javascript-colors",
             destination: isCore ? `${theme}-colors.js` : `themes/${theme}.js`,
-            filter: {
-              type: "color",
-            },
+            filter: "custom/filter/themeTokens",
           },
           {
             format: "custom/format/typescript-color-declarations",
             destination: isCore
               ? `${theme}-colors.d.ts`
               : `themes/${theme}.d.ts`,
-            filter: {
-              type: "color",
-            },
+            filter: "custom/filter/themeTokens",
           },
         ],
       },

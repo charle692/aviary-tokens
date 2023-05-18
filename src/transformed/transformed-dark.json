@@ -687,6 +687,69 @@
           "description": "Used for link hover colour for light profile components on contrasting surface backgrounds"
         }
       }
+    },
+    "shadow": {
+      "base": {
+        "value": "#000000",
+        "type": "color",
+        "description": "For use only with box shadow tokens"
+      }
+    }
+  },
+  "boxShadows": {
+    "card": {
+      "base": {
+        "value": {
+          "x": 0,
+          "y": 1,
+          "blur": 2,
+          "spread": 0,
+          "color": "#000000 16%",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow",
+        "description": "Used for static card-like components like Box"
+      },
+      "hover": {
+        "value": {
+          "x": 0,
+          "y": 2,
+          "blur": 8,
+          "spread": 0,
+          "color": "#000000 20%",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow",
+        "description": "Used for hover states on card-like components like Box"
+      }
+    },
+    "popover": {
+      "base": {
+        "value": {
+          "x": 0,
+          "y": 4,
+          "blur": 16,
+          "spread": 0,
+          "color": "#000000 16%",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow",
+        "description": "Used for popover components like Tooltip"
+      }
+    },
+    "modal": {
+      "base": {
+        "value": {
+          "x": 0,
+          "y": 8,
+          "blur": 32,
+          "spread": 0,
+          "color": "#000000 24%",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow",
+        "description": "Used for modals"
+      }
     }
   }
 }

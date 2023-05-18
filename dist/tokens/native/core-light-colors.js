@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 05 May 2023 14:00:05 GMT
+ * Generated on Fri, 12 May 2023 16:40:48 GMT
  */
 
 module.exports = {green : {100 : "#FAFFFC",200 : "#EBF2EF",300 : "#D1E0D9",400 : "#B6CFC2",500 : "#86B09B",600 : "#307553",700 : "#275E43",800 : "#244C38"},
@@ -10,4 +10,4 @@ purple : {100 : "#FCFAFF",200 : "#F2ECFE",300 : "#D7CEE9",400 : "#B9ABD5",500 : 
 orange : {100 : "#FFFAF5",200 : "#FFF3E8",300 : "#F3D8C0",400 : "#E7B88F",500 : "#CF8545",600 : "#B4631D",700 : "#8E4D14",800 : "#784213"},
 grey : {100 : "#FCFEFF",200 : "#F5F7FA",300 : "#E6EDF5",400 : "#C8D3E0",500 : "#596D84",600 : "#475A70",700 : "#36485C",800 : "#2E3A47"},
 shades : {white : "#FFFFFF",black : "#000000",transparent : "transparent"},
-yellow : {100 : "#faf8f2",200 : "#fcf3dd",300 : "#fce7b1",400 : "#fcd97e",500 : "#fccb4c",600 : "#ffc121",700 : "#f7b200",800 : "#e5a500"},};
+yellow : {100 : "#faf8f2",200 : "#fcf3dd",300 : "#fce7b1",400 : "#fcd97e",500 : "#fccb4c",600 : "#ffc121",700 : "#f7b200",800 : "#e5a500"},boxShadows: {},};

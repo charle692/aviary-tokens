@@ -6,10 +6,7 @@ const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
 StyleDictionary.registerFilter({
   name: "custom/filter/borders",
   matcher: (token) => {
-    return (
-      token.type === "borderRadius" ||
-      token.type === "borderWidth"
-    );
+    return token.type === "borderRadius" || token.type === "borderWidth";
   },
 });
 
@@ -17,6 +14,16 @@ StyleDictionary.registerFilter({
   name: "custom/filter/typography",
   matcher: function (token) {
     return token.attributes.category === "typography";
+  },
+});
+
+StyleDictionary.registerFilter({
+  name: "custom/filter/themeTokens",
+  matcher: (token) => {
+    return (
+      token.attributes.category === "boxShadows" ||
+      token.attributes.category === "colors"
+    );
   },
 });
 
@@ -108,11 +115,34 @@ const customColorObjectFormatter = (dictionary, theme, isJS) => {
   );
 };
 
+const customBoxShadowObjectFormatter = (dictionary, isJS) => {
+  const boxShadows = dictionary.allTokens.filter(
+    (token) => token.attributes.category === "boxShadows"
+  );
+  const valueOrType = (token, isJS) => {
+    return isJS
+      ? `"${token.value.x}px ${token.value.y}px ${token.value.blur}px ${token.value.spread}px ${token.value.color}"`
+      : `string`;
+  };
+
+  return (
+    declaration(isJS) +
+    `boxShadows: {` +
+    boxShadows.map((token) => {
+      return `${token.name} : ` + valueOrType(token, isJS);
+    }) +
+    `}` +
+    commaOrColon(isJS)
+  );
+};
+
 StyleDictionary.registerFormat({
   name: "custom/format/typescript-color-declarations",
   formatter: ({ dictionary, file }) => {
     return (
-      fileHeader({ file }) + customColorObjectFormatter(dictionary, file, false)
+      fileHeader({ file }) +
+      customColorObjectFormatter(dictionary, file, false) +
+      customBoxShadowObjectFormatter(dictionary, false)
     );
   },
 });
@@ -124,6 +154,7 @@ StyleDictionary.registerFormat({
       fileHeader({ file }) +
       `module.exports = {` +
       customColorObjectFormatter(dictionary, file, true) +
+      customBoxShadowObjectFormatter(dictionary, true) +
       `};`
     );
   },
