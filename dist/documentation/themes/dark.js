@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 19 May 2023 18:16:35 GMT
+ * Generated on Tue, 23 May 2023 17:05:23 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -162,6 +162,59 @@ primary : {textBase:{
             name: "primary.borderActive",
             hex: "#1A5740",
             description: "Used for the pressed border colour for primary components such as buttons"
+          }},
+success : {textBase:{
+            name: "success.textBase",
+            hex: "#42AD86",
+            description: "Used as the text or fill colour for successful intention versions of components such as message, pill, or box"
+          },textHover:{
+            name: "success.textHover",
+            hex: "#86D6B9",
+            description: "Used as the hovered text or fill colour for successful intention versions of components such as message, pill, or box"
+          },textActive:{
+            name: "success.textActive",
+            hex: "#DBFFF1",
+            description: "Used as the pressed text or fill colour for successful intention versions of components such as message, pill, or box"
+          },backgroundBase:{
+            name: "success.backgroundBase",
+            hex: "#288563",
+            description: "Description to come."
+          },backgroundHover:{
+            name: "success.backgroundHover",
+            hex: "#256E53",
+            description: "Description to come."
+          },backgroundActive:{
+            name: "success.backgroundActive",
+            hex: "#1A5740",
+            description: "Description to come."
+          },backgroundMuted:{
+            name: "success.backgroundMuted",
+            hex: "#13402F",
+            description: "Used as the muted background for successful intention versions of components such as message, pill, or box. Paired with successful.textBase for a subtler contrast."
+          },backgroundMutedHover:{
+            name: "success.backgroundMutedHover",
+            hex: "#1A5740",
+            description: "Used as the hovered muted background for successful intention versions of components such as message, pill, or box. Paired with successful.textBase for a subtler contrast"
+          },backgroundMutedActive:{
+            name: "success.backgroundMutedActive",
+            hex: "#256E53",
+            description: "Used as the pressed muted background for successful intention versions of components such as message, pill, or box. Paired with successful.textBase for a subtler contrast"
+          },backgroundBox:{
+            name: "success.backgroundBox",
+            hex: "#0C291E",
+            description: "Used as a very light background for successful intention versions of components such as message, pill, or box. Used for containers with content blocks"
+          },borderBase:{
+            name: "success.borderBase",
+            hex: "#288563",
+            description: "Used for the border colour for successful intention versions of components such as buttons and Message"
+          },borderHover:{
+            name: "success.borderHover",
+            hex: "#256E53",
+            description: "Used for the hovered border colour for successful components such as message"
+          },borderActive:{
+            name: "success.borderActive",
+            hex: "#1A5740",
+            description: "Used for the pressed border colour for successful components such as message"
           }},
 info : {textBase:{
             name: "info.textBase",
