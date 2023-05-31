@@ -23,17 +23,21 @@ require("core-js/modules/es.symbol.iterator.js");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.light = exports.emerson = exports.dark = void 0;
+exports.lightDS3 = exports.light = exports.emerson = exports.dark = void 0;
 
-var light = _interopRequireWildcard(require("./dist/tokens/ts/themes/light"));
+var light = _interopRequireWildcard(require("../../dist/tokens/ts/themes/light"));
 
 exports.light = light;
 
-var dark = _interopRequireWildcard(require("./dist/tokens/ts/themes/dark"));
+var lightDS3 = _interopRequireWildcard(require("../../dist/tokens/ts/themes/light-ds3"));
+
+exports.lightDS3 = lightDS3;
+
+var dark = _interopRequireWildcard(require("../../dist/tokens/ts/themes/dark"));
 
 exports.dark = dark;
 
-var emerson = _interopRequireWildcard(require("./dist/tokens/ts/themes/emerson"));
+var emerson = _interopRequireWildcard(require("../../dist/tokens/ts/themes/emerson"));
 
 exports.emerson = emerson;
 
