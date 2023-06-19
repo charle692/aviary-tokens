@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 31 May 2023 20:32:50 GMT
+ * Generated on Mon, 19 Jun 2023 19:41:15 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -112,7 +112,7 @@ surface : {level0:{
           }},
 primary : {textBase:{
             name: "primary.textBase",
-            hex: "#307553",
+            hex: "#36485C",
             description: "Used as the text or fill colour for interactive and static primary components such as links, text, and icons"
           },textHover:{
             name: "primary.textHover",
@@ -124,7 +124,7 @@ primary : {textBase:{
             description: "Used as the pressed text or fill colour for interactive primary components such as links and text buttons"
           },backgroundBase:{
             name: "primary.backgroundBase",
-            hex: "#307553",
+            hex: "#36485C",
             description: "Used as the background for primary components such as plain buttons. Paired with text.onBackground for contrast"
           },backgroundHover:{
             name: "primary.backgroundHover",

@@ -29,7 +29,7 @@ var light = _interopRequireWildcard(require("../../dist/tokens/ts/themes/light")
 
 exports.light = light;
 
-var lightDS3 = _interopRequireWildcard(require("../../dist/tokens/ts/themes/light-ds3"));
+var lightDS3 = _interopRequireWildcard(require("../../dist/tokens/ts/themes/lightDS3"));
 
 exports.lightDS3 = lightDS3;
 
