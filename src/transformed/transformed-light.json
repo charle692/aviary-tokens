@@ -149,17 +149,17 @@
     "primary": {
       "text": {
         "base": {
-          "value": "#FFFFFF",
+          "value": "#36485C",
           "type": "color",
           "description": "Used as the text or fill colour for interactive and static primary components such as links, text, and icons"
         },
         "hover": {
-          "value": "#FFFFFF",
+          "value": "#36485C",
           "type": "color",
           "description": "Used as the hovered text or fill colour for interactive primary components such as links and text buttons"
         },
         "active": {
-          "value": "#FFFFFF",
+          "value": "#2E3A47",
           "type": "color",
           "description": "Used as the pressed text or fill colour for interactive primary components such as links and text buttons"
         }
