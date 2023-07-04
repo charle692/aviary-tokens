@@ -154,66 +154,66 @@
           "description": "Used as the text or fill colour for interactive and static primary components such as links, text, and icons"
         },
         "hover": {
-          "value": "#275E43",
+          "value": "#36485C",
           "type": "color",
           "description": "Used as the hovered text or fill colour for interactive primary components such as links and text buttons"
         },
         "active": {
-          "value": "#244C38",
+          "value": "#2E3A47",
           "type": "color",
           "description": "Used as the pressed text or fill colour for interactive primary components such as links and text buttons"
         }
       },
       "background": {
         "base": {
-          "value": "#36485C",
+          "value": "#475A70",
           "type": "color",
           "description": "Used as the background for primary components such as plain buttons. Paired with text.onBackground for contrast"
         },
         "hover": {
-          "value": "#275E43",
+          "value": "#36485C",
           "type": "color",
           "description": "Used as the hovered background for primary components such as plain buttons"
         },
         "active": {
-          "value": "#244C38",
+          "value": "#2E3A47",
           "type": "color",
           "description": "Used as the hovered background for primary components such as plain buttons"
         },
         "muted": {
-          "value": "#EBF2EF",
+          "value": "#F5F7FA",
           "type": "color",
           "description": "Used as the muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
         },
         "mutedHover": {
-          "value": "#D1E0D9",
+          "value": "#E6EDF5",
           "type": "color",
           "description": "Used as the hovered muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
         },
         "mutedActive": {
-          "value": "#B6CFC2",
+          "value": "#C8D3E0",
           "type": "color",
           "description": "Used as the pressed muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
         },
         "box": {
-          "value": "#FAFFFC",
+          "value": "#FCFEFF",
           "type": "color",
           "description": "Used as a very light background for primary components such as Message and Box. Used for containers with content blocks"
         }
       },
       "border": {
         "base": {
-          "value": "#307553",
+          "value": "#C8D3E0",
           "type": "color",
-          "description": "Used for the border colour for primary components such as buttons and Message"
+          "description": "Used for t4e border colour for primary components such as buttons and Message"
         },
         "hover": {
-          "value": "#275E43",
+          "value": "#596D84",
           "type": "color",
           "description": "Used for the hovered border colour for primary components such as buttons"
         },
         "active": {
-          "value": "#244C38",
+          "value": "#2E3A47",
           "type": "color",
           "description": "Used for the pressed border colour for primary components such as buttons"
         }
