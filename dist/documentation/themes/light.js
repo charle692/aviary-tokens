@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 11 Jul 2023 13:36:42 GMT
+ * Generated on Tue, 11 Jul 2023 14:08:01 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -124,11 +124,11 @@ primary : {textBase:{
             description: "Used as the pressed text or fill colour for interactive primary components such as links and text buttons"
           },backgroundBase:{
             name: "primary.backgroundBase",
-            hex: "#475A70",
+            hex: "#36485C",
             description: "Used as the background for primary components such as plain buttons. Paired with text.onBackground for contrast"
           },backgroundHover:{
             name: "primary.backgroundHover",
-            hex: "#36485C",
+            hex: "#2E3A47",
             description: "Used as the hovered background for primary components such as plain buttons"
           },backgroundActive:{
             name: "primary.backgroundActive",
@@ -152,11 +152,11 @@ primary : {textBase:{
             description: "Used as a very light background for primary components such as Message and Box. Used for containers with content blocks"
           },borderBase:{
             name: "primary.borderBase",
-            hex: "#C8D3E0",
-            description: "Used for t4e border colour for primary components such as buttons and Message"
+            hex: "#36485C",
+            description: "Used for the border colour for primary components such as buttons and Message"
           },borderHover:{
             name: "primary.borderHover",
-            hex: "#596D84",
+            hex: "#2E3A47",
             description: "Used for the hovered border colour for primary components such as buttons"
           },borderActive:{
             name: "primary.borderActive",
