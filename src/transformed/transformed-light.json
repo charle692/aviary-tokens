@@ -213,7 +213,7 @@
           "description": "Used for the hovered border colour for primary components such as buttons"
         },
         "active": {
-          "value": "#2E3A47",
+          "value": "#212933",
           "type": "color",
           "description": "Used for the pressed border colour for primary components such as buttons"
         }
