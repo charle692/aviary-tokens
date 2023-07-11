@@ -176,7 +176,7 @@
           "description": "Used as the hovered background for primary components such as plain buttons"
         },
         "active": {
-          "value": "{colors.grey.800}",
+          "value": "{colors.grey.900}",
           "type": "color",
           "description": "Used as the hovered background for primary components such as plain buttons"
         },
