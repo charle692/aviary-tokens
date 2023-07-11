@@ -202,6 +202,10 @@
       "800": {
         "value": "#2E3A47",
         "type": "color"
+      },
+      "900": {
+        "value": "#212933",
+        "type": "color"
       }
     },
     "shades": {

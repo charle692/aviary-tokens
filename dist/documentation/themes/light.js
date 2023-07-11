@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 04 Jul 2023 14:55:02 GMT
+ * Generated on Tue, 11 Jul 2023 13:36:42 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -132,7 +132,7 @@ primary : {textBase:{
             description: "Used as the hovered background for primary components such as plain buttons"
           },backgroundActive:{
             name: "primary.backgroundActive",
-            hex: "#2E3A47",
+            hex: "#212933",
             description: "Used as the hovered background for primary components such as plain buttons"
           },backgroundMuted:{
             name: "primary.backgroundMuted",
