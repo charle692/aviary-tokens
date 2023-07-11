@@ -213,7 +213,7 @@
           "description": "Used for the hovered border colour for primary components such as buttons"
         },
         "active": {
-          "value": "{colors.grey.800}",
+          "value": "{colors.grey.900}",
           "type": "color",
           "description": "Used for the pressed border colour for primary components such as buttons"
         }
