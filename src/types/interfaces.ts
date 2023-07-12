@@ -5,6 +5,7 @@ const AVIARY_COLORS = {
   danger: "danger",
   highlight: "highlight",
   system: "system",
+  success: "success",
 };
 
 const EXTENDED_AVIARY_COLORS = {
