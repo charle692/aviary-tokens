@@ -90,5 +90,20 @@ export declare const colorProfileMapper: (currentTheme: AviaryTheme) => {
         borderActive: string;
         borderFocused: string;
     };
+    success: {
+        textBase: string;
+        textHover: string;
+        textActive: string;
+        backgroundBase: string;
+        backgroundHover: string;
+        backgroundActive: string;
+        backgroundMuted: string;
+        backgroundMutedHover: string;
+        backgroundMutedActive: string;
+        backgroundBox: string;
+        borderBase: string;
+        borderHover: string;
+        borderActive: string;
+    };
 };
 //# sourceMappingURL=colorProfileMapper.d.ts.map
