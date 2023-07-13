@@ -31,7 +31,8 @@ var AVIARY_COLORS = {
   warning: "warning",
   danger: "danger",
   highlight: "highlight",
-  system: "system"
+  system: "system",
+  success: "success"
 };
 exports.AVIARY_COLORS = AVIARY_COLORS;
 

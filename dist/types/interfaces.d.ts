@@ -5,6 +5,7 @@ declare const AVIARY_COLORS: {
     danger: string;
     highlight: string;
     system: string;
+    success: string;
 };
 declare const EXTENDED_AVIARY_COLORS: {
     light: string;
@@ -14,6 +15,7 @@ declare const EXTENDED_AVIARY_COLORS: {
     danger: string;
     highlight: string;
     system: string;
+    success: string;
 };
 declare type AviaryColors = keyof typeof AVIARY_COLORS;
 declare type ExtendedAviaryColors = keyof typeof EXTENDED_AVIARY_COLORS;
@@ -23,6 +25,6 @@ interface AviaryColorProps {
 interface AviaryExtendedColorProps {
     isColor?: ExtendedAviaryColors;
 }
-export type { AviaryColors, AviaryColorProps, AviaryExtendedColorProps, ExtendedAviaryColors, };
+export type { AviaryColors, AviaryColorProps, AviaryExtendedColorProps, ExtendedAviaryColors };
 export { AVIARY_COLORS, EXTENDED_AVIARY_COLORS };
 //# sourceMappingURL=interfaces.d.ts.map

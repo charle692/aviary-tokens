@@ -5,6 +5,7 @@ const AVIARY_COLORS = {
   danger: "danger",
   highlight: "highlight",
   system: "system",
+  success: "success",
 };
 
 const EXTENDED_AVIARY_COLORS = {
@@ -22,10 +23,5 @@ interface AviaryExtendedColorProps {
   isColor?: ExtendedAviaryColors;
 }
 
-export type {
-  AviaryColors,
-  AviaryColorProps,
-  AviaryExtendedColorProps,
-  ExtendedAviaryColors,
-};
+export type { AviaryColors, AviaryColorProps, AviaryExtendedColorProps, ExtendedAviaryColors };
 export { AVIARY_COLORS, EXTENDED_AVIARY_COLORS };

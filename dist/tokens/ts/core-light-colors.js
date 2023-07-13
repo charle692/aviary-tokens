@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 11 Jul 2023 17:31:36 GMT
+ * Generated on Wed, 12 Jul 2023 18:33:45 GMT
  */
 
 module.exports = {green : {100 : "#FAFFFC",200 : "#EBF2EF",300 : "#D1E0D9",400 : "#B6CFC2",500 : "#86B09B",600 : "#307553",700 : "#275E43",800 : "#244C38"},
