@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 12 Jul 2023 18:33:45 GMT
+ * Generated on Tue, 25 Jul 2023 17:40:46 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -152,15 +152,15 @@ primary : {textBase:{
             description: "Used as a very light background for primary components such as Message and Box. Used for containers with content blocks"
           },borderBase:{
             name: "primary.borderBase",
-            hex: "#36485C",
+            hex: "#C8D3E0",
             description: "Used for the border colour for primary components such as buttons and Message"
           },borderHover:{
             name: "primary.borderHover",
-            hex: "#2E3A47",
+            hex: "#596D84",
             description: "Used for the hovered border colour for primary components such as buttons"
           },borderActive:{
             name: "primary.borderActive",
-            hex: "#212933",
+            hex: "#2E3A47",
             description: "Used for the pressed border colour for primary components such as buttons"
           }},
 success : {textBase:{
