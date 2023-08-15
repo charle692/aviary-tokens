@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 15 Aug 2023 12:32:18 GMT
+ * Generated on Tue, 15 Aug 2023 12:36:37 GMT
  */
 
 module.exports = {theme: "light",

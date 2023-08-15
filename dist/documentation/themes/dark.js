@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 15 Aug 2023 12:32:18 GMT
+ * Generated on Tue, 15 Aug 2023 12:36:37 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -112,39 +112,39 @@ surface : {level0:{
           }},
 primary : {textBase:{
             name: "primary.textBase",
-            hex: "#42AD86",
+            hex: "#1A1D21",
             description: "Used as the text or fill colour for interactive and static primary components such as links, text, and icons"
           },textHover:{
             name: "primary.textHover",
-            hex: "#86D6B9",
+            hex: "#1A1D21",
             description: "Used as the hovered text or fill colour for interactive primary components such as links and text buttons"
           },textActive:{
             name: "primary.textActive",
-            hex: "#DBFFF1",
+            hex: "#1A1D21",
             description: "Used as the pressed text or fill colour for interactive primary components such as links and text buttons"
           },backgroundBase:{
             name: "primary.backgroundBase",
-            hex: "#288563",
+            hex: "#E8E9EA",
             description: "Used as the background for primary components such as plain buttons. Paired with text.onBackground for contrast"
           },backgroundHover:{
             name: "primary.backgroundHover",
-            hex: "#256E53",
+            hex: "#FFFFFF",
             description: "Used as the hovered background for primary components such as plain buttons"
           },backgroundActive:{
             name: "primary.backgroundActive",
-            hex: "#1A5740",
+            hex: "#FFFFFF",
             description: "Used as the hovered background for primary components such as plain buttons"
           },backgroundMuted:{
             name: "primary.backgroundMuted",
-            hex: "#13402F",
+            hex: "#22272B",
             description: "Used as the muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
           },backgroundMutedHover:{
             name: "primary.backgroundMutedHover",
-            hex: "#1A5740",
+            hex: "#2D3238",
             description: "Used as the hovered muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "primary.backgroundMutedActive",
-            hex: "#256E53",
+            hex: "#515357",
             description: "Used as the pressed muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
           },backgroundBox:{
             name: "primary.backgroundBox",
@@ -152,15 +152,15 @@ primary : {textBase:{
             description: "Used as a very light background for primary components such as Message and Box. Used for containers with content blocks"
           },borderBase:{
             name: "primary.borderBase",
-            hex: "#288563",
+            hex: "#515357",
             description: "Used for the border colour for primary components such as buttons and Message"
           },borderHover:{
             name: "primary.borderHover",
-            hex: "#256E53",
+            hex: "#616568",
             description: "Used for the hovered border colour for primary components such as buttons"
           },borderActive:{
             name: "primary.borderActive",
-            hex: "#1A5740",
+            hex: "#98999B",
             description: "Used for the pressed border colour for primary components such as buttons"
           }},
 success : {textBase:{
