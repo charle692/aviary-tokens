@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 27 Jul 2023 17:55:15 GMT
+ * Generated on Tue, 15 Aug 2023 12:32:18 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -70,7 +70,7 @@ system : {textLabelEmphasis:{
             description: "Used for the pressed border colour for system components"
           },borderFocused:{
             name: "system.borderFocused",
-            hex: "#0281d7",
+            hex: "#3971A8",
             description: "Used for the focused border colour for system components"
           }},
 surface : {level0:{
@@ -112,55 +112,55 @@ surface : {level0:{
           }},
 primary : {textBase:{
             name: "primary.textBase",
-            hex: "#307553",
+            hex: "#3971A8",
             description: "Used as the text or fill colour for interactive and static primary components such as links, text, and icons"
           },textHover:{
             name: "primary.textHover",
-            hex: "#275E43",
+            hex: "#21588F",
             description: "Used as the hovered text or fill colour for interactive primary components such as links and text buttons"
           },textActive:{
             name: "primary.textActive",
-            hex: "#244C38",
+            hex: "#194673",
             description: "Used as the pressed text or fill colour for interactive primary components such as links and text buttons"
           },backgroundBase:{
             name: "primary.backgroundBase",
-            hex: "#307553",
+            hex: "#3971A8",
             description: "Used as the background for primary components such as plain buttons. Paired with text.onBackground for contrast"
           },backgroundHover:{
             name: "primary.backgroundHover",
-            hex: "#275E43",
+            hex: "#21588F",
             description: "Used as the hovered background for primary components such as plain buttons"
           },backgroundActive:{
             name: "primary.backgroundActive",
-            hex: "#244C38",
+            hex: "#194673",
             description: "Used as the hovered background for primary components such as plain buttons"
           },backgroundMuted:{
             name: "primary.backgroundMuted",
-            hex: "#EBF2EF",
+            hex: "#E6F1FC",
             description: "Used as the muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
           },backgroundMutedHover:{
             name: "primary.backgroundMutedHover",
-            hex: "#D1E0D9",
+            hex: "#C0D8F0",
             description: "Used as the hovered muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "primary.backgroundMutedActive",
-            hex: "#B6CFC2",
+            hex: "#88B1D9",
             description: "Used as the pressed muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
           },backgroundBox:{
             name: "primary.backgroundBox",
-            hex: "#FAFFFC",
+            hex: "#F5FAFF",
             description: "Used as a very light background for primary components such as Message and Box. Used for containers with content blocks"
           },borderBase:{
             name: "primary.borderBase",
-            hex: "#307553",
+            hex: "#3971A8",
             description: "Used for the border colour for primary components such as buttons and Message"
           },borderHover:{
             name: "primary.borderHover",
-            hex: "#275E43",
+            hex: "#21588F",
             description: "Used for the hovered border colour for primary components such as buttons"
           },borderActive:{
             name: "primary.borderActive",
-            hex: "#244C38",
+            hex: "#194673",
             description: "Used for the pressed border colour for primary components such as buttons"
           }},
 success : {textBase:{
@@ -218,7 +218,7 @@ success : {textBase:{
           }},
 info : {textBase:{
             name: "info.textBase",
-            hex: "#0281d7",
+            hex: "#3971A8",
             description: "Used as the text or fill colour for interactive and static informational components such as links, text, and icons"
           },textHover:{
             name: "info.textHover",
@@ -230,7 +230,7 @@ info : {textBase:{
             description: "Used as the pressed colour for interactive informational components such as links and text buttons"
           },backgroundBase:{
             name: "info.backgroundBase",
-            hex: "#0281d7",
+            hex: "#3971A8",
             description: "Used as the background for informational components such as plain buttons. Paired with text.onBackground for contrast"
           },backgroundHover:{
             name: "info.backgroundHover",
@@ -258,7 +258,7 @@ info : {textBase:{
             description: "Used as a very light background for informational components such as Message and Box. Used for containers with content blocks"
           },borderBase:{
             name: "info.borderBase",
-            hex: "#0281d7",
+            hex: "#3971A8",
             description: "Used for the border colour for informational components such as buttons and Message"
           },borderHover:{
             name: "info.borderHover",
@@ -483,7 +483,7 @@ input : {backgroundBase:{
             description: "Used as the default static label colour in HTML inputs which appears as a placeholder in the static state"
           },textFloatingLabel:{
             name: "input.textFloatingLabel",
-            hex: "#0281d7",
+            hex: "#3971A8",
             description: "Used as the floated label colour when the HTML input has focus"
           },textFloatingLabelError:{
             name: "input.textFloatingLabelError",
@@ -519,7 +519,7 @@ input : {backgroundBase:{
             description: "Used as the hovered bottom border colour for floating label inputs or as the hovered border for inputs like checkbox"
           },borderActive:{
             name: "input.borderActive",
-            hex: "#0281d7",
+            hex: "#3971A8",
             description: "Used as the pressed bottom border colour for floating label inputs or as the engaged border for inputs like checkbox"
           }},
 separator : {base:{
