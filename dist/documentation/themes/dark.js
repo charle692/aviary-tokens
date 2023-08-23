@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 15 Aug 2023 12:36:37 GMT
+ * Generated on Tue, 22 Aug 2023 19:11:53 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -9,11 +9,11 @@ module.exports = {text : {emphasis:{
             description: "Used for any text content and icons used with text that needs emphasizing"
           },body:{
             name: "text.body",
-            hex: "#98999B",
+            hex: "#BCBDBF",
             description: "Used for default text content and icons used with text"
           },subdued:{
             name: "text.subdued",
-            hex: "#616568",
+            hex: "#98999B",
             description: "Used for any text content and icons used with text that requires less prominence"
           },onBackground:{
             name: "text.onBackground",
@@ -26,7 +26,7 @@ system : {textLabelEmphasis:{
             description: "Used for any text content and icons used with text that needs emphasizing"
           },textBase:{
             name: "system.textBase",
-            hex: "#98999B",
+            hex: "#BCBDBF",
             description: "Used as the text or fill colour for interactive and static system components such as links, text, and icons"
           },textHover:{
             name: "system.textHover",
@@ -62,11 +62,11 @@ system : {textLabelEmphasis:{
             description: "Used for the border colour for system components"
           },borderHover:{
             name: "system.borderHover",
-            hex: "#616568",
+            hex: "#98999B",
             description: "Used for the hovered border colour for system components"
           },borderActive:{
             name: "system.borderActive",
-            hex: "#98999B",
+            hex: "#BCBDBF",
             description: "Used for the pressed border colour for system components"
           },borderFocused:{
             name: "system.borderFocused",
@@ -103,7 +103,7 @@ surface : {level0:{
             description: "Used for elements that are absolutely positioned to overlay content on the page. Is always a dark background regardless of theme. Ex: Things like Toasts and Tooltips"
           },overlayTheme:{
             name: "surface.overlayTheme",
-            hex: "#22272B",
+            hex: "#1A1D21",
             description: "Used for elements that are absolutely positioned to overlay content on the page. Matches the base color of the theme. Ex: Snackbar"
           },overlayBackdrop:{
             name: "surface.overlayBackdrop",
@@ -156,11 +156,11 @@ primary : {textBase:{
             description: "Used for the border colour for primary components such as buttons and Message"
           },borderHover:{
             name: "primary.borderHover",
-            hex: "#616568",
+            hex: "#98999B",
             description: "Used for the hovered border colour for primary components such as buttons"
           },borderActive:{
             name: "primary.borderActive",
-            hex: "#98999B",
+            hex: "#BCBDBF",
             description: "Used for the pressed border colour for primary components such as buttons"
           }},
 success : {textBase:{
@@ -185,15 +185,15 @@ success : {textBase:{
             description: "Description to come."
           },backgroundActive:{
             name: "success.backgroundActive",
-            hex: "#1A5740",
+            hex: "#13402F",
             description: "Description to come."
           },backgroundMuted:{
             name: "success.backgroundMuted",
-            hex: "#13402F",
+            hex: "#0F3326",
             description: "Used as the muted background for successful intention versions of components such as message, pill, or box. Paired with successful.textBase for a subtler contrast."
           },backgroundMutedHover:{
             name: "success.backgroundMutedHover",
-            hex: "#1A5740",
+            hex: "#13402F",
             description: "Used as the hovered muted background for successful intention versions of components such as message, pill, or box. Paired with successful.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "success.backgroundMutedActive",
@@ -213,7 +213,7 @@ success : {textBase:{
             description: "Used for the hovered border colour for successful components such as message"
           },borderActive:{
             name: "success.borderActive",
-            hex: "#1A5740",
+            hex: "#13402F",
             description: "Used for the pressed border colour for successful components such as message"
           }},
 info : {textBase:{
@@ -238,15 +238,15 @@ info : {textBase:{
             description: "Used as the hovered background for informational components such as plain buttons"
           },backgroundActive:{
             name: "info.backgroundActive",
-            hex: "#1F4366",
+            hex: "#142C45",
             description: "Used as the pressed background for informational components such as plain buttons"
           },backgroundMuted:{
             name: "info.backgroundMuted",
-            hex: "#142C45",
+            hex: "#102337",
             description: "Used as the muted background for informational components such as pills and text buttons. Paired with info.textBase for a subtler contrast"
           },backgroundMutedHover:{
             name: "info.backgroundMutedHover",
-            hex: "#1F4366",
+            hex: "#142C45",
             description: "Used as the hovered muted background for informational components such as pills and text buttons. Paired with info.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "info.backgroundMutedActive",
@@ -266,7 +266,7 @@ info : {textBase:{
             description: "Used for the hovered border colour for informational components such as buttons"
           },borderActive:{
             name: "info.borderActive",
-            hex: "#1F4366",
+            hex: "#142C45",
             description: "Used for the pressed border colour for informational components such as buttons"
           }},
 warning : {textBase:{
@@ -291,15 +291,15 @@ warning : {textBase:{
             description: "Used as the hovered background for warning components such as plain buttons"
           },backgroundActive:{
             name: "warning.backgroundActive",
-            hex: "#663A1E",
+            hex: "#4A2915",
             description: "Used as the pressed background for warning components such as plain buttons"
           },backgroundMuted:{
             name: "warning.backgroundMuted",
-            hex: "#4A2915",
+            hex: "#361D0E",
             description: "Used as the muted background for warning components such as pills and text buttons. Paired with warning.textBase for a subtler contrast"
           },backgroundMutedHover:{
             name: "warning.backgroundMutedHover",
-            hex: "#663A1E",
+            hex: "#4A2915",
             description: "Used as the hovered muted background for warning components such as pills and text buttons. Paired with warning.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "warning.backgroundMutedActive",
@@ -319,7 +319,7 @@ warning : {textBase:{
             description: "Used for the hovered border colour for warning components"
           },borderActive:{
             name: "warning.borderActive",
-            hex: "#663A1E",
+            hex: "#4A2915",
             description: "Used for the pressed border colour for warning components such as buttons"
           }},
 danger : {textBase:{
@@ -344,15 +344,15 @@ danger : {textBase:{
             description: "Used as the hovered background for danger components such as plain buttons"
           },backgroundActive:{
             name: "danger.backgroundActive",
-            hex: "#611D30",
+            hex: "#451522",
             description: "Used as the pressed background for danger components such as plain buttons"
           },backgroundMuted:{
             name: "danger.backgroundMuted",
-            hex: "#451522",
+            hex: "#34101A",
             description: "Used as the muted background for danger components such as pills and text buttons. Paired with danger.textBase for a subtler contrast"
           },backgroundMutedHover:{
             name: "danger.backgroundMutedHover",
-            hex: "#611D30",
+            hex: "#451522",
             description: "Used as the hovered muted background for danger components such as pills and text buttons. Paired with danger.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "danger.backgroundMutedActive",
@@ -372,7 +372,7 @@ danger : {textBase:{
             description: "Used for the hovered border colour for danger components such as buttons"
           },borderActive:{
             name: "danger.borderActive",
-            hex: "#611D30",
+            hex: "#451522",
             description: "Used for the pressed border colour for danger components such as buttons"
           }},
 highlight : {textBase:{
@@ -397,15 +397,15 @@ highlight : {textBase:{
             description: "Used as the hovered background for highlight components such as plain buttons"
           },backgroundActive:{
             name: "highlight.backgroundActive",
-            hex: "#432652",
+            hex: "#33193F",
             description: "Used as the pressed background for highlight components such as plain buttons"
           },backgroundMuted:{
             name: "highlight.backgroundMuted",
-            hex: "#33193F",
+            hex: "#291433",
             description: "Used as the muted background for highlight components such as pills and text buttons. Paired with highlight.textBase for a subtler contrast"
           },backgroundMutedHover:{
             name: "highlight.backgroundMutedHover",
-            hex: "#432652",
+            hex: "#33193F",
             description: "Used as the hovered muted background for highlight components such as pills and text buttons. Paired with highlight.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "highlight.backgroundMutedActive",
@@ -425,12 +425,12 @@ highlight : {textBase:{
             description: "Used for the hovered border colour for highlight components"
           },borderActive:{
             name: "highlight.borderActive",
-            hex: "#432652",
+            hex: "#33193F",
             description: "Used for the pressed border colour for highlight components such as buttons and Message"
           }},
 disabled : {text:{
             name: "disabled.text",
-            hex: "#616568",
+            hex: "#98999B",
             description: "For use in disabled content like text and icons"
           },background:{
             name: "disabled.background",
@@ -444,13 +444,17 @@ disabled : {text:{
             name: "disabled.border",
             hex: "#515357",
             description: "Used as the border for disabled components"
+          },nakedContent:{
+            name: "disabled.nakedContent",
+            hex: "#22272B",
+            
           },inputBackground:{
             name: "disabled.inputBackground",
-            hex: "#1B2228",
+            hex: "#2D3238",
             description: "For use in disabled inputs as the background colour"
           },inputLabelText:{
             name: "disabled.inputLabelText",
-            hex: "#616568",
+            hex: "#98999B",
             description: "Used as the label colour for disabled inputs"
           }},
 input : {backgroundBase:{
@@ -471,7 +475,7 @@ input : {backgroundBase:{
             description: "Used for the default filled text colour for HTML inputs"
           },textInformation:{
             name: "input.textInformation",
-            hex: "#98999B",
+            hex: "#BCBDBF",
             description: "Used as the text content colour for the text description below the input"
           },textInformationError:{
             name: "input.textInformationError",
@@ -479,7 +483,7 @@ input : {backgroundBase:{
             description: "Used as the text content colour for the text description below the input when there are errors"
           },textLabel:{
             name: "input.textLabel",
-            hex: "#98999B",
+            hex: "#BCBDBF",
             description: "Used as the default static label colour in HTML inputs which appears as a placeholder in the static state"
           },textFloatingLabel:{
             name: "input.textFloatingLabel",
@@ -491,7 +495,7 @@ input : {backgroundBase:{
             description: "Used as the static and floated label colour when the input is in an error state"
           },textPlaceholder:{
             name: "input.textPlaceholder",
-            hex: "#616568",
+            hex: "#98999B",
             description: "Used as the default placeholder text colour for basic and search inputs"
           },textActive:{
             name: "input.textActive",
@@ -511,11 +515,11 @@ input : {backgroundBase:{
             description: "Used as the hovered border colour"
           },borderEmphasized:{
             name: "input.borderEmphasized",
-            hex: "#616568",
+            hex: "#98999B",
             description: "Used as the default bottom border colour for floating label inputs or as the default border for inputs like checkbox"
           },borderEmphasizedHover:{
             name: "input.borderEmphasizedHover",
-            hex: "#98999B",
+            hex: "#BCBDBF",
             description: "Used as the hovered bottom border colour for floating label inputs or as the hovered border for inputs like checkbox"
           },borderActive:{
             name: "input.borderActive",
@@ -533,7 +537,7 @@ light : {backgroundBase:{
             description: "For use as background colour in light profile components on contrasting surface backgrounds"
           },backgroundContrast:{
             name: "light.backgroundContrast",
-            hex: "#616568",
+            hex: "#98999B",
             description: "For use as a contrasting background colour in light profile components, to match shade of surface background"
           },backgroundHover:{
             name: "light.backgroundHover",

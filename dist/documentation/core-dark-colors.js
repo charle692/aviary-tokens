@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 15 Aug 2023 12:36:37 GMT
+ * Generated on Tue, 22 Aug 2023 19:11:52 GMT
  */
 
 module.exports = {green : {100:{
@@ -9,11 +9,11 @@ module.exports = {green : {100:{
             
           },200:{
             name: "green.200",
-            hex: "#13402F",
+            hex: "#0F3326",
             
           },300:{
             name: "green.300",
-            hex: "#1A5740",
+            hex: "#13402F",
             
           },400:{
             name: "green.400",
@@ -42,11 +42,11 @@ blue : {100:{
             
           },200:{
             name: "blue.200",
-            hex: "#142C45",
+            hex: "#102337",
             
           },300:{
             name: "blue.300",
-            hex: "#1F4366",
+            hex: "#142C45",
             
           },400:{
             name: "blue.400",
@@ -75,11 +75,11 @@ red : {100:{
             
           },200:{
             name: "red.200",
-            hex: "#451522",
+            hex: "#34101A",
             
           },300:{
             name: "red.300",
-            hex: "#611D30",
+            hex: "#451522",
             
           },400:{
             name: "red.400",
@@ -108,11 +108,11 @@ purple : {100:{
             
           },200:{
             name: "purple.200",
-            hex: "#33193F",
+            hex: "#291433",
             
           },300:{
             name: "purple.300",
-            hex: "#432652",
+            hex: "#33193F",
             
           },400:{
             name: "purple.400",
@@ -141,11 +141,11 @@ orange : {100:{
             
           },200:{
             name: "orange.200",
-            hex: "#4A2915",
+            hex: "#361D0E",
             
           },300:{
             name: "orange.300",
-            hex: "#663A1E",
+            hex: "#4A2915",
             
           },400:{
             name: "orange.400",
@@ -190,11 +190,11 @@ grey : {100:{
             
           },600:{
             name: "grey.600",
-            hex: "#616568",
+            hex: "#98999B",
             
           },700:{
             name: "grey.700",
-            hex: "#98999B",
+            hex: "#BCBDBF",
             
           },800:{
             name: "grey.800",
