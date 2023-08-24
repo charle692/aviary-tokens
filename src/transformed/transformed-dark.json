@@ -730,31 +730,31 @@
           "description": "For use as background colour in light profile components on contrasting surface backgrounds"
         },
         "contrast": {
-          "value": "#98999B",
+          "value": "#515357",
           "type": "color",
           "description": "For use as a contrasting background colour in light profile components, to match shade of surface background"
         },
         "hover": {
-          "value": "#1A1D21",
+          "value": "#E8E9EA",
           "type": "color",
           "description": "For use as background hover colour in light profile components on contrasting surface backgrounds"
         },
         "active": {
-          "value": "#22272B",
+          "value": "#E8E9EA",
           "type": "color",
           "description": "For use as background active colour in light profile components on contrasting surface backgrounds"
         }
       },
       "text": {
         "base": {
-          "value": "#E8E9EA",
+          "value": "#2D3238",
           "type": "color",
           "description": "Used as the content colour (text, icons) for light profile components, to match shade of constrasting surface background"
         }
       },
       "link": {
         "mutedBase": {
-          "value": "#1A1D21",
+          "value": "#E8E9EA",
           "type": "color",
           "description": "Used as link colour for light profile components on contrasting surface backgrounds"
         },
