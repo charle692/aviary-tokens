@@ -1,10 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Wed, 23 Aug 2023 15:05:46 GMT
+ * Generated on Tue, 29 Aug 2023 16:07:27 GMT
  */
 
 module.exports = {theme: "light",
-text : {emphasis : "#36485C",body : "#475A70",subdued : "#596D84",onBackground : "#FFFFFF"},
+text : {emphasis : "#2E3A47",body : "#36485C",subdued : "#475A70",onBackground : "#FFFFFF"},
 system : {textLabelEmphasis : "#2E3A47",textBase : "#475A70",textHover : "#36485C",textActive : "#2E3A47",backgroundBase : "#FFFFFF",backgroundMuted : "#F5F7FA",backgroundMutedHover : "#E6EDF5",backgroundMutedActive : "#C8D3E0",backgroundBox : "#FCFEFF",borderBase : "#C8D3E0",borderHover : "#596D84",borderActive : "#475A70",borderFocused : "#3971A8"},
 surface : {level0 : "#FFFFFF",level1 : "#FFFFFF",level2 : "#F5F7FA",interactiveBackground : "#FFFFFF",interactiveHover : "#F5F7FA",interactiveActive : "#E6EDF5",overlayDark : "#2E3A47",overlayTheme : "#FFFFFF",overlayBackdrop : "#36485C"},
 primary : {textBase : "#FFFFFF",textHover : "#FFFFFF",textActive : "#FFFFFF",backgroundBase : "#36485C",backgroundHover : "#2E3A47",backgroundActive : "#212933",backgroundMuted : "#F5F7FA",backgroundMutedHover : "#E6EDF5",backgroundMutedActive : "#C8D3E0",backgroundBox : "#FCFEFF",borderBase : "#C8D3E0",borderHover : "#596D84",borderActive : "#2E3A47"},

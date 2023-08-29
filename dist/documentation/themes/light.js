@@ -1,19 +1,19 @@
 /**
  * Do not edit directly
- * Generated on Wed, 23 Aug 2023 15:05:46 GMT
+ * Generated on Tue, 29 Aug 2023 16:07:27 GMT
  */
 
 module.exports = {text : {emphasis:{
             name: "text.emphasis",
-            hex: "#36485C",
+            hex: "#2E3A47",
             description: "Used for any text content and icons used with text that needs emphasizing"
           },body:{
             name: "text.body",
-            hex: "#475A70",
+            hex: "#36485C",
             description: "Used for default text content and icons used with text"
           },subdued:{
             name: "text.subdued",
-            hex: "#596D84",
+            hex: "#475A70",
             description: "Used for any text content and icons used with text that requires less prominence"
           },onBackground:{
             name: "text.onBackground",

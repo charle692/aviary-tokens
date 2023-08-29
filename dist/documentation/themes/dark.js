@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 23 Aug 2023 15:05:46 GMT
+ * Generated on Tue, 29 Aug 2023 16:07:27 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -181,11 +181,11 @@ success : {textBase:{
             description: "Description to come."
           },backgroundHover:{
             name: "success.backgroundHover",
-            hex: "#256E53",
+            hex: "#42AD86",
             description: "Description to come."
           },backgroundActive:{
             name: "success.backgroundActive",
-            hex: "#13402F",
+            hex: "#86D6B9",
             description: "Description to come."
           },backgroundMuted:{
             name: "success.backgroundMuted",
@@ -205,15 +205,15 @@ success : {textBase:{
             description: "Used as a very light background for successful intention versions of components such as message, pill, or box. Used for containers with content blocks"
           },borderBase:{
             name: "success.borderBase",
-            hex: "#288563",
+            hex: "#256E53",
             description: "Used for the border colour for successful intention versions of components such as buttons and Message"
           },borderHover:{
             name: "success.borderHover",
-            hex: "#256E53",
+            hex: "#288563",
             description: "Used for the hovered border colour for successful components such as message"
           },borderActive:{
             name: "success.borderActive",
-            hex: "#13402F",
+            hex: "#42AD86",
             description: "Used for the pressed border colour for successful components such as message"
           }},
 info : {textBase:{
@@ -287,11 +287,11 @@ warning : {textBase:{
             description: "Used as the background for warning components such as plain buttons. Paired with text.onBackground for contrast"
           },backgroundHover:{
             name: "warning.backgroundHover",
-            hex: "#8A4E29",
+            hex: "#CF7945",
             description: "Used as the hovered background for warning components such as plain buttons"
           },backgroundActive:{
             name: "warning.backgroundActive",
-            hex: "#4A2915",
+            hex: "#E7AA84",
             description: "Used as the pressed background for warning components such as plain buttons"
           },backgroundMuted:{
             name: "warning.backgroundMuted",
@@ -311,15 +311,15 @@ warning : {textBase:{
             description: "Used as a very light background for warning components such as Message and Box. Used for containers with content blocks"
           },borderBase:{
             name: "warning.borderBase",
-            hex: "#AD6234",
+            hex: "#8A4E29",
             description: "Used for the border colour for warning components such as buttons and Message"
           },borderHover:{
             name: "warning.borderHover",
-            hex: "#8A4E29",
+            hex: "#AD6234",
             description: "Used for the hovered border colour for warning components"
           },borderActive:{
             name: "warning.borderActive",
-            hex: "#4A2915",
+            hex: "#CF7945",
             description: "Used for the pressed border colour for warning components such as buttons"
           }},
 danger : {textBase:{
@@ -340,11 +340,11 @@ danger : {textBase:{
             description: "Used as the background for danger components such as plain buttons. Paired with text.onBackground for contrast"
           },backgroundHover:{
             name: "danger.backgroundHover",
-            hex: "#8F2843",
+            hex: "#C74C6B",
             description: "Used as the hovered background for danger components such as plain buttons"
           },backgroundActive:{
             name: "danger.backgroundActive",
-            hex: "#451522",
+            hex: "#EA8AA3",
             description: "Used as the pressed background for danger components such as plain buttons"
           },backgroundMuted:{
             name: "danger.backgroundMuted",
@@ -364,15 +364,15 @@ danger : {textBase:{
             description: "Used as a very light background for warning components such as Message and Box. Used for containers with content blocks"
           },borderBase:{
             name: "danger.borderBase",
-            hex: "#B23655",
+            hex: "#8F2843",
             description: "Used for the border colour for danger components such as buttons and Message"
           },borderHover:{
             name: "danger.borderHover",
-            hex: "#8F2843",
+            hex: "#B23655",
             description: "Used for the hovered border colour for danger components such as buttons"
           },borderActive:{
             name: "danger.borderActive",
-            hex: "#451522",
+            hex: "#C74C6B",
             description: "Used for the pressed border colour for danger components such as buttons"
           }},
 highlight : {textBase:{
@@ -393,11 +393,11 @@ highlight : {textBase:{
             description: "Used as the background for highlight components such as plain buttons. Paired with text.onBackground for contrast"
           },backgroundHover:{
             name: "highlight.backgroundHover",
-            hex: "#542F66",
+            hex: "#865C99",
             description: "Used as the hovered background for highlight components such as plain buttons"
           },backgroundActive:{
             name: "highlight.backgroundActive",
-            hex: "#33193F",
+            hex: "#B990CC",
             description: "Used as the pressed background for highlight components such as plain buttons"
           },backgroundMuted:{
             name: "highlight.backgroundMuted",
@@ -417,15 +417,15 @@ highlight : {textBase:{
             description: "Used as a very light background for highlight components such as Message and Box. Used for containers with content blocks"
           },borderBase:{
             name: "highlight.borderBase",
-            hex: "#693B80",
+            hex: "#542F66",
             description: "Used for the border colour for highlight components such as buttons and Message"
           },borderHover:{
             name: "highlight.borderHover",
-            hex: "#542F66",
+            hex: "#693B80",
             description: "Used for the hovered border colour for highlight components"
           },borderActive:{
             name: "highlight.borderActive",
-            hex: "#33193F",
+            hex: "#865C99",
             description: "Used for the pressed border colour for highlight components such as buttons and Message"
           }},
 disabled : {text:{
@@ -537,23 +537,23 @@ light : {backgroundBase:{
             description: "For use as background colour in light profile components on contrasting surface backgrounds"
           },backgroundContrast:{
             name: "light.backgroundContrast",
-            hex: "#98999B",
+            hex: "#515357",
             description: "For use as a contrasting background colour in light profile components, to match shade of surface background"
           },backgroundHover:{
             name: "light.backgroundHover",
-            hex: "#1A1D21",
+            hex: "#E8E9EA",
             description: "For use as background hover colour in light profile components on contrasting surface backgrounds"
           },backgroundActive:{
             name: "light.backgroundActive",
-            hex: "#22272B",
+            hex: "#E8E9EA",
             description: "For use as background active colour in light profile components on contrasting surface backgrounds"
           },textBase:{
             name: "light.textBase",
-            hex: "#E8E9EA",
+            hex: "#2D3238",
             description: "Used as the content colour (text, icons) for light profile components, to match shade of constrasting surface background"
           },linkMutedBase:{
             name: "light.linkMutedBase",
-            hex: "#1A1D21",
+            hex: "#E8E9EA",
             description: "Used as link colour for light profile components on contrasting surface backgrounds"
           },linkMutedHover:{
             name: "light.linkMutedHover",
