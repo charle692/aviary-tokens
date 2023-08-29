@@ -2,17 +2,17 @@
   "colors": {
     "text": {
       "emphasis": {
-        "value": "#36485C",
+        "value": "#2E3A47",
         "type": "color",
         "description": "Used for any text content and icons used with text that needs emphasizing"
       },
       "body": {
-        "value": "#475A70",
+        "value": "#36485C",
         "type": "color",
         "description": "Used for default text content and icons used with text"
       },
       "subdued": {
-        "value": "#596D84",
+        "value": "#475A70",
         "type": "color",
         "description": "Used for any text content and icons used with text that requires less prominence"
       },
