@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 29 Aug 2023 16:07:27 GMT
+ * Generated on Fri, 08 Sep 2023 13:23:23 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -75,7 +75,7 @@ system : {textLabelEmphasis:{
           }},
 surface : {level0:{
             name: "surface.level0",
-            hex: "#98999B",
+            hex: "#FFFFFF",
             description: "Used for setting the lowest most level, mainly applied as a background color to the HTML body. Should always be underneath levels 1 and 2"
           },level1:{
             name: "surface.level1",
