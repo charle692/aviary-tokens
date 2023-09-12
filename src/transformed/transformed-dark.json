@@ -781,7 +781,7 @@
           "y": 1,
           "blur": 2,
           "spread": 0,
-          "color": "#000000 32%",
+          "color": "#00000052",
           "type": "dropShadow"
         },
         "type": "boxShadow",
@@ -793,7 +793,7 @@
           "y": 2,
           "blur": 8,
           "spread": 0,
-          "color": "#000000 40%",
+          "color": "#00000066",
           "type": "dropShadow"
         },
         "type": "boxShadow",
@@ -807,7 +807,7 @@
           "y": 4,
           "blur": 16,
           "spread": 0,
-          "color": "#000000 32%",
+          "color": "#00000052",
           "type": "dropShadow"
         },
         "type": "boxShadow",
@@ -821,7 +821,7 @@
           "y": 4,
           "blur": 16,
           "spread": 0,
-          "color": "#000000 48%",
+          "color": "#0000007a",
           "type": "dropShadow"
         },
         "type": "boxShadow",
