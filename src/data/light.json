@@ -782,7 +782,7 @@
           "y": "1",
           "blur": "2",
           "spread": "0",
-          "color": "rgba({colors.shadow.base}, 0.16)",
+          "color": "rgba({colors.shadow.base}, {opacity.subtle})",
           "type": "dropShadow"
         },
         "type": "boxShadow",
