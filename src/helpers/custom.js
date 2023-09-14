@@ -22,7 +22,8 @@ StyleDictionary.registerFilter({
   matcher: (token) => {
     return (
       token.attributes.category === "boxShadows" ||
-      token.attributes.category === "colors"
+      token.attributes.category === "colors" ||
+      token.attributes.category === "opacity"
     );
   },
 });
@@ -139,6 +140,30 @@ const customBoxShadowObjectFormatter = (dictionary, theme, isJS) => {
   );
 };
 
+const customOpacityObjectFormatter = (dictionary, theme, isJS) => {
+  // no opacity tokens for core, returns empty object otherwise
+  if (theme?.destination.includes("core")) return "";
+
+  const opacityTokens = dictionary.allTokens.filter(
+    (token) => token.attributes.category === "opacity"
+  );
+  const valueOrType = (token, isJS) => {
+    return isJS
+      ? `"${token.value}"`
+      : `string`;
+  };
+
+  return (
+    declaration(isJS) +
+    `opacity: {` +
+    opacityTokens.map((token) => {
+      return `${token.name} : ` + valueOrType(token, isJS);
+    }) +
+    `}` +
+    commaOrColon(isJS)
+  );
+};
+
 StyleDictionary.registerFormat({
   name: "custom/format/typescript-color-declarations",
   formatter: ({ dictionary, file }) => {
@@ -158,6 +183,7 @@ StyleDictionary.registerFormat({
       `module.exports = {` +
       customColorObjectFormatter(dictionary, file, true) +
       customBoxShadowObjectFormatter(dictionary, file, true) +
+      customOpacityObjectFormatter(dictionary, file, true) +
       `};`
     );
   },
