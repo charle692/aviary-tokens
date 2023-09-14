@@ -256,11 +256,5 @@
         "type": "color"
       }
     }
-  },
-  "opacity": {
-    "subtle": {
-      "value": "16%",
-      "type": "opacity"
-    }
   }
 }
