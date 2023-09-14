@@ -170,7 +170,8 @@ StyleDictionary.registerFormat({
     return (
       fileHeader({ file }) +
       customColorObjectFormatter(dictionary, file, false) +
-      customBoxShadowObjectFormatter(dictionary, file, false)
+      customBoxShadowObjectFormatter(dictionary, file, false) +
+      customOpacityObjectFormatter(dictionary, file, false)
     );
   },
 });
