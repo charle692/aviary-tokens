@@ -828,7 +828,7 @@
   "opacity": {
     "overlay": {
       "backdrop": {
-        "value": "0.2",
+        "value": 0.2,
         "type": "opacity",
         "description": "Used for overlay backdrop opacity"
       }
