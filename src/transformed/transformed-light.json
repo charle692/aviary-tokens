@@ -143,11 +143,6 @@
           "value": "#36485C",
           "type": "color",
           "description": "Used to overlay & de-emphasize the page to draw focus to certain areas. Ex: Used with Modals, Drawers"
-        },
-        "opacity": {
-          "value": 0.2,
-          "type": "opacity",
-          "description": "Used for overlay opacity"
         }
       }
     },
@@ -827,6 +822,15 @@
         },
         "type": "boxShadow",
         "description": "Used for modals"
+      }
+    }
+  },
+  "opacity": {
+    "overlay": {
+      "backdrop": {
+        "value": 0.2,
+        "type": "opacity",
+        "description": "Used for overlay backdrop opacity"
       }
     }
   }
