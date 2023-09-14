@@ -447,7 +447,7 @@ export const disabled : {text:{
           },nakedContent:{
             name: string,
             hex: string,
-            
+
           },inputBackground:{
             name: string,
             hex: string,

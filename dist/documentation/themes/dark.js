@@ -447,7 +447,7 @@ disabled : {text:{
           },nakedContent:{
             name: "disabled.nakedContent",
             hex: "#22272B",
-            
+
           },inputBackground:{
             name: "disabled.inputBackground",
             hex: "#2D3238",
