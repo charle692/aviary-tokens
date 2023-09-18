@@ -2,17 +2,17 @@
   "colors": {
     "text": {
       "emphasis": {
-        "value": "{colors.grey.700}",
+        "value": "{colors.grey.800}",
         "type": "color",
         "description": "Used for any text content and icons used with text that needs emphasizing"
       },
       "body": {
-        "value": "{colors.grey.600}",
+        "value": "{colors.grey.700}",
         "type": "color",
         "description": "Used for default text content and icons used with text"
       },
       "subdued": {
-        "value": "{colors.grey.500}",
+        "value": "{colors.grey.600}",
         "type": "color",
         "description": "Used for any text content and icons used with text that requires less prominence"
       },
@@ -149,73 +149,73 @@
     "primary": {
       "text": {
         "base": {
-          "value": "{colors.blue.600}",
+          "value": "{colors.shades.white}",
           "type": "color",
           "description": "Used as the text or fill colour for interactive and static primary components such as links, text, and icons"
         },
         "hover": {
-          "value": "{colors.blue.700}",
+          "value": "{colors.shades.white}",
           "type": "color",
           "description": "Used as the hovered text or fill colour for interactive primary components such as links and text buttons"
         },
         "active": {
-          "value": "{colors.blue.800}",
+          "value": "{colors.shades.white}",
           "type": "color",
           "description": "Used as the pressed text or fill colour for interactive primary components such as links and text buttons"
         }
       },
       "background": {
         "base": {
-          "value": "{colors.blue.600}",
+          "value": "{colors.grey.700}",
           "type": "color",
           "description": "Used as the background for primary components such as plain buttons. Paired with text.onBackground for contrast"
         },
         "hover": {
-          "value": "{colors.blue.700}",
+          "value": "{colors.grey.800}",
           "type": "color",
           "description": "Used as the hovered background for primary components such as plain buttons"
         },
         "active": {
-          "value": "{colors.blue.800}",
+          "value": "{colors.grey.900}",
           "type": "color",
           "description": "Used as the hovered background for primary components such as plain buttons"
         },
         "muted": {
-          "value": "{colors.blue.200}",
+          "value": "{colors.grey.200}",
           "type": "color",
           "description": "Used as the muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
         },
         "mutedHover": {
-          "value": "{colors.blue.300}",
+          "value": "{colors.grey.300}",
           "type": "color",
           "description": "Used as the hovered muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
         },
         "mutedActive": {
-          "value": "{colors.blue.400}",
+          "value": "{colors.grey.400}",
           "type": "color",
           "description": "Used as the pressed muted background for primary components such as pills and text buttons. Paired with primary.textBase for a subtler contrast"
         },
         "box": {
-          "value": "{colors.blue.100}",
+          "value": "{colors.grey.100}",
           "type": "color",
           "description": "Used as a very light background for primary components such as Message and Box. Used for containers with content blocks"
         }
       },
       "border": {
         "base": {
-          "value": "{colors.blue.600}",
+          "value": "{colors.grey.400}",
           "type": "color",
-          "description": "Used for the border colour for primary components such as buttons and Message"
+          "description": "Used for the border colour for primary components"
         },
         "hover": {
-          "value": "{colors.blue.700}",
+          "value": "{colors.grey.500}",
           "type": "color",
-          "description": "Used for the hovered border colour for primary components such as buttons"
+          "description": "Used for the hovered border colour for primary components"
         },
         "active": {
-          "value": "{colors.blue.800}",
+          "value": "{colors.grey.800}",
           "type": "color",
-          "description": "Used for the pressed border colour for primary components such as buttons"
+          "description": "Used for the pressed border colour for primary components"
         }
       }
     },
@@ -283,12 +283,12 @@
         "hover": {
           "value": "{colors.green.700}",
           "type": "color",
-          "description": "Used for the hovered border colour for successful components such as buttons"
+          "description": "Used for the hovered border colour for successful components such as message"
         },
         "active": {
           "value": "{colors.green.800}",
           "type": "color",
-          "description": "Used for the pressed border colour for successful components such as buttons"
+          "description": "Used for the pressed border colour for successful components such as message"
         }
       }
     },
@@ -763,9 +763,55 @@
     },
     "shadow": {
       "base": {
-        "value": "{colors.shades.black}",
+        "value": "{colors.grey.700}",
         "type": "color",
         "description": "For use only with box shadow tokens"
+      }
+    },
+    "accent": {
+      "forest": {
+        "text": {
+          "base": {
+            "value": "{colors.green.700}",
+            "type": "color"
+          }
+        },
+        "background": {
+          "muted": {
+            "value": "{colors.green.200}",
+            "type": "color"
+          },
+          "mutedHover": {
+            "value": "{colors.green.300}",
+            "type": "color"
+          },
+          "mutedActive": {
+            "value": "{colors.green.400}",
+            "type": "color"
+          }
+        }
+      },
+      "sand": {
+        "text": {
+          "base": {
+            "value": "{colors.brown.700}",
+            "type": "color"
+          }
+        },
+        "background": {
+          "muted": {
+            "value": "{colors.brown.200}",
+            "type": "color"
+          },
+          "mutedHover": {
+            "value": "{colors.brown.300}",
+            "type": "color"
+          },
+          "mutedActive": {
+            "value": "{colors.brown.400}",
+            "type": "color"
+          }
+        }
       }
     }
   },
@@ -828,7 +874,7 @@
   "opacity": {
     "overlay": {
       "backdrop": {
-        "value": 0.2,
+        "value": "0.2",
         "type": "opacity",
         "description": "Used for overlay backdrop opacity"
       }

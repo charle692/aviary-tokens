@@ -132,7 +132,7 @@
         "type": "color"
       },
       "800": {
-        "value": "#F0F1FF",
+        "value": "#F0D1FF",
         "type": "color"
       }
     },
@@ -215,6 +215,24 @@
       },
       "transparent": {
         "value": "transparent",
+        "type": "color"
+      }
+    },
+    "brown": {
+      "200": {
+        "value": "#33260F",
+        "type": "color"
+      },
+      "300": {
+        "value": "#402F13",
+        "type": "color"
+      },
+      "400": {
+        "value": "#6E5225",
+        "type": "color"
+      },
+      "700": {
+        "value": "#D6BA87",
         "type": "color"
       }
     }

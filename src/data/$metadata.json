@@ -3,10 +3,10 @@
     "core-light",
     "core-emerson",
     "core-dark",
-    "light",
-    "lightDS3",
-    "dark",
-    "emerson",
+    "themes/light",
+    "themes/lightDS3",
+    "themes/dark",
+    "themes/emerson",
     "primitives"
   ]
 }
