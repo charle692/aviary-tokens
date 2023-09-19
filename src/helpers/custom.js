@@ -148,9 +148,7 @@ const customOpacityObjectFormatter = (dictionary, theme, isJS) => {
     (token) => token.attributes.category === "opacity"
   );
   const valueOrType = (token, isJS) => {
-    return isJS
-      ? `"${token.value}"`
-      : `string`;
+    return isJS ? `${token.value}` : `number`;
   };
 
   return (
