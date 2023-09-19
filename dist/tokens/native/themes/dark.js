@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 19 Sep 2023 20:27:09 GMT
+ * Generated on Tue, 19 Sep 2023 21:06:53 GMT
  */
 
 module.exports = {theme: "dark",
@@ -18,4 +18,4 @@ input : {backgroundBase : "#1B2228",backgroundHover : "#2D3238",backgroundInform
 separator : {base : "#2D3238"},
 light : {backgroundBase : "#FFFFFF",backgroundContrast : "#515357",backgroundHover : "#E8E9EA",backgroundActive : "#E8E9EA",textBase : "#2D3238",linkMutedBase : "#E8E9EA",linkMutedHover : "#FFFFFF"},
 shadow : {base : "#000000"},
-accent : {forestTextBase : "#86D6B9",forestBackgroundMuted : "#0F3326",forestBackgroundMutedHover : "#13402F",forestBackgroundMutedActive : "#256E53",sandTextBase : "#D6BA87",sandBackgroundMuted : "#33260F",sandBackgroundMutedHover : "#402F13",sandBackgroundMutedActive : "#6E5225"},boxShadows: {cardBase : "0px 1px 2px 0px #00000052",cardHover : "0px 2px 8px 0px #00000066",popoverBase : "0px 4px 16px 0px #00000052",modalBase : "0px 4px 16px 0px #0000007a"},opacity: {overlayBackdrop : "0.8"},};
+accent : {forestTextBase : "#86D6B9",forestBackgroundMuted : "#0F3326",forestBackgroundMutedHover : "#13402F",forestBackgroundMutedActive : "#256E53",sandTextBase : "#D6BA87",sandBackgroundMuted : "#33260F",sandBackgroundMutedHover : "#402F13",sandBackgroundMutedActive : "#6E5225"},boxShadows: {cardBase : "0px 1px 2px 0px #00000052",cardHover : "0px 2px 8px 0px #00000066",popoverBase : "0px 4px 16px 0px #00000052",modalBase : "0px 4px 16px 0px #0000007a"},opacity: {overlayBackdrop : 0.8},};
