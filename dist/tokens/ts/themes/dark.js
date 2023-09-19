@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 14 Sep 2023 21:07:24 GMT
+ * Generated on Tue, 19 Sep 2023 17:44:45 GMT
  */
 
 module.exports = {theme: "dark",
@@ -17,4 +17,4 @@ disabled : {text : "#98999B",background : "#1A1D21",nakedBackground : "transpare
 input : {backgroundBase : "#1B2228",backgroundHover : "#2D3238",backgroundInformation : "#FFFFFF",textBase : "#FFFFFF",textInformation : "#BCBDBF",textInformationError : "#B23655",textLabel : "#BCBDBF",textFloatingLabel : "#4577AD",textFloatingLabelError : "#B23655",textPlaceholder : "#98999B",textActive : "#FFFFFF",borderBase : "#2D3238",borderError : "#8F2843",borderHover : "#515357",borderEmphasized : "#98999B",borderEmphasizedHover : "#BCBDBF",borderActive : "#285685"},
 separator : {base : "#2D3238"},
 light : {backgroundBase : "#FFFFFF",backgroundContrast : "#515357",backgroundHover : "#E8E9EA",backgroundActive : "#E8E9EA",textBase : "#2D3238",linkMutedBase : "#E8E9EA",linkMutedHover : "#FFFFFF"},
-shadow : {base : "#000000"},boxShadows: {cardBase : "0px 1px 2px 0px #00000052",cardHover : "0px 2px 8px 0px #00000066",popoverBase : "0px 4px 16px 0px #00000052",modalBase : "0px 4px 16px 0px #0000007a"},opacity: {overlayBackdrop : "0.8"},};
+shadow : {base : "#000000"},boxShadows: {cardBase : "0px 1px 2px 0px #00000052",cardHover : "0px 2px 8px 0px #00000066",popoverBase : "0px 4px 16px 0px #00000052",modalBase : "0px 4px 16px 0px #0000007a"},opacity: {overlayBackdrop : 0.8},};
