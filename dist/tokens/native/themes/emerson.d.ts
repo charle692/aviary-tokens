@@ -17,4 +17,4 @@ export const disabled : {text : string,background : string,nakedBackground : str
 export const input : {backgroundBase : string,backgroundHover : string,backgroundInformation : string,textBase : string,textInformation : string,textInformationError : string,textLabel : string,textFloatingLabel : string,textFloatingLabelError : string,textPlaceholder : string,textActive : string,borderBase : string,borderError : string,borderHover : string,borderEmphasized : string,borderEmphasizedHover : string,borderActive : string};
 export const separator : {base : string};
 export const light : {backgroundBase : string,backgroundContrast : string,backgroundHover : string,backgroundActive : string,textBase : string,linkMutedBase : string,linkMutedHover : string};
-export const shadow : {base : string};export const boxShadows: {cardBase : string,cardHover : string,popoverBase : string,modalBase : string};export const opacity: {overlayBackdrop : string};
+export const shadow : {base : string};export const boxShadows: {cardBase : string,cardHover : string,popoverBase : string,modalBase : string};export const opacity: {overlayBackdrop : number};
