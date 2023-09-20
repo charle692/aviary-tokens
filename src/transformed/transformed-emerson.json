@@ -769,6 +769,56 @@
       }
     }
   },
+  "accent": {
+    "forest": {
+      "text": {
+        "base": {
+          "value": "#275E43",
+          "type": "color"
+        }
+      },
+      "background": {
+        "muted": {
+          "value": "#EBF2EF",
+          "type": "color"
+        },
+        "mutedHover": {
+          "value": "#D1E0D9",
+          "type": "color"
+        },
+        "mutedActive": {
+          "value": "#B6CFC2",
+          "type": "color"
+        }
+      }
+    },
+    "sand": {
+      "text": {
+        "base": {
+          "value": "{colors.brown.700}",
+          "type": "color",
+          "failedToResolve": true
+        }
+      },
+      "background": {
+        "muted": {
+          "value": "{colors.brown.200}",
+          "type": "color",
+          "failedToResolve": true
+        },
+        "mutedHover": {
+          "value": "{colors.brown.300}",
+          "type": "color",
+          "failedToResolve": true
+        },
+        "mutedActive": {
+          "value": "{colors.brown.400}",
+          "type": "color",
+          "failedToResolve": true
+        }
+      }
+    }
+  },
   "boxShadows": {
     "card": {
       "base": {
