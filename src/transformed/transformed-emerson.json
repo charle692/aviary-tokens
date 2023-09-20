@@ -795,26 +795,22 @@
     "sand": {
       "text": {
         "base": {
-          "value": "{colors.brown.700}",
-          "type": "color",
-          "failedToResolve": true
+          "value": "#5E4D27",
+          "type": "color"
         }
       },
       "background": {
         "muted": {
-          "value": "{colors.brown.200}",
-          "type": "color",
-          "failedToResolve": true
+          "value": "#F6F1E5",
+          "type": "color"
         },
         "mutedHover": {
-          "value": "{colors.brown.300}",
-          "type": "color",
-          "failedToResolve": true
+          "value": "#E4D9C2",
+          "type": "color"
         },
         "mutedActive": {
-          "value": "{colors.brown.400}",
-          "type": "color",
-          "failedToResolve": true
+          "value": "#DACCAA",
+          "type": "color"
         }
       }
     }
