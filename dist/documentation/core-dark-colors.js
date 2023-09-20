@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 19 Sep 2023 17:47:36 GMT
+ * Generated on Tue, 19 Sep 2023 21:06:53 GMT
  */
 
 module.exports = {green : {100:{
@@ -132,7 +132,7 @@ purple : {100:{
             
           },800:{
             name: "purple.800",
-            hex: "#F0F1FF",
+            hex: "#F0D1FF",
             
           }},
 orange : {100:{
@@ -212,5 +212,22 @@ shades : {white:{
           },transparent:{
             name: "shades.transparent",
             hex: "transparent",
+            
+          }},
+brown : {200:{
+            name: "brown.200",
+            hex: "#33260F",
+            
+          },300:{
+            name: "brown.300",
+            hex: "#402F13",
+            
+          },400:{
+            name: "brown.400",
+            hex: "#6E5225",
+            
+          },700:{
+            name: "brown.700",
+            hex: "#D6BA87",
             
           }},};

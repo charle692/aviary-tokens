@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 19 Sep 2023 17:47:36 GMT
+ * Generated on Tue, 19 Sep 2023 21:06:53 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -560,4 +560,37 @@ shadow : {base:{
             name: "shadow.base",
             hex: "#36485C",
             description: "For use only with box shadow tokens"
+          }},
+accent : {forestTextBase:{
+            name: "accent.forestTextBase",
+            hex: "#275E43",
+            
+          },forestBackgroundMuted:{
+            name: "accent.forestBackgroundMuted",
+            hex: "#EBF2EF",
+            
+          },forestBackgroundMutedHover:{
+            name: "accent.forestBackgroundMutedHover",
+            hex: "#D1E0D9",
+            
+          },forestBackgroundMutedActive:{
+            name: "accent.forestBackgroundMutedActive",
+            hex: "#B6CFC2",
+            
+          },sandTextBase:{
+            name: "accent.sandTextBase",
+            hex: "#5E4D27",
+            
+          },sandBackgroundMuted:{
+            name: "accent.sandBackgroundMuted",
+            hex: "#F6F1E5",
+            
+          },sandBackgroundMutedHover:{
+            name: "accent.sandBackgroundMutedHover",
+            hex: "#E4D9C2",
+            
+          },sandBackgroundMutedActive:{
+            name: "accent.sandBackgroundMutedActive",
+            hex: "#DACCAA",
+            
           }},};

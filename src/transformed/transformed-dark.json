@@ -524,7 +524,7 @@
           "description": "Used as the hovered text or fill colour for interactive and static highlight components such as links and text buttons"
         },
         "active": {
-          "value": "#F0F1FF",
+          "value": "#F0D1FF",
           "type": "color",
           "description": "Used as the pressed text or fill colour for interactive and static highlight components such as links and text buttons"
         }
@@ -770,6 +770,52 @@
         "value": "#000000",
         "type": "color",
         "description": "For use only with box shadow tokens"
+      }
+    },
+    "accent": {
+      "forest": {
+        "text": {
+          "base": {
+            "value": "#86D6B9",
+            "type": "color"
+          }
+        },
+        "background": {
+          "muted": {
+            "value": "#0F3326",
+            "type": "color"
+          },
+          "mutedHover": {
+            "value": "#13402F",
+            "type": "color"
+          },
+          "mutedActive": {
+            "value": "#256E53",
+            "type": "color"
+          }
+        }
+      },
+      "sand": {
+        "text": {
+          "base": {
+            "value": "#D6BA87",
+            "type": "color"
+          }
+        },
+        "background": {
+          "muted": {
+            "value": "#33260F",
+            "type": "color"
+          },
+          "mutedHover": {
+            "value": "#402F13",
+            "type": "color"
+          },
+          "mutedActive": {
+            "value": "#6E5225",
+            "type": "color"
+          }
+        }
       }
     }
   },

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 19 Sep 2023 17:47:36 GMT
+ * Generated on Tue, 19 Sep 2023 21:06:53 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -385,7 +385,7 @@ highlight : {textBase:{
             description: "Used as the hovered text or fill colour for interactive and static highlight components such as links and text buttons"
           },textActive:{
             name: "highlight.textActive",
-            hex: "#F0F1FF",
+            hex: "#F0D1FF",
             description: "Used as the pressed text or fill colour for interactive and static highlight components such as links and text buttons"
           },backgroundBase:{
             name: "highlight.backgroundBase",
@@ -564,4 +564,37 @@ shadow : {base:{
             name: "shadow.base",
             hex: "#000000",
             description: "For use only with box shadow tokens"
+          }},
+accent : {forestTextBase:{
+            name: "accent.forestTextBase",
+            hex: "#86D6B9",
+            
+          },forestBackgroundMuted:{
+            name: "accent.forestBackgroundMuted",
+            hex: "#0F3326",
+            
+          },forestBackgroundMutedHover:{
+            name: "accent.forestBackgroundMutedHover",
+            hex: "#13402F",
+            
+          },forestBackgroundMutedActive:{
+            name: "accent.forestBackgroundMutedActive",
+            hex: "#256E53",
+            
+          },sandTextBase:{
+            name: "accent.sandTextBase",
+            hex: "#D6BA87",
+            
+          },sandBackgroundMuted:{
+            name: "accent.sandBackgroundMuted",
+            hex: "#33260F",
+            
+          },sandBackgroundMutedHover:{
+            name: "accent.sandBackgroundMutedHover",
+            hex: "#402F13",
+            
+          },sandBackgroundMutedActive:{
+            name: "accent.sandBackgroundMutedActive",
+            hex: "#6E5225",
+            
           }},};
