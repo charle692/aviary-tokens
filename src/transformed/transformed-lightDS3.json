@@ -767,6 +767,52 @@
         "type": "color",
         "description": "For use only with box shadow tokens"
       }
+    },
+    "accent": {
+      "forest": {
+        "text": {
+          "base": {
+            "value": "#275E43",
+            "type": "color"
+          }
+        },
+        "background": {
+          "muted": {
+            "value": "#EBF2EF",
+            "type": "color"
+          },
+          "mutedHover": {
+            "value": "#D1E0D9",
+            "type": "color"
+          },
+          "mutedActive": {
+            "value": "#B6CFC2",
+            "type": "color"
+          }
+        }
+      },
+      "sand": {
+        "text": {
+          "base": {
+            "value": "#5E4D27",
+            "type": "color"
+          }
+        },
+        "background": {
+          "muted": {
+            "value": "#F6F1E5",
+            "type": "color"
+          },
+          "mutedHover": {
+            "value": "#E4D9C2",
+            "type": "color"
+          },
+          "mutedActive": {
+            "value": "#DACCAA",
+            "type": "color"
+          }
+        }
+      }
     }
   },
   "boxShadows": {
@@ -822,52 +868,6 @@
         },
         "type": "boxShadow",
         "description": "Used for modals"
-      }
-    }
-  },
-  "accent": {
-    "forest": {
-      "text": {
-        "base": {
-          "value": "#275E43",
-          "type": "color"
-        }
-      },
-      "background": {
-        "muted": {
-          "value": "#EBF2EF",
-          "type": "color"
-        },
-        "mutedHover": {
-          "value": "#D1E0D9",
-          "type": "color"
-        },
-        "mutedActive": {
-          "value": "#B6CFC2",
-          "type": "color"
-        }
-      }
-    },
-    "sand": {
-      "text": {
-        "base": {
-          "value": "#5E4D27",
-          "type": "color"
-        }
-      },
-      "background": {
-        "muted": {
-          "value": "#F6F1E5",
-          "type": "color"
-        },
-        "mutedHover": {
-          "value": "#E4D9C2",
-          "type": "color"
-        },
-        "mutedActive": {
-          "value": "#DACCAA",
-          "type": "color"
-        }
       }
     }
   },
