@@ -769,6 +769,52 @@
       }
     }
   },
+  "accent": {
+    "forest": {
+      "text": {
+        "base": {
+          "value": "{colors.green.700}",
+          "type": "color"
+        }
+      },
+      "background": {
+        "muted": {
+          "value": "{colors.green.200}",
+          "type": "color"
+        },
+        "mutedHover": {
+          "value": "{colors.green.300}",
+          "type": "color"
+        },
+        "mutedActive": {
+          "value": "{colors.green.400}",
+          "type": "color"
+        }
+      }
+    },
+    "sand": {
+      "text": {
+        "base": {
+          "value": "{colors.brown.700}",
+          "type": "color"
+        }
+      },
+      "background": {
+        "muted": {
+          "value": "{colors.brown.200}",
+          "type": "color"
+        },
+        "mutedHover": {
+          "value": "{colors.brown.300}",
+          "type": "color"
+        },
+        "mutedActive": {
+          "value": "{colors.brown.400}",
+          "type": "color"
+        }
+      }
+    }
+  },
   "boxShadows": {
     "card": {
       "base": {
@@ -822,52 +868,6 @@
         },
         "type": "boxShadow",
         "description": "Used for modals"
-      }
-    }
-  },
-  "accent": {
-    "forest": {
-      "text": {
-        "base": {
-          "value": "{colors.green.700}",
-          "type": "color"
-        }
-      },
-      "background": {
-        "muted": {
-          "value": "{colors.green.200}",
-          "type": "color"
-        },
-        "mutedHover": {
-          "value": "{colors.green.300}",
-          "type": "color"
-        },
-        "mutedActive": {
-          "value": "{colors.green.400}",
-          "type": "color"
-        }
-      }
-    },
-    "sand": {
-      "text": {
-        "base": {
-          "value": "{colors.brown.700}",
-          "type": "color"
-        }
-      },
-      "background": {
-        "muted": {
-          "value": "{colors.brown.200}",
-          "type": "color"
-        },
-        "mutedHover": {
-          "value": "{colors.brown.300}",
-          "type": "color"
-        },
-        "mutedActive": {
-          "value": "{colors.brown.400}",
-          "type": "color"
-        }
       }
     }
   },
