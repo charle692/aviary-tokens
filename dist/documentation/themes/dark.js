@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 25 Sep 2023 14:33:26 GMT
+ * Generated on Mon, 25 Sep 2023 16:03:12 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -38,7 +38,7 @@ system : {textLabelEmphasis:{
             description: "Used as the pressed text or fill colour for interactive system components such as links and text buttons"
           },backgroundBase:{
             name: "system.backgroundBase",
-            hex: "#1A1D21",
+            hex: "#101012",
             description: "Used as the background for system components"
           },backgroundMuted:{
             name: "system.backgroundMuted",
