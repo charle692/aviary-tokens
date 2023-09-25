@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 20 Sep 2023 20:21:27 GMT
+ * Generated on Mon, 25 Sep 2023 14:33:26 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -434,7 +434,7 @@ disabled : {text:{
             description: "For use in disabled content like text and icons"
           },background:{
             name: "disabled.background",
-            hex: "#1A1D21",
+            hex: "#22272B",
             description: "Used as the background colour for disabled components"
           },nakedBackground:{
             name: "disabled.nakedBackground",

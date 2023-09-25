@@ -591,7 +591,7 @@
         "description": "For use in disabled content like text and icons"
       },
       "background": {
-        "value": "#1A1D21",
+        "value": "#22272B",
         "type": "color",
         "description": "Used as the background colour for disabled components"
       },
