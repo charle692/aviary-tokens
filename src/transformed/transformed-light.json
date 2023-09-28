@@ -713,7 +713,7 @@
     },
     "separator": {
       "base": {
-        "value": "#596D84",
+        "value": "#C8D3E0",
         "type": "color",
         "description": "Used for the colour of the separator element"
       }
