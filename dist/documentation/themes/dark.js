@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 25 Sep 2023 16:03:12 GMT
+ * Generated on Fri, 29 Sep 2023 14:27:55 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -528,7 +528,7 @@ input : {backgroundBase:{
           }},
 separator : {base:{
             name: "separator.base",
-            hex: "#2D3238",
+            hex: "#515357",
             description: "Used for the colour of the separator element"
           }},
 light : {backgroundBase:{

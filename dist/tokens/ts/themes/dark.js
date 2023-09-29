@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 25 Sep 2023 16:03:12 GMT
+ * Generated on Fri, 29 Sep 2023 14:27:55 GMT
  */
 
 module.exports = {theme: "dark",
@@ -15,7 +15,7 @@ danger : {textBase : "#C74C6B",textHover : "#EA8AA3",textActive : "#FFD1DD",back
 highlight : {textBase : "#865C99",textHover : "#B990CC",textActive : "#F0D1FF",backgroundBase : "#693B80",backgroundHover : "#865C99",backgroundActive : "#B990CC",backgroundMuted : "#291433",backgroundMutedHover : "#33193F",backgroundMutedActive : "#542F66",backgroundBox : "#200F29",borderBase : "#542F66",borderHover : "#693B80",borderActive : "#865C99"},
 disabled : {text : "#98999B",background : "#22272B",nakedBackground : "transparent",border : "#515357",nakedContent : "#22272B",inputBackground : "#2D3238",inputLabelText : "#98999B"},
 input : {backgroundBase : "#1B2228",backgroundHover : "#2D3238",backgroundInformation : "#FFFFFF",textBase : "#FFFFFF",textInformation : "#BCBDBF",textInformationError : "#B23655",textLabel : "#BCBDBF",textFloatingLabel : "#4577AD",textFloatingLabelError : "#B23655",textPlaceholder : "#98999B",textActive : "#FFFFFF",borderBase : "#2D3238",borderError : "#8F2843",borderHover : "#515357",borderEmphasized : "#98999B",borderEmphasizedHover : "#BCBDBF",borderActive : "#285685"},
-separator : {base : "#2D3238"},
+separator : {base : "#515357"},
 light : {backgroundBase : "#FFFFFF",backgroundContrast : "#515357",backgroundHover : "#E8E9EA",backgroundActive : "#E8E9EA",textBase : "#2D3238",linkMutedBase : "#E8E9EA",linkMutedHover : "#FFFFFF"},
 shadow : {base : "#000000"},
 accent : {forestTextBase : "#86D6B9",forestBackgroundMuted : "#0F3326",forestBackgroundMutedHover : "#13402F",forestBackgroundMutedActive : "#256E53",sandTextBase : "#D6BA87",sandBackgroundMuted : "#33260F",sandBackgroundMutedHover : "#402F13",sandBackgroundMutedActive : "#6E5225"},boxShadows: {cardBase : "0px 1px 2px 0px #00000052",cardHover : "0px 2px 8px 0px #00000066",popoverBase : "0px 4px 16px 0px #00000052",modalBase : "0px 4px 16px 0px #0000007a"},opacity: {overlayBackdrop : 0.8},};
