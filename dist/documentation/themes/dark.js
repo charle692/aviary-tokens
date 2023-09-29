@@ -38,7 +38,7 @@ system : {textLabelEmphasis:{
             description: "Used as the pressed text or fill colour for interactive system components such as links and text buttons"
           },backgroundBase:{
             name: "system.backgroundBase",
-            hex: "#1A1D21",
+            hex: "#101012",
             description: "Used as the background for system components"
           },backgroundMuted:{
             name: "system.backgroundMuted",
@@ -447,7 +447,7 @@ disabled : {text:{
           },nakedContent:{
             name: "disabled.nakedContent",
             hex: "#22272B",
-            
+
           },inputBackground:{
             name: "disabled.inputBackground",
             hex: "#2D3238",
@@ -568,33 +568,33 @@ shadow : {base:{
 accent : {forestTextBase:{
             name: "accent.forestTextBase",
             hex: "#86D6B9",
-            
+
           },forestBackgroundMuted:{
             name: "accent.forestBackgroundMuted",
             hex: "#0F3326",
-            
+
           },forestBackgroundMutedHover:{
             name: "accent.forestBackgroundMutedHover",
             hex: "#13402F",
-            
+
           },forestBackgroundMutedActive:{
             name: "accent.forestBackgroundMutedActive",
             hex: "#256E53",
-            
+
           },sandTextBase:{
             name: "accent.sandTextBase",
             hex: "#D6BA87",
-            
+
           },sandBackgroundMuted:{
             name: "accent.sandBackgroundMuted",
             hex: "#33260F",
-            
+
           },sandBackgroundMutedHover:{
             name: "accent.sandBackgroundMutedHover",
             hex: "#402F13",
-            
+
           },sandBackgroundMutedActive:{
             name: "accent.sandBackgroundMutedActive",
             hex: "#6E5225",
-            
+
           }},};

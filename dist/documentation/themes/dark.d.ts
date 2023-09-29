@@ -447,7 +447,7 @@ export const disabled : {text:{
           },nakedContent:{
             name: string,
             hex: string,
-            
+
           },inputBackground:{
             name: string,
             hex: string,
@@ -568,33 +568,33 @@ export const shadow : {base:{
 export const accent : {forestTextBase:{
             name: string,
             hex: string,
-            
+
           },forestBackgroundMuted:{
             name: string,
             hex: string,
-            
+
           },forestBackgroundMutedHover:{
             name: string,
             hex: string,
-            
+
           },forestBackgroundMutedActive:{
             name: string,
             hex: string,
-            
+
           },sandTextBase:{
             name: string,
             hex: string,
-            
+
           },sandBackgroundMuted:{
             name: string,
             hex: string,
-            
+
           },sandBackgroundMutedHover:{
             name: string,
             hex: string,
-            
+
           },sandBackgroundMutedActive:{
             name: string,
             hex: string,
-            
+
           }};
