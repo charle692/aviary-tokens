@@ -717,7 +717,7 @@
     },
     "separator": {
       "base": {
-        "value": "{colors.grey.400}",
+        "value": "{colors.grey.500}",
         "type": "color",
         "description": "Used for the colour of the separator element"
       }
