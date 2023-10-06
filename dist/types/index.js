@@ -35,3 +35,16 @@ Object.keys(_profiles).forEach(function (key) {
     }
   });
 });
+
+var _intentions = require("./intentions");
+
+Object.keys(_intentions).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _intentions[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _intentions[key];
+    }
+  });
+});
