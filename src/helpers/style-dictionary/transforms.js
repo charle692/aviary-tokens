@@ -1,0 +1,94 @@
+/**
+ * used in build.js
+ *
+ * transforms are performed sequentially (see transform groups below).
+ * order of operations: filters > transforms > formats
+ *
+ * https://amzn.github.io/style-dictionary/#/transforms?id=transforms
+ */
+
+const StyleDictionary = require("style-dictionary");
+const ChangeCase = require("change-case");
+
+const isStringPxValue = (token) => {
+  if (typeof token.value === "string") {
+    return token.value.endsWith("px");
+  }
+};
+
+// removes the word "color"
+StyleDictionary.registerTransform({
+  name: "custom/name/remove-color-prefix",
+  matcher: (token) => token.type === "color",
+  type: "name",
+  transformer: function (token) {
+    return ChangeCase.camelCase(token.path.slice(2).join(" "));
+  },
+});
+
+// removes word "desktop"
+StyleDictionary.registerTransform({
+  name: "custom/name/remove-desktop-prefix",
+  type: "name",
+  transformer: function (token) {
+    const slicePrefix = token.path.slice(1);
+    const filterDesktop = slicePrefix.filter((prefix) => prefix !== "desktop");
+    return ChangeCase.camelCase(filterDesktop.join(" ")).replace("_", "");
+  },
+});
+
+// removes "px" and turns string into number
+StyleDictionary.registerTransform({
+  name: "custom/value/rm-px",
+  type: "value",
+  matcher: isStringPxValue,
+  transformer: function (token) {
+    return parseFloat(token.value);
+  },
+});
+
+// turns font weight numbers to string
+StyleDictionary.registerTransform({
+  name: "custom/value/font-weight-to-string",
+  type: "value",
+  matcher: (token) => token.type === "fontWeights" || token.type === "fontWeight",
+  transformer: function (token) {
+    return token.value.toString();
+  },
+});
+
+// TRANSFORM GROUPS, used in build.js
+
+StyleDictionary.registerTransformGroup({
+  name: "custom/aviary",
+  transforms: [
+    "attribute/cti",
+    "custom/name/remove-desktop-prefix",
+    "custom/name/remove-color-prefix",
+  ],
+});
+
+StyleDictionary.registerTransformGroup({
+  name: "custom/documentation",
+  transforms: [
+    "attribute/cti",
+    "custom/name/remove-desktop-prefix",
+    "custom/name/remove-color-prefix",
+  ],
+});
+
+StyleDictionary.registerTransformGroup({
+  name: "custom/native",
+  transforms: [
+    "attribute/cti",
+    "custom/name/remove-desktop-prefix",
+    "custom/value/rm-px",
+    "custom/value/font-weight-to-string",
+    "custom/name/remove-color-prefix",
+  ],
+});
+
+StyleDictionary.registerTransformGroup({
+  name: "custom/scss",
+  transforms: ["attribute/cti", "custom/name/remove-desktop-prefix"],
+});
