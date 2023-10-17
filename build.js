@@ -1,5 +1,4 @@
 const StyleDictionary = require("style-dictionary");
-
 require("./src/helpers/style-dictionary");
 
 const getStyleDictionaryConfig = (theme) => {
