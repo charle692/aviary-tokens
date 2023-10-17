@@ -11,6 +11,7 @@ require("./transforms");
 
 const StyleDictionary = require("style-dictionary");
 
+// used in hw-admin
 StyleDictionary.registerTransformGroup({
   name: "custom/aviary",
   transforms: [
@@ -20,6 +21,7 @@ StyleDictionary.registerTransformGroup({
   ],
 });
 
+// used in docusaurus
 StyleDictionary.registerTransformGroup({
   name: "custom/documentation",
   transforms: [
@@ -29,6 +31,7 @@ StyleDictionary.registerTransformGroup({
   ],
 });
 
+// used in fs-native
 StyleDictionary.registerTransformGroup({
   name: "custom/native",
   transforms: [
@@ -40,6 +43,7 @@ StyleDictionary.registerTransformGroup({
   ],
 });
 
+//used in fs-mark-ii marketing site
 StyleDictionary.registerTransformGroup({
   name: "custom/scss",
   transforms: ["attribute/cti", "custom/name/remove-desktop-prefix"],
