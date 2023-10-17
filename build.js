@@ -1,8 +1,6 @@
 const StyleDictionary = require("style-dictionary");
 
-require("./src/helpers/style-dictionary/formats");
-require("./src/helpers/style-dictionary/filters");
-require("./src/helpers/style-dictionary/transforms");
+require("./src/helpers/style-dictionary");
 
 const getStyleDictionaryConfig = (theme) => {
   const isCore = theme.includes("core");

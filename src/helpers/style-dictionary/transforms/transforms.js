@@ -1,5 +1,5 @@
 /**
- * used in build.js
+ * used in transform-groups.js
  *
  * transforms are performed sequentially (see transform groups below).
  * order of operations: filters > transforms > formats
@@ -55,40 +55,4 @@ StyleDictionary.registerTransform({
   transformer: function (token) {
     return token.value.toString();
   },
-});
-
-// TRANSFORM GROUPS, used in build.js
-
-StyleDictionary.registerTransformGroup({
-  name: "custom/aviary",
-  transforms: [
-    "attribute/cti",
-    "custom/name/remove-desktop-prefix",
-    "custom/name/remove-color-prefix",
-  ],
-});
-
-StyleDictionary.registerTransformGroup({
-  name: "custom/documentation",
-  transforms: [
-    "attribute/cti",
-    "custom/name/remove-desktop-prefix",
-    "custom/name/remove-color-prefix",
-  ],
-});
-
-StyleDictionary.registerTransformGroup({
-  name: "custom/native",
-  transforms: [
-    "attribute/cti",
-    "custom/name/remove-desktop-prefix",
-    "custom/value/rm-px",
-    "custom/value/font-weight-to-string",
-    "custom/name/remove-color-prefix",
-  ],
-});
-
-StyleDictionary.registerTransformGroup({
-  name: "custom/scss",
-  transforms: ["attribute/cti", "custom/name/remove-desktop-prefix"],
 });
