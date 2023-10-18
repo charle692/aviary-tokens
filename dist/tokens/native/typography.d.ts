@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 17 Oct 2023 16:02:33 GMT
+ * Generated on Wed, 18 Oct 2023 16:23:19 GMT
  */
 
 export const letterSpacingBase : number;
@@ -14,6 +14,7 @@ export const sizeLarge : number;
 export const sizeNormal : number;
 export const sizeSmall : number;
 export const sizeXsmall : number;
+export const sizeXxsmall : number;
 export const sizeMobile3xlarge : number;
 export const sizeMobile2xlarge : number;
 export const sizeMobileXlarge : number;
@@ -91,6 +92,14 @@ export const captionLetterSpacing : number;
 export const captionParagraphSpacing : number;
 export const captionTextDecoration : string;
 export const captionTextCase : string;
+export const subcaptionFontFamily : string;
+export const subcaptionFontWeight : string;
+export const subcaptionLineHeight : number;
+export const subcaptionFontSize : number;
+export const subcaptionLetterSpacing : number;
+export const subcaptionParagraphSpacing : number;
+export const subcaptionTextDecoration : string;
+export const subcaptionTextCase : string;
 export const mobileH1FontFamily : string;
 export const mobileH1FontWeight : string;
 export const mobileH1LineHeight : number;

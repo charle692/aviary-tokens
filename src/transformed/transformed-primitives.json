@@ -83,6 +83,10 @@
         "xsmall": {
           "value": "12px",
           "type": "fontSizes"
+        },
+        "xxsmall": {
+          "value": "10px",
+          "type": "fontSizes"
         }
       },
       "mobile": {
@@ -400,6 +404,40 @@
         },
         "fontSize": {
           "value": "12px",
+          "type": "fontSize"
+        },
+        "letterSpacing": {
+          "value": 0,
+          "type": "letterSpacing"
+        },
+        "paragraphSpacing": {
+          "value": 0,
+          "type": "paragraphSpacing"
+        },
+        "textDecoration": {
+          "value": "none",
+          "type": "textDecoration"
+        },
+        "textCase": {
+          "value": "none",
+          "type": "textCase"
+        }
+      },
+      "subcaption": {
+        "fontFamily": {
+          "value": "Mulish",
+          "type": "fontFamily"
+        },
+        "fontWeight": {
+          "value": 500,
+          "type": "fontWeight"
+        },
+        "lineHeight": {
+          "value": "16px",
+          "type": "lineHeight"
+        },
+        "fontSize": {
+          "value": "10px",
           "type": "fontSize"
         },
         "letterSpacing": {
