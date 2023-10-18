@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 17 Oct 2023 16:02:33 GMT
+ * Generated on Wed, 18 Oct 2023 16:23:19 GMT
  */
 
 module.exports = {
@@ -15,6 +15,7 @@ module.exports = {
   "sizeNormal": "16px",
   "sizeSmall": "14px",
   "sizeXsmall": "12px",
+  "sizeXxsmall": "10px",
   "sizeMobile3xlarge": "32px",
   "sizeMobile2xlarge": "28px",
   "sizeMobileXlarge": "22px",
@@ -92,6 +93,14 @@ module.exports = {
   "captionParagraphSpacing": 0,
   "captionTextDecoration": "none",
   "captionTextCase": "none",
+  "subcaptionFontFamily": "Mulish",
+  "subcaptionFontWeight": 500,
+  "subcaptionLineHeight": "16px",
+  "subcaptionFontSize": "10px",
+  "subcaptionLetterSpacing": 0,
+  "subcaptionParagraphSpacing": 0,
+  "subcaptionTextDecoration": "none",
+  "subcaptionTextCase": "none",
   "mobileH1FontFamily": "Mulish",
   "mobileH1FontWeight": 700,
   "mobileH1LineHeight": "40px",
