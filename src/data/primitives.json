@@ -83,6 +83,10 @@
         "xsmall": {
           "value": "12px",
           "type": "fontSizes"
+        },
+        "xxsmall": {
+          "value": "10px",
+          "type": "fontSizes"
         }
       },
       "mobile": {
@@ -245,6 +249,19 @@
           "fontWeight": "{typography.weight.base}",
           "lineHeight": "{typography.lineHeight.small}",
           "fontSize": "{typography.size.desktop.xsmall}",
+          "letterSpacing": "{typography.letterSpacing.base}",
+          "paragraphSpacing": "{typography.paragraphSpacing.base}",
+          "textDecoration": "{typography.textDecoration.base}",
+          "textCase": "{typography.textCase.base}"
+        }
+      },
+      "subcaption": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{typography.fontFamily.sansSerif}",
+          "fontWeight": "{typography.weight.base}",
+          "lineHeight": "{typography.lineHeight.small}",
+          "fontSize": "{typography.size.desktop.xxsmall}",
           "letterSpacing": "{typography.letterSpacing.base}",
           "paragraphSpacing": "{typography.paragraphSpacing.base}",
           "textDecoration": "{typography.textDecoration.base}",
