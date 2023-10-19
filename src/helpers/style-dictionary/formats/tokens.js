@@ -30,6 +30,22 @@ const addPrefix = (theme, isJS) => {
   )}${commaOrColon(isJS)}\n`);
 };
 
+const renderOutput = (isJS, tokenFamily, tokensArray, customValueOrType) => {
+  const renderValueOrType = (token) =>
+    customValueOrType
+      ? customValueOrType(token, isJS)
+      : valueOrType(token, isJS);
+
+  return (
+    declaration(isJS) +
+    `${tokenFamily} : {` +
+    tokensArray.map((token) => {
+      return `${token.name} : ` + renderValueOrType(token);
+    }) +
+    `}${commaOrColon(isJS)}`
+  );
+};
+
 const customBaseColorObjectFormatter = (dictionary, isJS) => {
   return Object.entries(dictionary.properties.colors)
     .filter((tokens) => tokens[0] !== "accent")
@@ -39,14 +55,7 @@ const customBaseColorObjectFormatter = (dictionary, isJS) => {
         (token) => token.attributes.type === colorObj
       );
 
-      return (
-        declaration(isJS) +
-        `${colorObj} : {` +
-        filteredTokens.map((token) => {
-          return `${token.name} : ` + valueOrType(token, isJS);
-        }) +
-        `}${commaOrColon(isJS)}`
-      );
+      return renderOutput(isJS, colorObj, filteredTokens);
     })
     .join(`\n`);
 };
@@ -85,15 +94,7 @@ const customBoxShadowObjectFormatter = (dictionary, theme, isJS) => {
       : `string`;
   };
 
-  return (
-    declaration(isJS) +
-    `boxShadows: {` +
-    boxShadows.map((token) => {
-      return `${token.name} : ` + valueOrType(token, isJS);
-    }) +
-    `}` +
-    commaOrColon(isJS)
-  );
+  return renderOutput(isJS, "boxShadows", boxShadows, valueOrType);
 };
 
 const customOpacityObjectFormatter = (dictionary, theme, isJS) => {
@@ -107,15 +108,7 @@ const customOpacityObjectFormatter = (dictionary, theme, isJS) => {
     return isJS ? `${token.value}` : `number`;
   };
 
-  return (
-    declaration(isJS) +
-    `opacity: {` +
-    opacityTokens.map((token) => {
-      return `${token.name} : ` + valueOrType(token, isJS);
-    }) +
-    `}` +
-    commaOrColon(isJS)
-  );
+  return renderOutput(isJS, "opacity", opacityTokens, valueOrType);
 };
 
 StyleDictionary.registerFormat({
