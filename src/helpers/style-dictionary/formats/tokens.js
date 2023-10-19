@@ -62,15 +62,6 @@ const customBaseColorObjectFormatter = (dictionary, isJS) => {
 };
 
 const customAccentColorObjectFormatter = (dictionary, isJS) => {
-  const accentColors = ["forest", "sand"];
-
-  const getCapitalizedState = (token) => {
-    return (
-      token?.attributes.state.charAt(0).toUpperCase() +
-      token?.attributes.state.slice(1)
-    );
-  };
-
   return Object.entries(dictionary.properties.colors)
     .filter((tokens) => tokens[0] === "accent")
     .map((tokens) => {
@@ -87,88 +78,23 @@ const customAccentColorObjectFormatter = (dictionary, isJS) => {
       // array of unique accent colors (ex: ["forest", "sand"])
       const accentColors = Array.from(new Set(getAllAccentColors));
 
-      // sort accent tokens by accent color (forest or sand)
-      const sortedTokens = accentTokens.reduce((accents, token) => {
-        const color = token.attributes.item;
-        if (!accents[color]) {
-          accents[color] = [];
-        }
-        accents[color].push(token);
-        return accents;
-      }, {});
+      // array of color objects (ex: ["forest: { textBase: ... }, "sand: { textBase: ... }"]) that gets mapped over with the accent colors to create separate arrays for each individual accent color
+      const colorObjects = accentColors.map((color) => {
+        const tokenStrings = accentTokens.map((token) => {
+          const capitalizedState =
+            token.attributes.state.charAt(0).toUpperCase() +
+            token.attributes.state.slice(1);
+          const tokenName = `${token.attributes.subitem}${capitalizedState}`;
+          return `${tokenName}: ${valueOrType(token, isJS)}`;
+        });
+        return `${color}: { ${tokenStrings.join(", ")} }`;
+      });
 
-      // const forestTokens = sortedTokens[accentColors[0]];
-      // const sandTokens = sortedTokens[accentColors[1]];
-
-      // sandTokens: [
-      //   {
-      //     value: "#5E4D27",
-      //     type: "color",
-      //     filePath: "src/transformed/transformed-emerson.json",
-      //     isSource: true,
-      //     original: [Object],
-      //     name: "sandTextBase",
-      //     attributes: [Object],
-      //     path: [Array],
-      //   },
-      //   {
-      //     value: "#F6F1E5",
-      //     type: "color",
-      //     filePath: "src/transformed/transformed-emerson.json",
-      //     isSource: true,
-      //     original: [Object],
-      //     name: "sandBackgroundMuted",
-      //     attributes: [Object],
-      //     path: [Array],
-      //   },
-      //   {
-      //     value: "#E4D9C2",
-      //     type: "color",
-      //     filePath: "src/transformed/transformed-emerson.json",
-      //     isSource: true,
-      //     original: [Object],
-      //     name: "sandBackgroundMutedHover",
-      //     attributes: [Object],
-      //     path: [Array],
-      //   },
-      //   {
-      //     value: "#DACCAA",
-      //     type: "color",
-      //     filePath: "src/transformed/transformed-emerson.json",
-      //     isSource: true,
-      //     original: [Object],
-      //     name: "sandBackgroundMutedActive",
-      //     attributes: [Object],
-      //     path: [Array],
-      //   },
-      // ];
-
-      return (
-        `${declaration(isJS)} ${colorObj}s: { ${accentColors[0]}: {` +
-        sortedTokens[accentColors[0]]
-          .map((token) => {
-            const capitalizedState =
-              token.attributes.state.charAt(0).toUpperCase() +
-              token.attributes.state.slice(1);
-            const tokenName = `${token.attributes.subitem}${capitalizedState}`;
-            return `${tokenName} : ` + valueOrType(token, isJS);
-          })
-          .join(", ") +
-        `}${commaOrColon(isJS)} ` +
-        `${accentColors[1]}: {` +
-        sortedTokens[accentColors[1]]
-          .map((token) => {
-            const capitalizedState =
-              token.attributes.state.charAt(0).toUpperCase() +
-              token.attributes.state.slice(1);
-            const tokenName = `${token.attributes.subitem}${capitalizedState}`;
-            return `${tokenName} : ` + valueOrType(token, isJS);
-          })
-          .join(", ") +
-        `}${commaOrColon(isJS)} }${commaOrColon(isJS)}`
-      );
-    })
-    .join(`\n`);
+      const colorObjectString = colorObjects.join(", ");
+      return `${declaration(
+        isJS
+      )} ${colorObj}: { ${colorObjectString} } ${commaOrColon(isJS)}`;
+    });
 };
 
 const customBoxShadowObjectFormatter = (dictionary, theme, isJS) => {
