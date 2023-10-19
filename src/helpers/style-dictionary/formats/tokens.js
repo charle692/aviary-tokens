@@ -19,16 +19,59 @@ const customColorObjectFormatter = (dictionary, theme, isJS) => {
   let prefix = ``;
   // Only add a prefix for theme files, not core ones
   if (!theme?.destination.includes("core")) {
-    const themeWithSlash = theme.destination.substring(0, theme.destination.indexOf("."));
+    const themeWithSlash = theme.destination.substring(
+      0,
+      theme.destination.indexOf(".")
+    );
     const extractedThemeName = { value: themeWithSlash.split("/")[1] };
-    prefix = `${declaration(isJS)}theme: ${valueOrType(extractedThemeName, isJS)}${commaOrColon(
+    prefix = `${declaration(isJS)}theme: ${valueOrType(
+      extractedThemeName,
       isJS
-    )}\n`;
+    )}${commaOrColon(isJS)}\n`;
   }
 
   return (
     prefix +
     Object.entries(dictionary.properties.colors)
+      .filter((tokens) => tokens[0] !== "accent")
+      .map((tokens) => {
+        const colorObj = tokens[0];
+        const filteredTokens = dictionary.allTokens.filter(
+          (token) => token.attributes.type === colorObj
+        );
+
+        return (
+          declaration(isJS) +
+          `${colorObj} : {` +
+          filteredTokens.map((token) => {
+            return `${token.name} : ` + valueOrType(token, isJS);
+          }) +
+          `}${commaOrColon(isJS)}`
+        );
+      })
+      .join(`\n`)
+  );
+};
+
+const customAccentColorObjectFormatter = (dictionary, theme, isJS) => {
+  let prefix = ``;
+  // Only add a prefix for theme files, not core ones
+  if (!theme?.destination.includes("core")) {
+    const themeWithSlash = theme.destination.substring(
+      0,
+      theme.destination.indexOf(".")
+    );
+    const extractedThemeName = { value: themeWithSlash.split("/")[1] };
+    prefix = `${declaration(isJS)}theme: ${valueOrType(
+      extractedThemeName,
+      isJS
+    )}${commaOrColon(isJS)}\n`;
+  }
+
+  return (
+    prefix +
+    Object.entries(dictionary.properties.colors)
+      .filter((tokens) => tokens[0] === "accent")
       .map((tokens) => {
         const colorObj = tokens[0];
         const filteredTokens = dictionary.allTokens.filter(
@@ -100,6 +143,7 @@ StyleDictionary.registerFormat({
     return (
       fileHeader({ file }) +
       customColorObjectFormatter(dictionary, file, false) +
+      customAccentColorObjectFormatter(dictionary, file, false) +
       customBoxShadowObjectFormatter(dictionary, file, false) +
       customOpacityObjectFormatter(dictionary, file, false)
     );
@@ -113,6 +157,7 @@ StyleDictionary.registerFormat({
       fileHeader({ file }) +
       `module.exports = {` +
       customColorObjectFormatter(dictionary, file, true) +
+      customAccentColorObjectFormatter(dictionary, file, true) +
       customBoxShadowObjectFormatter(dictionary, file, true) +
       customOpacityObjectFormatter(dictionary, file, true) +
       `};`
