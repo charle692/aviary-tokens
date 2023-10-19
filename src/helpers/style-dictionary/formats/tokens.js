@@ -8,6 +8,7 @@
  */
 
 const StyleDictionary = require("style-dictionary");
+const { accent } = require("../../../../dist/tokens/ts/themes/light");
 const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
 
 const declaration = (isJS) => (isJS ? "" : `export const `);
@@ -65,17 +66,66 @@ const customAccentColorObjectFormatter = (dictionary, isJS) => {
     .filter((tokens) => tokens[0] === "accent")
     .map((tokens) => {
       const colorObj = tokens[0];
-      const filteredTokens = dictionary.allTokens.filter(
-        (token) => token.attributes.type === colorObj
+      const accentColors = ["forest", "sand"];
+      const accentTokens = dictionary.allTokens.filter(
+        (token) =>
+          token.attributes.type === colorObj &&
+          accentColors.includes(token.attributes.item)
       );
+
+      //    attributes: {
+      //   category: 'colors',
+      //   type: 'accent',
+      //   item: 'sand',
+      //   subitem: 'background',
+      //   state: 'mutedHover'
+      // },
+
+      //      accentTokens: {
+      //   value: '#275E43',
+      //   type: 'color',
+      //   filePath: 'src/transformed/transformed-emerson.json',
+      //   isSource: true,
+      //   original: { value: '#275E43', type: 'color' },
+      //   name: 'forestTextBase',
+      //   attributes: {
+      //     category: 'colors',
+      //     type: 'accent',
+      //     item: 'forest',
+      //     subitem: 'text',
+      //     state: 'base'
+      //   },
+      //   path: [ 'colors', 'accent', 'forest', 'text', 'base' ]
+      // }
+
+      // separate token.attributes.item
+      // render each item's tokens in their own objs
+
+      const tokensByItem = accentTokens.reduce((accent, token) => {
+        const item = token.attributes.item;
+        if (!accent[item]) {
+          accent[item] = [];
+        }
+        accent[item].push(token);
+        return accent;
+      }, {});
+
+      console.log({ item1Tokens });
+
+      const item1Tokens = tokensByItem[accentColors[0]];
+      const item2Tokens = tokensByItem[accentColors[1]];
 
       return (
         declaration(isJS) +
-        `${colorObj} : {` +
-        filteredTokens.map((token) => {
-          return `${token.name} : ` + valueOrType(token, isJS);
+        `${colorObj} : { ${accentTokens[0].attributes.item} : {` +
+        accentTokens.map((token) => {
+          const capitalizedState =
+            token.attributes.state.charAt(0).toUpperCase() +
+            token.attributes.state.slice(1);
+          const tokenName = `${token.attributes.subitem}${capitalizedState}`;
+          return `${tokenName} : ` + valueOrType(token, isJS);
         }) +
-        `}${commaOrColon(isJS)}`
+        `}${commaOrColon(isJS)} }${commaOrColon(isJS)}`
       );
     })
     .join(`\n`);
