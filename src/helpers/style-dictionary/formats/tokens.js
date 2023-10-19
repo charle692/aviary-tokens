@@ -62,69 +62,109 @@ const customBaseColorObjectFormatter = (dictionary, isJS) => {
 };
 
 const customAccentColorObjectFormatter = (dictionary, isJS) => {
+  const accentColors = ["forest", "sand"];
+
+  const getCapitalizedState = (token) => {
+    return (
+      token?.attributes.state.charAt(0).toUpperCase() +
+      token?.attributes.state.slice(1)
+    );
+  };
+
   return Object.entries(dictionary.properties.colors)
     .filter((tokens) => tokens[0] === "accent")
     .map((tokens) => {
       const colorObj = tokens[0];
-      const accentColors = ["forest", "sand"];
+      // filtered accent tokens from all color tokens
       const accentTokens = dictionary.allTokens.filter(
-        (token) =>
-          token.attributes.type === colorObj &&
-          accentColors.includes(token.attributes.item)
+        (token) => token.attributes.type === colorObj
       );
 
-      //    attributes: {
-      //   category: 'colors',
-      //   type: 'accent',
-      //   item: 'sand',
-      //   subitem: 'background',
-      //   state: 'mutedHover'
-      // },
+      // get all accent colors from all accent tokens (includes duplicates)
+      const getAllAccentColors = accentTokens.map(
+        (token) => token.attributes.item
+      );
+      // array of unique accent colors (ex: ["forest", "sand"])
+      const accentColors = Array.from(new Set(getAllAccentColors));
 
-      //      accentTokens: {
-      //   value: '#275E43',
-      //   type: 'color',
-      //   filePath: 'src/transformed/transformed-emerson.json',
-      //   isSource: true,
-      //   original: { value: '#275E43', type: 'color' },
-      //   name: 'forestTextBase',
-      //   attributes: {
-      //     category: 'colors',
-      //     type: 'accent',
-      //     item: 'forest',
-      //     subitem: 'text',
-      //     state: 'base'
-      //   },
-      //   path: [ 'colors', 'accent', 'forest', 'text', 'base' ]
-      // }
-
-      // separate token.attributes.item
-      // render each item's tokens in their own objs
-
-      const tokensByItem = accentTokens.reduce((accent, token) => {
-        const item = token.attributes.item;
-        if (!accent[item]) {
-          accent[item] = [];
+      // sort accent tokens by accent color (forest or sand)
+      const sortedTokens = accentTokens.reduce((accents, token) => {
+        const color = token.attributes.item;
+        if (!accents[color]) {
+          accents[color] = [];
         }
-        accent[item].push(token);
-        return accent;
+        accents[color].push(token);
+        return accents;
       }, {});
 
-      console.log({ item1Tokens });
+      // const forestTokens = sortedTokens[accentColors[0]];
+      // const sandTokens = sortedTokens[accentColors[1]];
 
-      const item1Tokens = tokensByItem[accentColors[0]];
-      const item2Tokens = tokensByItem[accentColors[1]];
+      // sandTokens: [
+      //   {
+      //     value: "#5E4D27",
+      //     type: "color",
+      //     filePath: "src/transformed/transformed-emerson.json",
+      //     isSource: true,
+      //     original: [Object],
+      //     name: "sandTextBase",
+      //     attributes: [Object],
+      //     path: [Array],
+      //   },
+      //   {
+      //     value: "#F6F1E5",
+      //     type: "color",
+      //     filePath: "src/transformed/transformed-emerson.json",
+      //     isSource: true,
+      //     original: [Object],
+      //     name: "sandBackgroundMuted",
+      //     attributes: [Object],
+      //     path: [Array],
+      //   },
+      //   {
+      //     value: "#E4D9C2",
+      //     type: "color",
+      //     filePath: "src/transformed/transformed-emerson.json",
+      //     isSource: true,
+      //     original: [Object],
+      //     name: "sandBackgroundMutedHover",
+      //     attributes: [Object],
+      //     path: [Array],
+      //   },
+      //   {
+      //     value: "#DACCAA",
+      //     type: "color",
+      //     filePath: "src/transformed/transformed-emerson.json",
+      //     isSource: true,
+      //     original: [Object],
+      //     name: "sandBackgroundMutedActive",
+      //     attributes: [Object],
+      //     path: [Array],
+      //   },
+      // ];
 
       return (
-        declaration(isJS) +
-        `${colorObj} : { ${accentTokens[0].attributes.item} : {` +
-        accentTokens.map((token) => {
-          const capitalizedState =
-            token.attributes.state.charAt(0).toUpperCase() +
-            token.attributes.state.slice(1);
-          const tokenName = `${token.attributes.subitem}${capitalizedState}`;
-          return `${tokenName} : ` + valueOrType(token, isJS);
-        }) +
+        `${declaration(isJS)} ${colorObj}s: { ${accentColors[0]}: {` +
+        sortedTokens[accentColors[0]]
+          .map((token) => {
+            const capitalizedState =
+              token.attributes.state.charAt(0).toUpperCase() +
+              token.attributes.state.slice(1);
+            const tokenName = `${token.attributes.subitem}${capitalizedState}`;
+            return `${tokenName} : ` + valueOrType(token, isJS);
+          })
+          .join(", ") +
+        `}${commaOrColon(isJS)} ` +
+        `${accentColors[1]}: {` +
+        sortedTokens[accentColors[1]]
+          .map((token) => {
+            const capitalizedState =
+              token.attributes.state.charAt(0).toUpperCase() +
+              token.attributes.state.slice(1);
+            const tokenName = `${token.attributes.subitem}${capitalizedState}`;
+            return `${tokenName} : ` + valueOrType(token, isJS);
+          })
+          .join(", ") +
         `}${commaOrColon(isJS)} }${commaOrColon(isJS)}`
       );
     })
