@@ -8,7 +8,6 @@
  */
 
 const StyleDictionary = require("style-dictionary");
-const { accent } = require("../../../../dist/tokens/ts/themes/light");
 const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
 
 const declaration = (isJS) => (isJS ? "" : `export const `);
