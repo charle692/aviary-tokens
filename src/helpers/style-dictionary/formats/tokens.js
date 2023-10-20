@@ -27,7 +27,7 @@ const addPrefix = (theme, isJS) => {
   return (prefix = `${declaration(isJS)}theme: ${valueOrType(
     extractedThemeName,
     isJS
-  )}${commaOrColon(isJS)}\n`);
+  )}${commaOrColon(isJS)}`);
 };
 
 const renderOutput = (isJS, tokenFamily, tokensArray, customValueOrType) => {
@@ -108,9 +108,9 @@ const customAccentColorObjectFormatter = (dictionary, isJS) => {
       // join all accent color strings with comma
       const colorObjectString = colorObjects.join(", ");
       // return final output for all accent colors
-      return `${declaration(
+      return `\n${declaration(
         isJS
-      )} ${colorObj}: { ${colorObjectString} } ${commaOrColon(isJS)}`;
+      )}${colorObj}: { ${colorObjectString} }${commaOrColon(isJS)}\n`;
     });
 };
 
