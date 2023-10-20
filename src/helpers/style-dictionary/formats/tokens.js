@@ -72,25 +72,43 @@ const customAccentColorObjectFormatter = (dictionary, isJS) => {
       );
 
       // get all accent colors from all accent tokens (includes duplicates)
-      const getAllAccentColors = accentTokens.map(
+      const getAllAvailableAccentColors = accentTokens.map(
         (token) => token.attributes.item
       );
-      // array of unique accent colors (ex: ["forest", "sand"])
-      const accentColors = Array.from(new Set(getAllAccentColors));
+      // create array of unique accent colors (ex: ["forest", "sand"])
+      const accentColors = Array.from(new Set(getAllAvailableAccentColors));
 
-      // array of color objects (ex: ["forest: { textBase: ... }, "sand: { textBase: ... }"]) that gets mapped over with the accent colors to create separate arrays for each individual accent color
+      // sort accent tokens by unique accent colors (no duplicates) into individual arrays
+      const sortedTokens = accentTokens.reduce((accents, token) => {
+        const color = token.attributes.item;
+        if (!accents[color]) {
+          accents[color] = [];
+        }
+        accents[color].push(token);
+        return accents;
+      }, {});
+
+      // map over unique accent colors array (forest, sand, etc.)
       const colorObjects = accentColors.map((color) => {
-        const tokenStrings = accentTokens.map((token) => {
+        // map over tokens for each accent color with arrays created in sortedTokens
+        const eachAccentTokensArray = sortedTokens[color];
+        const tokenStrings = eachAccentTokensArray.map((token) => {
+          // create string for each token (tokenName: tokenValue)
           const capitalizedState =
             token.attributes.state.charAt(0).toUpperCase() +
             token.attributes.state.slice(1);
           const tokenName = `${token.attributes.subitem}${capitalizedState}`;
           return `${tokenName}: ${valueOrType(token, isJS)}`;
         });
+        // join token strings with comma
+        // create string for each accent color
         return `${color}: { ${tokenStrings.join(", ")} }`;
       });
 
+      // join accent color strings with comma and create string for all accent colors
+      // join all accent color strings with comma
       const colorObjectString = colorObjects.join(", ");
+      // return final output for all accent colors
       return `${declaration(
         isJS
       )} ${colorObj}: { ${colorObjectString} } ${commaOrColon(isJS)}`;

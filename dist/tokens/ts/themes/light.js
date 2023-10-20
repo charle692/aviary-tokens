@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 19 Oct 2023 22:57:35 GMT
+ * Generated on Fri, 20 Oct 2023 00:21:25 GMT
  */
 
 module.exports = {
@@ -165,7 +165,7 @@ module.exports = {
     linkMutedHover: "#FFFFFF",
   },
   shadow: { base: "#36485C" },
-  accents: {
+  accent: {
     forest: {
       textBase: "#275E43",
       backgroundMuted: "#EBF2EF",
