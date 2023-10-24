@@ -1,10 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Wed, 18 Oct 2023 16:23:19 GMT
+ * Generated on Fri, 20 Oct 2023 14:01:17 GMT
  */
 
-export const theme: string;
-export const text : {emphasis : string,body : string,subdued : string,onBackground : string};
+export const theme: string;export const text : {emphasis : string,body : string,subdued : string,onBackground : string};
 export const system : {textLabelEmphasis : string,textBase : string,textHover : string,textActive : string,backgroundBase : string,backgroundMuted : string,backgroundMutedHover : string,backgroundMutedActive : string,backgroundBox : string,borderBase : string,borderHover : string,borderActive : string,borderFocused : string};
 export const surface : {level0 : string,level1 : string,level2 : string,interactiveBackground : string,interactiveHover : string,interactiveActive : string,overlayDark : string,overlayTheme : string,overlayBackdrop : string};
 export const primary : {textBase : string,textHover : string,textActive : string,backgroundBase : string,backgroundHover : string,backgroundActive : string,backgroundMuted : string,backgroundMutedHover : string,backgroundMutedActive : string,backgroundBox : string,borderBase : string,borderHover : string,borderActive : string};
@@ -18,4 +17,5 @@ export const input : {backgroundBase : string,backgroundHover : string,backgroun
 export const separator : {base : string};
 export const light : {backgroundBase : string,backgroundContrast : string,backgroundHover : string,backgroundActive : string,textBase : string,linkMutedBase : string,linkMutedHover : string};
 export const shadow : {base : string};
-export const accent : {forestTextBase : string,forestBackgroundMuted : string,forestBackgroundMutedHover : string,forestBackgroundMutedActive : string,sandTextBase : string,sandBackgroundMuted : string,sandBackgroundMutedHover : string,sandBackgroundMutedActive : string};export const boxShadows: {cardBase : string,cardHover : string,popoverBase : string,modalBase : string};export const opacity: {overlayBackdrop : number};
+export const accent: { forest: { textBase: string, backgroundMuted: string, backgroundMutedHover: string, backgroundMutedActive: string }, sand: { textBase: string, backgroundMuted: string, backgroundMutedHover: string, backgroundMutedActive: string } };
+export const boxShadows : {cardBase : string,cardHover : string,popoverBase : string,modalBase : string};export const opacity : {overlayBackdrop : number};

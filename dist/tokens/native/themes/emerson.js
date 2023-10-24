@@ -1,10 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Wed, 18 Oct 2023 16:23:20 GMT
+ * Generated on Fri, 20 Oct 2023 14:01:17 GMT
  */
 
-module.exports = {theme: "emerson",
-text : {emphasis : "#36485C",body : "#475A70",subdued : "#596D84",onBackground : "#FFFFFF"},
+module.exports = {theme: "emerson",text : {emphasis : "#36485C",body : "#475A70",subdued : "#596D84",onBackground : "#FFFFFF"},
 system : {textLabelEmphasis : "#2E3A47",textBase : "#475A70",textHover : "#36485C",textActive : "#2E3A47",backgroundBase : "#FFFFFF",backgroundMuted : "#F5F7FA",backgroundMutedHover : "#E6EDF5",backgroundMutedActive : "#C8D3E0",backgroundBox : "#FCFEFF",borderBase : "#C8D3E0",borderHover : "#596D84",borderActive : "#475A70",borderFocused : "#3971A8"},
 surface : {level0 : "#FFFFFF",level1 : "#FFFFFF",level2 : "#F5F7FA",interactiveBackground : "#FFFFFF",interactiveHover : "#F5F7FA",interactiveActive : "#E6EDF5",overlayDark : "#2E3A47",overlayTheme : "#FFFFFF",overlayBackdrop : "#36485C"},
 primary : {textBase : "#FFFFFF",textHover : "#FFFFFF",textActive : "#FFFFFF",backgroundBase : "#36485C",backgroundHover : "#2E3A47",backgroundActive : "#212933",backgroundMuted : "#F5F7FA",backgroundMutedHover : "#E6EDF5",backgroundMutedActive : "#C8D3E0",backgroundBox : "#FCFEFF",borderBase : "#C8D3E0",borderHover : "#596D84",borderActive : "#2E3A47"},
@@ -18,4 +17,5 @@ input : {backgroundBase : "#F5F7FA",backgroundHover : "#E6EDF5",backgroundInform
 separator : {base : "#C8D3E0"},
 light : {backgroundBase : "#FFFFFF",backgroundContrast : "#475A70",backgroundHover : "#F5F7FA",backgroundActive : "#E6EDF5",textBase : "#2E3A47",linkMutedBase : "#F5F7FA",linkMutedHover : "#FFFFFF"},
 shadow : {base : "#000000"},
-accent : {forestTextBase : "#275E43",forestBackgroundMuted : "#EBF2EF",forestBackgroundMutedHover : "#D1E0D9",forestBackgroundMutedActive : "#B6CFC2",sandTextBase : "#5E4D27",sandBackgroundMuted : "#F6F1E5",sandBackgroundMutedHover : "#E4D9C2",sandBackgroundMutedActive : "#DACCAA"},boxShadows: {cardBase : "0px 1px 2px 0px #00000029",cardHover : "0px 2px 8px 0px #00000033",popoverBase : "0px 4px 16px 0px #00000029",modalBase : "0px 8px 32px 0px #0000003d"},opacity: {overlayBackdrop : 0.2},};
+accent: { forest: { textBase: "#275E43", backgroundMuted: "#EBF2EF", backgroundMutedHover: "#D1E0D9", backgroundMutedActive: "#B6CFC2" }, sand: { textBase: "#5E4D27", backgroundMuted: "#F6F1E5", backgroundMutedHover: "#E4D9C2", backgroundMutedActive: "#DACCAA" } },
+boxShadows : {cardBase : "0px 1px 2px 0px #00000029",cardHover : "0px 2px 8px 0px #00000033",popoverBase : "0px 4px 16px 0px #00000029",modalBase : "0px 8px 32px 0px #0000003d"},opacity : {overlayBackdrop : 0.2},};
