@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 20 Oct 2023 14:01:17 GMT
+ * Generated on Wed, 08 Nov 2023 14:37:54 GMT
  */
 
 export const text : {emphasis:{
@@ -565,15 +565,19 @@ export const accent : {forestTextBase:{
             name: string,
             hex: string,
             
-          },forestBackgroundMuted:{
+          },forestTextEmphasis:{
+            name: string,
+            hex: string,
+            description: string
+          },forestBackgroundMuted0:{
             name: string,
             hex: string,
             
-          },forestBackgroundMutedHover:{
+          },forestBackgroundMuted1:{
             name: string,
             hex: string,
             
-          },forestBackgroundMutedActive:{
+          },forestBackgroundMuted2:{
             name: string,
             hex: string,
             
@@ -581,15 +585,19 @@ export const accent : {forestTextBase:{
             name: string,
             hex: string,
             
-          },sandBackgroundMuted:{
+          },sandTextEmphasis:{
+            name: string,
+            hex: string,
+            description: string
+          },sandBackgroundMuted0:{
             name: string,
             hex: string,
             
-          },sandBackgroundMutedHover:{
+          },sandBackgroundMuted1:{
             name: string,
             hex: string,
             
-          },sandBackgroundMutedActive:{
+          },sandBackgroundMuted2:{
             name: string,
             hex: string,
             

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 20 Oct 2023 14:01:17 GMT
+ * Generated on Wed, 08 Nov 2023 14:37:54 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -569,32 +569,40 @@ accent : {forestTextBase:{
             name: "accent.forestTextBase",
             hex: "#86D6B9",
             
-          },forestBackgroundMuted:{
-            name: "accent.forestBackgroundMuted",
+          },forestTextEmphasis:{
+            name: "accent.forestTextEmphasis",
+            hex: "#DBFFF1",
+            
+          },forestBackgroundMuted0:{
+            name: "accent.forestBackgroundMuted0",
             hex: "#0F3326",
             
-          },forestBackgroundMutedHover:{
-            name: "accent.forestBackgroundMutedHover",
+          },forestBackgroundMuted1:{
+            name: "accent.forestBackgroundMuted1",
             hex: "#13402F",
             
-          },forestBackgroundMutedActive:{
-            name: "accent.forestBackgroundMutedActive",
+          },forestBackgroundMuted2:{
+            name: "accent.forestBackgroundMuted2",
             hex: "#256E53",
             
           },sandTextBase:{
             name: "accent.sandTextBase",
             hex: "#D6BA87",
             
-          },sandBackgroundMuted:{
-            name: "accent.sandBackgroundMuted",
+          },sandTextEmphasis:{
+            name: "accent.sandTextEmphasis",
+            hex: "#EFE5D1",
+            
+          },sandBackgroundMuted0:{
+            name: "accent.sandBackgroundMuted0",
             hex: "#33260F",
             
-          },sandBackgroundMutedHover:{
-            name: "accent.sandBackgroundMutedHover",
+          },sandBackgroundMuted1:{
+            name: "accent.sandBackgroundMuted1",
             hex: "#402F13",
             
-          },sandBackgroundMutedActive:{
-            name: "accent.sandBackgroundMutedActive",
+          },sandBackgroundMuted2:{
+            name: "accent.sandBackgroundMuted2",
             hex: "#6E5225",
             
           }},};

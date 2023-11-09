@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 20 Oct 2023 14:01:17 GMT
+ * Generated on Wed, 08 Nov 2023 14:37:54 GMT
  */
 
 module.exports = {green : {100:{
@@ -229,5 +229,9 @@ brown : {200:{
           },700:{
             name: "brown.700",
             hex: "#D6BA87",
+            
+          },800:{
+            name: "brown.800",
+            hex: "#EFE5D1",
             
           }},};

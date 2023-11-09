@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 20 Oct 2023 14:01:17 GMT
+ * Generated on Wed, 08 Nov 2023 14:37:54 GMT
  */
 
 export const theme: string;export const text : {emphasis : string,body : string,subdued : string,onBackground : string};
@@ -17,5 +17,5 @@ export const input : {backgroundBase : string,backgroundHover : string,backgroun
 export const separator : {base : string};
 export const light : {backgroundBase : string,backgroundContrast : string,backgroundHover : string,backgroundActive : string,textBase : string,linkMutedBase : string,linkMutedHover : string};
 export const shadow : {base : string};
-export const accent: { forest: { textBase: string, backgroundMuted: string, backgroundMutedHover: string, backgroundMutedActive: string }, sand: { textBase: string, backgroundMuted: string, backgroundMutedHover: string, backgroundMutedActive: string } };
+export const accent: { forest: { textBase: string, textEmphasis: string, backgroundMuted0: string, backgroundMuted1: string, backgroundMuted2: string }, sand: { textBase: string, textEmphasis: string, backgroundMuted0: string, backgroundMuted1: string, backgroundMuted2: string } };
 export const boxShadows : {cardBase : string,cardHover : string,popoverBase : string,modalBase : string};export const opacity : {overlayBackdrop : number};

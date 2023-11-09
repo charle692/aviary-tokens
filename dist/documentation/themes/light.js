@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 20 Oct 2023 14:01:17 GMT
+ * Generated on Wed, 08 Nov 2023 14:37:54 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -565,32 +565,40 @@ accent : {forestTextBase:{
             name: "accent.forestTextBase",
             hex: "#275E43",
             
-          },forestBackgroundMuted:{
-            name: "accent.forestBackgroundMuted",
+          },forestTextEmphasis:{
+            name: "accent.forestTextEmphasis",
+            hex: "#244C38",
+            description: "Accent used for headings and icons of empahsis"
+          },forestBackgroundMuted0:{
+            name: "accent.forestBackgroundMuted0",
             hex: "#EBF2EF",
             
-          },forestBackgroundMutedHover:{
-            name: "accent.forestBackgroundMutedHover",
+          },forestBackgroundMuted1:{
+            name: "accent.forestBackgroundMuted1",
             hex: "#D1E0D9",
             
-          },forestBackgroundMutedActive:{
-            name: "accent.forestBackgroundMutedActive",
+          },forestBackgroundMuted2:{
+            name: "accent.forestBackgroundMuted2",
             hex: "#B6CFC2",
             
           },sandTextBase:{
             name: "accent.sandTextBase",
             hex: "#5E4D27",
             
-          },sandBackgroundMuted:{
-            name: "accent.sandBackgroundMuted",
+          },sandTextEmphasis:{
+            name: "accent.sandTextEmphasis",
+            hex: "#3E3114",
+            description: "Accent colour used for heading or icons of emphasis"
+          },sandBackgroundMuted0:{
+            name: "accent.sandBackgroundMuted0",
             hex: "#F6F1E5",
             
-          },sandBackgroundMutedHover:{
-            name: "accent.sandBackgroundMutedHover",
+          },sandBackgroundMuted1:{
+            name: "accent.sandBackgroundMuted1",
             hex: "#E4D9C2",
             
-          },sandBackgroundMutedActive:{
-            name: "accent.sandBackgroundMutedActive",
+          },sandBackgroundMuted2:{
+            name: "accent.sandBackgroundMuted2",
             hex: "#DACCAA",
             
           }},};
