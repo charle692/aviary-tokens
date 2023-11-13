@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 08 Nov 2023 14:37:54 GMT
+ * Generated on Thu, 09 Nov 2023 21:01:43 GMT
  */
 
 export const letterSpacingBase : number;

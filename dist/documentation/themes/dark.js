@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 08 Nov 2023 14:37:54 GMT
+ * Generated on Thu, 09 Nov 2023 21:01:43 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -565,8 +565,8 @@ shadow : {base:{
             hex: "#000000",
             description: "For use only with box shadow tokens"
           }},
-accent : {forestTextBase:{
-            name: "accent.forestTextBase",
+accent : {forestTextBody:{
+            name: "accent.forestTextBody",
             hex: "#86D6B9",
             
           },forestTextEmphasis:{
@@ -585,8 +585,8 @@ accent : {forestTextBase:{
             name: "accent.forestBackgroundMuted2",
             hex: "#256E53",
             
-          },sandTextBase:{
-            name: "accent.sandTextBase",
+          },sandTextBody:{
+            name: "accent.sandTextBody",
             hex: "#D6BA87",
             
           },sandTextEmphasis:{
