@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 09 Nov 2023 21:01:43 GMT
+ * Generated on Tue, 21 Nov 2023 13:20:23 GMT
  */
 
 module.exports = {theme: "lightDS3",text : {emphasis : "#36485C",body : "#475A70",subdued : "#596D84",onBackground : "#FFFFFF"},

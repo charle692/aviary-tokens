@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 09 Nov 2023 21:01:43 GMT
+ * Generated on Tue, 21 Nov 2023 13:20:23 GMT
  */
 
 export const theme: string;export const text : {emphasis : string,body : string,subdued : string,onBackground : string};
