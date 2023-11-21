@@ -35,6 +35,11 @@ const getStyleDictionaryConfig = (theme) => {
         files: [
           {
             format: "javascript/module-flat",
+            destination: "dimensions.js",
+            filter: "custom/filter/dimensions",
+          },
+          {
+            format: "javascript/module-flat",
             destination: "borders.js",
             filter: "custom/filter/borders",
           },
