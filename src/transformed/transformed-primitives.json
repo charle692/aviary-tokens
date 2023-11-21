@@ -563,11 +563,13 @@
       }
     }
   },
-  "contentArea": {
-    "max": {
-      "value": "1196px",
-      "type": "dimension",
-      "description": "Max wdith for main content area"
+  "dimensions": {
+    "contentArea": {
+      "max": {
+        "value": "1196px",
+        "type": "dimension",
+        "description": "Max wdith for main content area"
+      }
     }
   }
 }
