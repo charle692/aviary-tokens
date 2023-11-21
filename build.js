@@ -40,7 +40,7 @@ const getStyleDictionaryConfig = (theme) => {
           },
           {
             format: "typescript/es6-declarations",
-            destination: "dimensions.js",
+            destination: "dimensions.d.ts",
             filter: "custom/filter/dimensions",
           },
           {
