@@ -39,6 +39,11 @@ const getStyleDictionaryConfig = (theme) => {
             filter: "custom/filter/dimensions",
           },
           {
+            format: "typescript/es6-declarations",
+            destination: "dimensions.js",
+            filter: "custom/filter/dimensions",
+          },
+          {
             format: "javascript/module-flat",
             destination: "borders.js",
             filter: "custom/filter/borders",
