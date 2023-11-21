@@ -568,7 +568,7 @@
       "max": {
         "value": "1196px",
         "type": "dimension",
-        "description": "Max wdith for main content area"
+        "description": "Max width for main content area"
       }
     }
   }
