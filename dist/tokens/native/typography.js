@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 22 Nov 2023 14:31:10 GMT
+ * Generated on Wed, 24 Jan 2024 16:29:12 GMT
  */
 
 module.exports = {
@@ -24,6 +24,7 @@ module.exports = {
   "lineHeightNormal": 24,
   "lineHeightSmall": 16,
   "fontFamilySansSerif": "Mulish",
+  "fontFamilySerif": "Besley",
   "weightSemiBold": "700",
   "weightBase": "500",
   "weightLight": "400",

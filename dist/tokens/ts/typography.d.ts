@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 22 Nov 2023 14:31:10 GMT
+ * Generated on Wed, 24 Jan 2024 16:29:12 GMT
  */
 
 export const letterSpacingBase : number;
@@ -23,6 +23,7 @@ export const lineHeightLarge : string;
 export const lineHeightNormal : string;
 export const lineHeightSmall : string;
 export const fontFamilySansSerif : string;
+export const fontFamilySerif : string;
 export const weightSemiBold : number;
 export const weightBase : number;
 export const weightLight : number;
