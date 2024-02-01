@@ -887,5 +887,209 @@
         "description": "Used for overlay backdrop opacity"
       }
     }
+  },
+  "typography": {
+    "desktop": {
+      "h1": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 700,
+          "fontSize": "40px",
+          "lineHeight": "40px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "h2": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 600,
+          "fontSize": "32px",
+          "lineHeight": "40px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "h3": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 600,
+          "fontSize": "24px",
+          "lineHeight": "32px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "h4": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 600,
+          "fontSize": "20px",
+          "lineHeight": "24px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "h5": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 700,
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "body": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 400,
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "footnote": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 500,
+          "fontSize": "14px",
+          "lineHeight": "16px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "caption": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 500,
+          "fontSize": "12px",
+          "lineHeight": "16px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "subcaption": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 500,
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      }
+    },
+    "mobile": {
+      "h1": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 700,
+          "fontSize": "32px",
+          "lineHeight": "40px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "h2": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 600,
+          "fontSize": "28px",
+          "lineHeight": "32px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "h3": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 600,
+          "fontSize": "22px",
+          "lineHeight": "32px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "h4": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 600,
+          "fontSize": "20px",
+          "lineHeight": "24px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "h5": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 700,
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "body": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 400,
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "footnote": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 500,
+          "fontSize": "14px",
+          "lineHeight": "16px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "caption": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 500,
+          "fontSize": "12px",
+          "lineHeight": "16px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "subcaption": {
+        "value": {
+          "fontFamily": "Mulish",
+          "fontWeight": 500,
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      }
+    }
   }
 }

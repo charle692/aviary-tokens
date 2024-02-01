@@ -21,6 +21,12 @@ StyleDictionary.registerFilter({
 StyleDictionary.registerFilter({
   name: "custom/filter/typography",
   matcher: function (token) {
+    // Only export typography primitives
+    const primitiveFile = token.filePath.includes("primitive");
+    if (!primitiveFile) {
+      return false;
+    }
+
     return token.attributes.category === "typography";
   },
 });
@@ -33,14 +39,21 @@ StyleDictionary.registerFilter({
   },
 });
 
-// filter boxShadows, colors, and opacity
+// filter boxShadows, colors, typography and opacity
 StyleDictionary.registerFilter({
   name: "custom/filter/themeTokens",
   matcher: (token) => {
+    // Do not parse primitive tokens, as they are not theme tokens
+    const primitiveFile = token.filePath.includes("primitive");
+    if (primitiveFile) {
+      return false;
+    }
+
     return (
       token.attributes.category === "boxShadows" ||
       token.attributes.category === "colors" ||
-      token.attributes.category === "opacity"
+      token.attributes.category === "opacity" ||
+      token.attributes.category === "typography"
     );
   },
 });
