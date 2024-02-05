@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 01 Feb 2024 20:50:13 GMT
+ * Generated on Fri, 02 Feb 2024 20:01:56 GMT
  */
 
 module.exports = {green : {100:{
@@ -9,15 +9,15 @@ module.exports = {green : {100:{
             
           },200:{
             name: "green.200",
-            hex: "#0F3326",
+            hex: "#124935",
             
           },300:{
             name: "green.300",
-            hex: "#13402F",
+            hex: "#1F5B45",
             
           },400:{
             name: "green.400",
-            hex: "#256E53",
+            hex: "#206A4F",
             
           },500:{
             name: "green.500",
@@ -29,11 +29,11 @@ module.exports = {green : {100:{
             
           },700:{
             name: "green.700",
-            hex: "#86D6B9",
+            hex: "#BFE8D9",
             
           },800:{
             name: "green.800",
-            hex: "#DBFFF1",
+            hex: "#F0FFF9",
             
           }},
 blue : {100:{
@@ -75,11 +75,11 @@ red : {100:{
             
           },200:{
             name: "red.200",
-            hex: "#34101A",
+            hex: "#451522",
             
           },300:{
             name: "red.300",
-            hex: "#451522",
+            hex: "#5E1D2E",
             
           },400:{
             name: "red.400",
@@ -108,11 +108,11 @@ purple : {100:{
             
           },200:{
             name: "purple.200",
-            hex: "#291433",
+            hex: "#33193F",
             
           },300:{
             name: "purple.300",
-            hex: "#33193F",
+            hex: "#482359",
             
           },400:{
             name: "purple.400",
@@ -141,11 +141,11 @@ orange : {100:{
             
           },200:{
             name: "orange.200",
-            hex: "#361D0E",
+            hex: "#4A2915",
             
           },300:{
             name: "orange.300",
-            hex: "#4A2915",
+            hex: "#63371C",
             
           },400:{
             name: "orange.400",
@@ -170,11 +170,11 @@ orange : {100:{
           }},
 grey : {100:{
             name: "grey.100",
-            hex: "#101012",
+            hex: "#141719",
             
           },200:{
             name: "grey.200",
-            hex: "#1A1D21",
+            hex: "#1D2124",
             
           },300:{
             name: "grey.300",
@@ -216,22 +216,22 @@ shades : {white:{
           }},
 brown : {200:{
             name: "brown.200",
-            hex: "#33260F",
+            hex: "#493612",
             
           },300:{
             name: "brown.300",
-            hex: "#402F13",
+            hex: "#5E4317",
             
           },400:{
             name: "brown.400",
-            hex: "#6E5225",
+            hex: "#6B5024",
             
           },700:{
             name: "brown.700",
-            hex: "#D6BA87",
+            hex: "#EFE5D1",
             
           },800:{
             name: "brown.800",
-            hex: "#EFE5D1",
+            hex: "#F6F1E5",
             
           }},};

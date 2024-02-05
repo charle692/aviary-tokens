@@ -1,11 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Thu, 01 Feb 2024 20:50:13 GMT
+ * Generated on Fri, 02 Feb 2024 20:01:56 GMT
  */
 
 module.exports = {text : {emphasis:{
             name: "text.emphasis",
-            hex: "#E8E9EA",
+            hex: "#FFFFFF",
             description: "Used for any text content and icons used with text that needs emphasizing"
           },body:{
             name: "text.body",
@@ -38,7 +38,7 @@ system : {textLabelEmphasis:{
             description: "Used as the pressed text or fill colour for interactive system components such as links and text buttons"
           },backgroundBase:{
             name: "system.backgroundBase",
-            hex: "#101012",
+            hex: "#141719",
             description: "Used as the background for system components"
           },backgroundMuted:{
             name: "system.backgroundMuted",
@@ -54,7 +54,7 @@ system : {textLabelEmphasis:{
             description: "Used as the pressed muted background for system components"
           },backgroundBox:{
             name: "system.backgroundBox",
-            hex: "#1A1D21",
+            hex: "#1D2124",
             description: "Used as a background colour for a system container like Box or Message"
           },borderBase:{
             name: "system.borderBase",
@@ -75,11 +75,11 @@ system : {textLabelEmphasis:{
           }},
 surface : {level0:{
             name: "surface.level0",
-            hex: "#101012",
+            hex: "#141719",
             description: "Used for setting the lowest most level, mainly applied as a background color to the HTML body. Should always be underneath levels 1 and 2"
           },level1:{
             name: "surface.level1",
-            hex: "#101012",
+            hex: "#141719",
             description: "Used commonly with Boxes and containers that are directly on surface level 0. Also can be used as an alternative HTML body background color."
           },level2:{
             name: "surface.level2",
@@ -87,7 +87,7 @@ surface : {level0:{
             description: "Used for elements that are contained within Boxes or other wrappers that are surface level 1."
           },interactiveBackground:{
             name: "surface.interactiveBackground",
-            hex: "#1A1D21",
+            hex: "#1D2124",
             description: "Used for elements where the entire surface is interactable. For example Accordions, ActionBlock, and DropdownItems"
           },interactiveHover:{
             name: "surface.interactiveHover",
@@ -99,28 +99,28 @@ surface : {level0:{
             description: "Active/Pressed state for elements where the entire surface is interactable. For example Accordions, ActionBlock, and DropdownItems"
           },overlayDark:{
             name: "surface.overlayDark",
-            hex: "#22272B",
+            hex: "#1D2124",
             description: "Used for elements that are absolutely positioned to overlay content on the page. Is always a dark background regardless of theme. Ex: Things like Toasts and Tooltips"
           },overlayTheme:{
             name: "surface.overlayTheme",
-            hex: "#1A1D21",
+            hex: "#1D2124",
             description: "Used for elements that are absolutely positioned to overlay content on the page. Matches the base color of the theme. Ex: Snackbar"
           },overlayBackdrop:{
             name: "surface.overlayBackdrop",
-            hex: "#1A1D21",
+            hex: "#000000",
             description: "Used to overlay & de-emphasize the page to draw focus to certain areas. Ex: Used with Modals, Drawers"
           }},
 primary : {textBase:{
             name: "primary.textBase",
-            hex: "#1A1D21",
+            hex: "#1D2124",
             description: "Used as the text or fill colour for interactive and static primary components such as links, text, and icons"
           },textHover:{
             name: "primary.textHover",
-            hex: "#1A1D21",
+            hex: "#1D2124",
             description: "Used as the hovered text or fill colour for interactive primary components such as links and text buttons"
           },textActive:{
             name: "primary.textActive",
-            hex: "#1A1D21",
+            hex: "#1D2124",
             description: "Used as the pressed text or fill colour for interactive primary components such as links and text buttons"
           },backgroundBase:{
             name: "primary.backgroundBase",
@@ -169,11 +169,11 @@ success : {textBase:{
             description: "Used as the text or fill colour for successful intention versions of components such as message, pill, or box"
           },textHover:{
             name: "success.textHover",
-            hex: "#86D6B9",
+            hex: "#BFE8D9",
             description: "Used as the hovered text or fill colour for successful intention versions of components such as message, pill, or box"
           },textActive:{
             name: "success.textActive",
-            hex: "#DBFFF1",
+            hex: "#F0FFF9",
             description: "Used as the pressed text or fill colour for successful intention versions of components such as message, pill, or box"
           },backgroundBase:{
             name: "success.backgroundBase",
@@ -185,19 +185,19 @@ success : {textBase:{
             description: "Description to come."
           },backgroundActive:{
             name: "success.backgroundActive",
-            hex: "#86D6B9",
+            hex: "#BFE8D9",
             description: "Description to come."
           },backgroundMuted:{
             name: "success.backgroundMuted",
-            hex: "#0F3326",
+            hex: "#124935",
             description: "Used as the muted background for successful intention versions of components such as message, pill, or box. Paired with successful.textBase for a subtler contrast."
           },backgroundMutedHover:{
             name: "success.backgroundMutedHover",
-            hex: "#13402F",
+            hex: "#1F5B45",
             description: "Used as the hovered muted background for successful intention versions of components such as message, pill, or box. Paired with successful.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "success.backgroundMutedActive",
-            hex: "#256E53",
+            hex: "#206A4F",
             description: "Used as the pressed muted background for successful intention versions of components such as message, pill, or box. Paired with successful.textBase for a subtler contrast"
           },backgroundBox:{
             name: "success.backgroundBox",
@@ -205,7 +205,7 @@ success : {textBase:{
             description: "Used as a very light background for successful intention versions of components such as message, pill, or box. Used for containers with content blocks"
           },borderBase:{
             name: "success.borderBase",
-            hex: "#256E53",
+            hex: "#206A4F",
             description: "Used for the border colour for successful intention versions of components such as buttons and Message"
           },borderHover:{
             name: "success.borderHover",
@@ -295,11 +295,11 @@ warning : {textBase:{
             description: "Used as the pressed background for warning components such as plain buttons"
           },backgroundMuted:{
             name: "warning.backgroundMuted",
-            hex: "#361D0E",
+            hex: "#4A2915",
             description: "Used as the muted background for warning components such as pills and text buttons. Paired with warning.textBase for a subtler contrast"
           },backgroundMutedHover:{
             name: "warning.backgroundMutedHover",
-            hex: "#4A2915",
+            hex: "#63371C",
             description: "Used as the hovered muted background for warning components such as pills and text buttons. Paired with warning.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "warning.backgroundMutedActive",
@@ -348,11 +348,11 @@ danger : {textBase:{
             description: "Used as the pressed background for danger components such as plain buttons"
           },backgroundMuted:{
             name: "danger.backgroundMuted",
-            hex: "#34101A",
+            hex: "#451522",
             description: "Used as the muted background for danger components such as pills and text buttons. Paired with danger.textBase for a subtler contrast"
           },backgroundMutedHover:{
             name: "danger.backgroundMutedHover",
-            hex: "#451522",
+            hex: "#5E1D2E",
             description: "Used as the hovered muted background for danger components such as pills and text buttons. Paired with danger.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "danger.backgroundMutedActive",
@@ -401,11 +401,11 @@ highlight : {textBase:{
             description: "Used as the pressed background for highlight components such as plain buttons"
           },backgroundMuted:{
             name: "highlight.backgroundMuted",
-            hex: "#291433",
+            hex: "#33193F",
             description: "Used as the muted background for highlight components such as pills and text buttons. Paired with highlight.textBase for a subtler contrast"
           },backgroundMutedHover:{
             name: "highlight.backgroundMutedHover",
-            hex: "#33193F",
+            hex: "#482359",
             description: "Used as the hovered muted background for highlight components such as pills and text buttons. Paired with highlight.textBase for a subtler contrast"
           },backgroundMutedActive:{
             name: "highlight.backgroundMutedActive",
@@ -567,42 +567,42 @@ shadow : {base:{
           }},
 accent : {forestTextBody:{
             name: "accent.forestTextBody",
-            hex: "#86D6B9",
+            hex: "#BFE8D9",
             
           },forestTextEmphasis:{
             name: "accent.forestTextEmphasis",
-            hex: "#DBFFF1",
+            hex: "#F0FFF9",
             
           },forestBackgroundMuted0:{
             name: "accent.forestBackgroundMuted0",
-            hex: "#0F3326",
+            hex: "#124935",
             
           },forestBackgroundMuted1:{
             name: "accent.forestBackgroundMuted1",
-            hex: "#13402F",
+            hex: "#1F5B45",
             
           },forestBackgroundMuted2:{
             name: "accent.forestBackgroundMuted2",
-            hex: "#256E53",
+            hex: "#206A4F",
             
           },sandTextBody:{
             name: "accent.sandTextBody",
-            hex: "#D6BA87",
+            hex: "#EFE5D1",
             
           },sandTextEmphasis:{
             name: "accent.sandTextEmphasis",
-            hex: "#EFE5D1",
+            hex: "#F6F1E5",
             
           },sandBackgroundMuted0:{
             name: "accent.sandBackgroundMuted0",
-            hex: "#33260F",
+            hex: "#493612",
             
           },sandBackgroundMuted1:{
             name: "accent.sandBackgroundMuted1",
-            hex: "#402F13",
+            hex: "#5E4317",
             
           },sandBackgroundMuted2:{
             name: "accent.sandBackgroundMuted2",
-            hex: "#6E5225",
+            hex: "#6B5024",
             
           }},};
