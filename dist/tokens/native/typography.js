@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 06 Feb 2024 21:36:06 GMT
+ * Generated on Thu, 08 Feb 2024 20:57:28 GMT
  */
 
 module.exports = {
@@ -19,10 +19,12 @@ module.exports = {
   "sizeMobile3xlarge": 32,
   "sizeMobile2xlarge": 28,
   "sizeMobileXlarge": 22,
-  "lineHeightXlarge": 40,
-  "lineHeightLarge": 32,
-  "lineHeightNormal": 24,
-  "lineHeightSmall": 16,
+  "lineHeightXxlarge": 50,
+  "lineHeightXlarge": 44,
+  "lineHeightLarge": 34,
+  "lineHeightMedium": 26,
+  "lineHeightSmall": 22,
+  "lineHeightXsmall": 18,
   "fontFamilySansSerif": "Mulish",
   "fontFamilySerif": "Besley",
   "weightSemiBold": "700",

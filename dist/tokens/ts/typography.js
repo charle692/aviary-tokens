@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 06 Feb 2024 21:36:06 GMT
+ * Generated on Thu, 08 Feb 2024 20:57:28 GMT
  */
 
 module.exports = {
@@ -19,10 +19,12 @@ module.exports = {
   "sizeMobile3xlarge": "32px",
   "sizeMobile2xlarge": "28px",
   "sizeMobileXlarge": "22px",
-  "lineHeightXlarge": "40px",
-  "lineHeightLarge": "32px",
-  "lineHeightNormal": "24px",
-  "lineHeightSmall": "16px",
+  "lineHeightXxlarge": "50px",
+  "lineHeightXlarge": "44px",
+  "lineHeightLarge": "34px",
+  "lineHeightMedium": "26px",
+  "lineHeightSmall": "22px",
+  "lineHeightXsmall": "18px",
   "fontFamilySansSerif": "Mulish",
   "fontFamilySerif": "Besley",
   "weightSemiBold": 700,
