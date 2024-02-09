@@ -1,10 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Thu, 08 Feb 2024 20:57:28 GMT
+ * Generated on Fri, 09 Feb 2024 18:36:04 GMT
  */
 
 module.exports = {theme: "dark",
-text: {emphasis : "#FFFFFF",body : "#BCBDBF",subdued : "#98999B",onBackground : "#FFFFFF"},
+text: {emphasis : "#FFFFFF",body : "#E8E9EA",subdued : "#BCBDBF",onBackground : "#FFFFFF"},
 system: {textLabelEmphasis : "#FFFFFF",textBase : "#BCBDBF",textHover : "#E8E9EA",textActive : "#FFFFFF",backgroundBase : "#141719",backgroundMuted : "#22272B",backgroundMutedHover : "#2D3238",backgroundMutedActive : "#515357",backgroundBox : "#1D2124",borderBase : "#515357",borderHover : "#98999B",borderActive : "#BCBDBF",borderFocused : "#6597CE"},
 surface: {level0 : "#141719",level1 : "#141719",level2 : "#22272B",interactiveBackground : "#1D2124",interactiveHover : "#22272B",interactiveActive : "#2D3238",overlayDark : "#1D2124",overlayTheme : "#1D2124",overlayBackdrop : "#000000"},
 primary: {textBase : "#1D2124",textHover : "#1D2124",textActive : "#1D2124",backgroundBase : "#E8E9EA",backgroundHover : "#FFFFFF",backgroundActive : "#FFFFFF",backgroundMuted : "#22272B",backgroundMutedHover : "#2D3238",backgroundMutedActive : "#515357",backgroundBox : "#0C291E",borderBase : "#515357",borderHover : "#98999B",borderActive : "#BCBDBF"},
