@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 13 Feb 2024 15:21:28 GMT
+ * Generated on Tue, 13 Feb 2024 18:51:30 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -109,6 +109,10 @@ surface : {level0:{
             name: "surface.overlayBackdrop",
             hex: "#36485C",
             description: "Used to overlay & de-emphasize the page to draw focus to certain areas. Ex: Used with Modals, Drawers"
+          },overlayModal:{
+            name: "surface.overlayModal",
+            hex: "#FFFFFF",
+            
           }},
 primary : {textBase:{
             name: "primary.textBase",
@@ -600,5 +604,26 @@ accent : {forestTextBody:{
           },sandBackgroundMuted2:{
             name: "accent.sandBackgroundMuted2",
             hex: "#DACCAA",
+            
+          }},
+inverted : {backgroundBase:{
+            name: "inverted.backgroundBase",
+            hex: "#2E3A47",
+            
+          },backgroundHover:{
+            name: "inverted.backgroundHover",
+            hex: "#36485C",
+            
+          },backgroundActive:{
+            name: "inverted.backgroundActive",
+            hex: "#475A70",
+            
+          },textEmphasis:{
+            name: "inverted.textEmphasis",
+            hex: "#FFFFFF",
+            
+          },textBody:{
+            name: "inverted.textBody",
+            hex: "#F5F7FA",
             
           }},};

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 13 Feb 2024 15:21:28 GMT
+ * Generated on Tue, 13 Feb 2024 18:51:30 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -103,8 +103,12 @@ surface : {level0:{
             description: "Used for elements that are absolutely positioned to overlay content on the page. Is always a dark background regardless of theme. Ex: Things like Toasts and Tooltips"
           },overlayTheme:{
             name: "surface.overlayTheme",
-            hex: "#1D2124",
+            hex: "#2D3238",
             description: "Used for elements that are absolutely positioned to overlay content on the page. Matches the base color of the theme. Ex: Snackbar"
+          },overlayModal:{
+            name: "surface.overlayModal",
+            hex: "#1D2124",
+            
           },overlayBackdrop:{
             name: "surface.overlayBackdrop",
             hex: "#000000",
@@ -604,5 +608,26 @@ accent : {forestTextBody:{
           },sandBackgroundMuted2:{
             name: "accent.sandBackgroundMuted2",
             hex: "#6B5024",
+            
+          }},
+inverted : {backgroundBase:{
+            name: "inverted.backgroundBase",
+            hex: "#E8E9EA",
+            
+          },backgroundHover:{
+            name: "inverted.backgroundHover",
+            hex: "#BCBDBF",
+            
+          },backgroundActive:{
+            name: "inverted.backgroundActive",
+            hex: "#98999B",
+            
+          },textEmphasis:{
+            name: "inverted.textEmphasis",
+            hex: "#141719",
+            
+          },textBody:{
+            name: "inverted.textBody",
+            hex: "#1D2124",
             
           }},};

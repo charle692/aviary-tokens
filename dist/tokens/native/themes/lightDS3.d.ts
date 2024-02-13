@@ -1,12 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Tue, 13 Feb 2024 15:21:28 GMT
+ * Generated on Tue, 13 Feb 2024 18:51:30 GMT
  */
 
 export const theme: string;
 export const text: {emphasis : string,body : string,subdued : string,onBackground : string};
 export const system: {textLabelEmphasis : string,textBase : string,textHover : string,textActive : string,backgroundBase : string,backgroundMuted : string,backgroundMutedHover : string,backgroundMutedActive : string,backgroundBox : string,borderBase : string,borderHover : string,borderActive : string,borderFocused : string};
-export const surface: {level0 : string,level1 : string,level2 : string,interactiveBackground : string,interactiveHover : string,interactiveActive : string,overlayDark : string,overlayTheme : string,overlayBackdrop : string};
+export const surface: {level0 : string,level1 : string,level2 : string,interactiveBackground : string,interactiveHover : string,interactiveActive : string,overlayDark : string,overlayTheme : string,overlayBackdrop : string,overlayModal : string};
 export const primary: {textBase : string,textHover : string,textActive : string,backgroundBase : string,backgroundHover : string,backgroundActive : string,backgroundMuted : string,backgroundMutedHover : string,backgroundMutedActive : string,backgroundBox : string,borderBase : string,borderHover : string,borderActive : string};
 export const success: {textBase : string,textHover : string,textActive : string,backgroundBase : string,backgroundHover : string,backgroundActive : string,backgroundMuted : string,backgroundMutedHover : string,backgroundMutedActive : string,backgroundBox : string,borderBase : string,borderHover : string,borderActive : string};
 export const info: {textBase : string,textHover : string,textActive : string,backgroundBase : string,backgroundHover : string,backgroundActive : string,backgroundMuted : string,backgroundMutedHover : string,backgroundMutedActive : string,backgroundBox : string,borderBase : string,borderHover : string,borderActive : string};
@@ -18,6 +18,7 @@ export const input: {backgroundBase : string,backgroundHover : string,background
 export const separator: {base : string};
 export const light: {backgroundBase : string,backgroundContrast : string,backgroundHover : string,backgroundActive : string,textBase : string,linkMutedBase : string,linkMutedHover : string};
 export const shadow: {base : string};
+export const inverted: {backgroundBase : string,backgroundHover : string,backgroundActive : string,textEmphasis : string,textBody : string};
 
 export const accent: { forest: { textBody: string, textEmphasis: string, backgroundMuted0: string, backgroundMuted1: string, backgroundMuted2: string }, sand: { textBody: string, textEmphasis: string, backgroundMuted0: string, backgroundMuted1: string, backgroundMuted2: string } };
 export const boxShadows: {cardBase : string,cardHover : string,popoverBase : string,modalBase : string};

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 13 Feb 2024 15:21:28 GMT
+ * Generated on Tue, 13 Feb 2024 18:51:30 GMT
  */
 
 export const text : {emphasis:{
@@ -109,6 +109,10 @@ export const surface : {level0:{
             name: string,
             hex: string,
             description: string
+          },overlayModal:{
+            name: string,
+            hex: string,
+            
           }};
 export const primary : {textBase:{
             name: string,
@@ -598,6 +602,27 @@ export const accent : {forestTextBody:{
             hex: string,
             
           },sandBackgroundMuted2:{
+            name: string,
+            hex: string,
+            
+          }};
+export const inverted : {backgroundBase:{
+            name: string,
+            hex: string,
+            
+          },backgroundHover:{
+            name: string,
+            hex: string,
+            
+          },backgroundActive:{
+            name: string,
+            hex: string,
+            
+          },textEmphasis:{
+            name: string,
+            hex: string,
+            
+          },textBody:{
             name: string,
             hex: string,
             
