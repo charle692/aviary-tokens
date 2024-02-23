@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 13 Feb 2024 18:51:30 GMT
+ * Generated on Wed, 21 Feb 2024 15:30:26 GMT
  */
 
 module.exports = {text : {emphasis:{
@@ -58,7 +58,7 @@ system : {textLabelEmphasis:{
             description: "Used as a background colour for a system container like Box or Message"
           },borderBase:{
             name: "system.borderBase",
-            hex: "#C8D3E0",
+            hex: "#B8C6D6",
             description: "Used for the border colour for system components"
           },borderHover:{
             name: "system.borderHover",
@@ -112,6 +112,18 @@ surface : {level0:{
           },overlayModal:{
             name: "surface.overlayModal",
             hex: "#FFFFFF",
+            
+          },borderBase:{
+            name: "surface.borderBase",
+            hex: "#C8D3E0",
+            
+          },borderHover:{
+            name: "surface.borderHover",
+            hex: "#596D84",
+            
+          },borderActive:{
+            name: "surface.borderActive",
+            hex: "#475A70",
             
           }},
 primary : {textBase:{

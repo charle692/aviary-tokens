@@ -1,12 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Tue, 13 Feb 2024 18:51:30 GMT
+ * Generated on Wed, 21 Feb 2024 15:30:26 GMT
  */
 
 module.exports = {theme: "dark",
 text: {emphasis : "#FFFFFF",body : "#E8E9EA",subdued : "#BCBDBF",onBackground : "#FFFFFF"},
-system: {textLabelEmphasis : "#FFFFFF",textBase : "#BCBDBF",textHover : "#E8E9EA",textActive : "#FFFFFF",backgroundBase : "#141719",backgroundMuted : "#22272B",backgroundMutedHover : "#2D3238",backgroundMutedActive : "#515357",backgroundBox : "#1D2124",borderBase : "#515357",borderHover : "#98999B",borderActive : "#BCBDBF",borderFocused : "#6597CE"},
-surface: {level0 : "#141719",level1 : "#141719",level2 : "#22272B",interactiveBackground : "#1D2124",interactiveHover : "#22272B",interactiveActive : "#2D3238",overlayDark : "#1D2124",overlayTheme : "#2D3238",overlayModal : "#1D2124",overlayBackdrop : "#000000"},
+system: {textLabelEmphasis : "#FFFFFF",textBase : "#BCBDBF",textHover : "#E8E9EA",textActive : "#FFFFFF",backgroundBase : "#141719",backgroundMuted : "#22272B",backgroundMutedHover : "#2D3238",backgroundMutedActive : "#515357",backgroundBox : "#1D2124",borderBase : "#686B70",borderHover : "#98999B",borderActive : "#BCBDBF",borderFocused : "#6597CE"},
+surface: {level0 : "#141719",level1 : "#141719",level2 : "#22272B",interactiveBackground : "#1D2124",interactiveHover : "#22272B",interactiveActive : "#2D3238",overlayDark : "#1D2124",overlayTheme : "#2D3238",overlayModal : "#1D2124",overlayBackdrop : "#000000",borderBase : "#515357",borderHover : "#98999B",borderActive : "#BCBDBF"},
 primary: {textBase : "#1D2124",textHover : "#1D2124",textActive : "#1D2124",backgroundBase : "#E8E9EA",backgroundHover : "#FFFFFF",backgroundActive : "#FFFFFF",backgroundMuted : "#22272B",backgroundMutedHover : "#2D3238",backgroundMutedActive : "#515357",backgroundBox : "#0C291E",borderBase : "#515357",borderHover : "#98999B",borderActive : "#BCBDBF"},
 success: {textBase : "#42AD86",textHover : "#BFE8D9",textActive : "#F0FFF9",backgroundBase : "#288563",backgroundHover : "#42AD86",backgroundActive : "#BFE8D9",backgroundMuted : "#124935",backgroundMutedHover : "#1F5B45",backgroundMutedActive : "#206A4F",backgroundBox : "#0C291E",borderBase : "#206A4F",borderHover : "#288563",borderActive : "#42AD86"},
 info: {textBase : "#6597CE",textHover : "#96BDE7",textActive : "#D1E8FF",backgroundBase : "#4577AD",backgroundHover : "#285685",backgroundActive : "#142C45",backgroundMuted : "#102337",backgroundMutedHover : "#142C45",backgroundMutedActive : "#285685",backgroundBox : "#0C1B29",borderBase : "#4577AD",borderHover : "#285685",borderActive : "#142C45"},

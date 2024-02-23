@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 13 Feb 2024 18:51:30 GMT
+ * Generated on Wed, 21 Feb 2024 15:30:26 GMT
  */
 
 export const text : {emphasis:{
@@ -113,6 +113,18 @@ export const surface : {level0:{
             name: string,
             hex: string,
             description: string
+          },borderBase:{
+            name: string,
+            hex: string,
+            
+          },borderHover:{
+            name: string,
+            hex: string,
+            
+          },borderActive:{
+            name: string,
+            hex: string,
+            
           }};
 export const primary : {textBase:{
             name: string,
