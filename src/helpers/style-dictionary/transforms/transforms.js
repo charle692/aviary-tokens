@@ -58,3 +58,24 @@ StyleDictionary.registerTransform({
     return token.value.toString();
   },
 });
+
+/* Converts typography attributes to
+ * proper types to be used in react native
+ *
+ * fontWeight: number => string
+ * fontSize: string => number
+ */
+StyleDictionary.registerTransform({
+  name: "custom/value/native-typography-transforms",
+  type: "value",
+  matcher: (token) => {
+    return token.type === "typography";
+  },
+  transformer: function (token) {
+    return {
+      ...token.value,
+      fontSize: `${parseFloat(token.value.fontSize)}`,
+      lineHeight: `${parseFloat(token.value.lineHeight)}`,
+    };
+  },
+});

@@ -72,8 +72,8 @@ const renderOutput = (isJS, tokenFamily, tokensArray, customValueOrType) => {
 };
 
 const renderTypographyOutput = (isJS, tokensArray, customValueOrType) => {
-  const renderValueOrType = (token, isFontWeight) =>
-    customValueOrType(token, isJS, isFontWeight);
+  const renderValueOrType = (token, propertyName) =>
+    customValueOrType(token, isJS, propertyName);
 
   /* Output the typography sub values
    *
@@ -89,7 +89,7 @@ const renderTypographyOutput = (isJS, tokensArray, customValueOrType) => {
 
       return `${propertyName}: ${renderValueOrType(
         propertyValue,
-        propertyName === `fontWeight`
+        propertyName
       )} `;
     });
   };
@@ -269,7 +269,7 @@ const customOpacityObjectFormatter = (dictionary, theme, isJS) => {
  *
  * @excludes "core" type token files
  */
-const customTypographyObjectFormatter = (dictionary, theme, isJS) => {
+const customTypographyObjectFormatter = (dictionary, theme, isJS, isNative) => {
   // no typography tokens for core, returns empty object otherwise
   if (theme?.destination.includes("core" || "primitives")) return "";
 
@@ -277,8 +277,19 @@ const customTypographyObjectFormatter = (dictionary, theme, isJS) => {
     (token) => token.attributes.category === "typography"
   );
 
-  const valueOrType = (token, isJS, isFontWeight) => {
-    if (isFontWeight) {
+  const valueOrType = (token, isJS, propertyName) => {
+    if (isNative) {
+      if (
+        propertyName === "fontWeight" ||
+        propertyName === "textCase" ||
+        propertyName === "textDecoration" ||
+        propertyName === "fontFamily"
+      ) {
+        return isJS ? `"${token}"` : `string`;
+      }
+      return isJS ? `${token}` : `number`;
+    }
+    if (propertyName === "fontWeight") {
       return isJS ? `${token}` : `number`;
     }
     return isJS ? `"${token}"` : `string`;
@@ -289,7 +300,8 @@ const customTypographyObjectFormatter = (dictionary, theme, isJS) => {
 
 StyleDictionary.registerFormat({
   name: "custom/format/typescript-color-declarations",
-  formatter: ({ dictionary, file }) => {
+  formatter: ({ dictionary, file, platform }) => {
+    const isNative = platform.transformGroup.includes("native");
     return (
       fileHeader({ file }) +
       addThemePrefix(file, false) +
@@ -297,14 +309,16 @@ StyleDictionary.registerFormat({
       customAccentColorObjectFormatter(dictionary, false) +
       customBoxShadowObjectFormatter(dictionary, file, false) +
       customOpacityObjectFormatter(dictionary, file, false) +
-      customTypographyObjectFormatter(dictionary, file, false)
+      customTypographyObjectFormatter(dictionary, file, false, isNative)
     );
   },
 });
 
 StyleDictionary.registerFormat({
   name: "custom/format/javascript-colors",
-  formatter: ({ dictionary, file }) => {
+  formatter: ({ dictionary, file, platform }) => {
+    const isNative = platform.transformGroup.includes("native");
+
     return (
       fileHeader({ file }) +
       `module.exports = {` +
@@ -313,7 +327,7 @@ StyleDictionary.registerFormat({
       customAccentColorObjectFormatter(dictionary, true) +
       customBoxShadowObjectFormatter(dictionary, file, true) +
       customOpacityObjectFormatter(dictionary, file, true) +
-      customTypographyObjectFormatter(dictionary, file, true) +
+      customTypographyObjectFormatter(dictionary, file, true, isNative) +
       `};`
     );
   },
