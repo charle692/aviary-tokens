@@ -1,0 +1,12 @@
+{
+  "tokenSetOrder": [
+    "core-light",
+    "core-emerson",
+    "core-dark",
+    "themes/light",
+    "themes/lightDS3",
+    "themes/dark",
+    "themes/emerson",
+    "primitives"
+  ]
+}

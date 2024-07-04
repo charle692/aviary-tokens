@@ -1,17 +1,36 @@
 {
-  "name": "@ccayl/aviary-tokens",
-  "version": "0.0.1",
-  "description": "Testing 123",
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
+  "name": "aviary-tokens",
+  "license": "MIT",
+  "version": "1.1.2",
+  "description": "Design tokens for the Fullscript Aviary design system",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
   "scripts": {
-    "build": "node build.js",
-    "transform": "token-transformer data/tokens.json data/transformed-tokens.json --expandTypography=true"
+    "build": "yarn clean && yarn transform && yarn build:tokens && yarn build:types && yarn build:babel",
+    "build:tokens": "node build.js",
+    "build:typescript": "yarn build:types && yarn build:babel",
+    "build:types": "tsc --emitDeclarationOnly --declarationMap --declaration -p ./tsconfig.json",
+    "build:babel": "yarn babel src --out-dir dist --ignore 'src/**/*.spec.ts' --extensions .ts",
+    "transform": "yarn transform-core-light && yarn transform-core-dark && yarn transform-core-emerson && yarn transform-light && yarn transform-lightDS3  && yarn transform-dark && yarn transform-emerson && yarn transform-primitives",
+    "transform-core-light": "yarn token-transformer src/data src/transformed/transformed-core-light.json core-light",
+    "transform-core-dark": "yarn token-transformer src/data src/transformed/transformed-core-dark.json core-dark",
+    "transform-core-emerson": "yarn token-transformer src/data src/transformed/transformed-core-emerson.json core-emerson",
+    "transform-light": "yarn token-transformer src/data src/transformed/transformed-light.json primitives,core-light,themes/light primitives,core-light",
+    "transform-lightDS3": "yarn token-transformer src/data src/transformed/transformed-lightDS3.json primitives,core-light,themes/lightDS3 primitives,core-light",
+    "transform-dark": "yarn token-transformer src/data src/transformed/transformed-dark.json primitives,core-dark,themes/dark primitives,core-dark",
+    "transform-emerson": "yarn token-transformer src/data src/transformed/transformed-emerson.json primitives,core-emerson,themes/emerson primitives,core-emerson",
+    "transform-primitives": "yarn token-transformer src/data src/transformed/transformed-primitives.json primitives --expandTypography ",
+    "clean": "rm -rf dist/"
   },
   "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "@babel/preset-typescript": "^7.18.6",
+    "core-js": "^3.25.0",
     "style-dictionary": "^3.7.0",
-    "token-transformer": "0.0.23"
-  }
+    "token-transformer": "0.0.23",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {}
 }

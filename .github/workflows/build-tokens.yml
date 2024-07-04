@@ -3,11 +3,10 @@ name: Style dictionary build
 on:
   push:
     paths:
-      - 'data/tokens.json'
-      - 'config.json'
-      - 'build.js'
+      - "src/**"
+      - "build.js"
     branches-ignore:
-      - 'main'
+      - "main"
 
 jobs:
   transform_tokens:
@@ -20,11 +19,13 @@ jobs:
         with:
           node-version: "14"
       - name: Install Node Dependencies
-        run: npm install
+        run: yarn install
       - name: Pull any branch changes
         run: git pull origin ${{ github.head_ref }}
+      - name: Clean dist folder
+        run: yarn run clean
       - name: Run token transformer
-        run: npm run transform
+        run: yarn run transform
       - name: Commit transformed tokens
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -41,12 +42,54 @@ jobs:
         with:
           node-version: "14"
       - name: Install Node Dependencies
-        run: npm install
+        run: yarn install
       - name: Pull transformed tokens changes
         run: git pull origin ${{ github.head_ref }}
       - name: Run style dictionary build
-        run: npm run build
+        run: yarn run build:tokens
       - name: Commit built tokens
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Built and updated design tokens
+
+  compile:
+    needs: [transform_tokens, build_style_dictionary]
+    name: "Compile TS to JS"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: Install Node Dependencies
+        run: yarn install
+      - name: Pull any branch changes
+        run: git pull origin ${{ github.head_ref }}
+      - name: Run TSC and Babel
+        run: yarn run build:typescript
+      - name: Commit compiled files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Files compiled!
+
+  prettier:
+    needs: [transform_tokens, compile, build_style_dictionary]
+    name: "Prettier format files"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: Install Node Dependencies
+        run: yarn install
+      - name: Pull transformed tokens changes
+        run: git pull origin ${{ github.head_ref }}
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.2
+        with:
+          # This part is also where you can pass other options, for example:
+          prettier_options: --write src/**/*.{js,ts}
+          only_changed: True
